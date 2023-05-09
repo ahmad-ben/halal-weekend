@@ -1,0 +1,24 @@
+{
+  "Teams":[
+    {
+      "Name": "Manchester United",
+      "Stadium": {
+        "name": "Old Trafford",
+        "location" : {
+          "long": 9090909,
+          "lat": 90909090
+        }
+      },
+      "Hotels" : [
+        {
+          "name": "Mikes Kebabs",
+          "location" : {
+            "long": 9090909,
+            "lat": 90909090
+          }
+        }
+      ],
+      "Restaurants" : []
+    }
+  ]
+}

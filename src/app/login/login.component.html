@@ -100,6 +100,7 @@
         <button
           class="btn m-2 border d-block" type="submit"
           [class.inactive]="reactiveForm.invalid"
+          (click)="skip()"
         > continue </button>
         <p
         class="text-danger"
@@ -115,9 +116,5 @@
   </div>
 </div>
 
-
-
-
-<!-- [class.inactive]="!formInfo.valid || !gender.value" -->
 
 

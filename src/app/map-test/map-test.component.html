@@ -1,0 +1,26 @@
+<h2>Map And Markers With The Angular Google Map Library</h2>
+<div class="d-flex justify-content-center align-items-center">
+  <div class="map" style="max-height: 600px; max-width: 600px;">
+    <google-map
+      [options]="options"
+      (mapClick)="addMarker($event)"
+    >
+      <map-marker *ngFor="let markerPosition of markerPositions"
+      [position]="markerPosition"
+      [options]="markerOptions"></map-marker>
+    </google-map>
+  </div>
+</div>
+<hr>
+<hr>
+<hr>
+<h2>Map And Markers With Customize Stuff</h2>
+<div class="map">
+  <google-map height="100vh"
+              width="100%"
+              [options]="customOptions"
+              (mapInitialized)="handleMapInitialized($event)">
+  </google-map>
+</div>
+
+

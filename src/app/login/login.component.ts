@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { RealtimeDataService } from '../services/database/realtime-data.service';
 
 @Component({
@@ -24,7 +24,8 @@ export class LoginComponent {
   invalidFrom!: boolean;
 
   constructor(
-    private realtimeDataService: RealtimeDataService
+    private realtimeDataService: RealtimeDataService,
+    private route: Router,
   ) {
     this.userInfo.country = '';
     this.userInfo.interests = '';
@@ -40,10 +41,10 @@ export class LoginComponent {
   save(formInfo: FormGroup){
     if (formInfo.invalid) this.invalidFrom = true
     else  this.invalidFrom = false;
-    this.realtimeDataService.saveUserInfo(formInfo.value);
+    // this.realtimeDataService.saveUserInfo(formInfo.value);
   }
 
   skip(){
-
+    this.route.navigateByUrl('/test')
   }
 }

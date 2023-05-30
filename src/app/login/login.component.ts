@@ -19,7 +19,7 @@ import { RealtimeDataService } from '../services/database/realtime-data.service'
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  userInfo: any = {};
+  //! userInfo: any = {}; iF i will use it or not.
   reactiveForm!: FormGroup;
   invalidFrom!: boolean;
 
@@ -27,8 +27,8 @@ export class LoginComponent {
     private realtimeDataService: RealtimeDataService,
     private route: Router,
   ) {
-    this.userInfo.country = '';
-    this.userInfo.interests = '';
+    // this.userInfo.country = '';
+    // this.userInfo.interests = '';
     this.reactiveForm = new FormGroup({
       fullName: new FormControl(null, Validators.required),
       gender: new FormControl(null, Validators.required),
@@ -45,6 +45,6 @@ export class LoginComponent {
   }
 
   skip(){
-    this.route.navigateByUrl('/test')
+    this.route.navigateByUrl('/home')
   }
 }

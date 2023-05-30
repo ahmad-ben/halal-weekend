@@ -1,0 +1,21 @@
+.homeComponent{
+  width: 100%;
+  height: 100%; //! If I Really Need Them
+  overflow: hidden; //! If I Really Need Them
+  bottom-nav{
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+//=> For The Map With The Custom Markers
+.map{
+  overflow: hidden;
+  height: calc(100vh - 220px);
+}
+

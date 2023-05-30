@@ -1,0 +1,10 @@
+// .form-control {
+//   width: 300px;
+// }
+::ng-deep .dropdown-menu.show{
+  padding: 0;
+  ::ng-deep .dropdown-item.active {
+    background-color: #808080;
+  }
+}
+

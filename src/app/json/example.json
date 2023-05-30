@@ -5,16 +5,16 @@
       "Stadium": {
         "name": "Old Trafford",
         "location" : {
-          "long": 9090909,
-          "lat": 90909090
+          "long": 53.46328404202837,
+          "lat":  -2.291328672118847
         }
       },
       "Hotels" : [
         {
-          "name": "Mikes Kebabs",
+          "name": "Old Trafford Stadium Hotel",
           "location" : {
-            "long": 9090909,
-            "lat": 90909090
+            "long": 53.461134028804764,
+            "lat": -2.287671429882639
           }
         }
       ],

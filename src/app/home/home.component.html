@@ -1,5 +1,53 @@
-<div class="home container text-center">
-  <h2>HALAL WEEKEND</h2>
-  <p class="fw-bold">Find your ultimate halal football experience</p>
-  <a class="badge text-bg-secondary text-decoration-none rounded-pill px-4 py-2" routerLink="/login">Let's get started</a>
+<div class="homeComponent">
+
+  <top-nav></top-nav>
+
+  <h2>Map And Markers With The Angular Google Map Library</h2>
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="map">
+      <google-map
+        [options]="options"
+        (mapClick)="addMarker($event)"
+      >
+        <map-marker *ngFor="let markerPosition of markerPositions"
+        [position]="markerPosition"
+        [options]="markerOptions"></map-marker>
+      </google-map>
+    </div>
+  </div>
+
+  <bottom-nav></bottom-nav>
+
 </div>
+
+
+
+<!--
+<div class="map">
+
+</div>
+<h2>Map And Markers With The Angular Google Map Library</h2>
+<div class="d-flex justify-content-center align-items-center">
+  <div class="map" style="max-height: 600px; max-width: 600px;">
+    <google-map
+      [options]="options"
+      (mapClick)="addMarker($event)"
+    >
+      <map-marker *ngFor="let markerPosition of markerPositions"
+      [position]="markerPosition"
+      [options]="markerOptions"></map-marker>
+    </google-map>
+  </div>
+</div>
+-->
+
+
+<!--
+<h2>Map And Markers With Customize Stuff</h2>
+<div class="map">
+  <google-map height="100%"
+              width="100%"
+              [options]="customOptions"
+              (mapInitialized)="handleMapInitialized($event)">
+  </google-map>
+</div> -->

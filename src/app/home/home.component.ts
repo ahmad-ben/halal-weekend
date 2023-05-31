@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
-import { GoogleMap, GoogleMapsModule } from '@angular/google-maps';
+import { Component } from '@angular/core';
+import { GoogleMapsModule } from '@angular/google-maps';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
+import { JsonDataService } from '../services/json/json-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
 
 
@@ -28,50 +29,59 @@ interface MarkerProperties {
 
 
 export class homeComponent {
+  response: any;
+  // currentTeam: any;
+
+  center!: google.maps.LatLngLiteral | google.maps.LatLng;
+
+  markerPositions: google.maps.LatLngLiteral[] = [];
+
   //=> Full Library Based
-  //center: google.maps.LatLngLiteral = {lat: 40, lng: -20};
   options: google.maps.MapOptions = {
-    center: {lat: 35.546579, lng: -5.365447},
-    zoom: 12,
+    zoom: 18,
   };
 
-  //: Create Standard Marker:
-  markerOptions: google.maps.MarkerOptions = { draggable: true };
-  markerPositions: google.maps.LatLngLiteral[] = [
-    {lat: 35.54657977, lng: -5.36544907},
-  ];
+  constructor(public jsonData: JsonDataService){
 
-  constructor(){}
+    jsonData.getJsonData().subscribe({
+
+      next: (response) => {
+        this.response = response;
+
+        this.mapHandling();
+
+      }
+
+    });
+
+  }
 
   addMarker(event: google.maps.MapMouseEvent) {
     this.markerPositions.push(event.latLng!.toJSON());
   }
 
+  clubNameSelected(event: any){
+    console.log(event);
 
-  //=> Customize Building:
-  @ViewChild('myGoogleMap', { static: true }) map!: GoogleMap;
+    if(event == 'Chelsea') this.mapHandling(2)
+    else if (event == 'Manchester United') this.mapHandling(0)
+    else this.mapHandling(1)
 
-  customOptions: google.maps.MapOptions = {
-    center: {lat: 35.546579, lng: -5.365447},
-    zoom: 12,
-  };
+  }
 
-  markers: MarkerProperties[] = [
-    { position: {lat: 35.546579, lng: -5.365447}},
-  ];
+  mapHandling(clubName: number = 0){
 
+    this.center = this.response.teams[clubName].stadium.location;
 
-  handleMapInitialized(map: google.maps.Map) {
-    this.markers.forEach((marker: MarkerProperties) => {
-      new google.maps.Marker({
-        position: marker.position,
-        map,
-        icon: {
-          url: "../../assets/test/stadium.jpg",
-          scaledSize: new google.maps.Size(40, 40)
-        }
-      });
-    });
+    this.markerPositions.push(this.response.teams[clubName].stadium.location as google.maps.LatLngLiteral)
+
+    const hotels: any[] = this.response.teams[clubName].hotels;
+
+    hotels.forEach(hotel => this.markerPositions.push(hotel.location as google.maps.LatLngLiteral) )
+
   }
 
 }
+
+
+

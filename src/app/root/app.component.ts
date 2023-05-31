@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 // import { AngularFireDatabase } from '@angular/fire/compat/database';
 
-import jsonFile from '../json/example.json';
-
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,9 +9,6 @@ import jsonFile from '../json/example.json';
 export class AppComponent {
   title = 'halalWeekendProject';
 
-  jsonContent = jsonFile;
+  constructor() {}
 
-  constructor() {
-
-  }
 }

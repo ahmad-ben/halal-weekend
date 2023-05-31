@@ -1,15 +1,12 @@
 <div class="topNav">
 
   <div class="searchBar mb-2">
+
     <label for="typeahead-basic">Search for a Club:</label>
-    <input
-      id="typeahead-basic" type="text" class="form-control"
-      placeholder="Start typing your team"
-      [(ngModel)]="model" [ngbTypeahead]="search"
-      (focus)="focus$.next($any($event).target.value)"
-      (click)="click$.next($any($event).target.value)"
-      #instance="ngbTypeahead"
-    />
+    <select class="form-select" [(ngModel)]="selectedClubName" (change)="clubSelected(selectedClubName)">
+      <option *ngFor="let clubName of clubNames" [value]="clubName"> {{ clubName }} </option>
+    </select>
+
   </div>
 
   <div class="places d-flex align-items-center justify-content-between">

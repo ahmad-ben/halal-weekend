@@ -1,21 +1,11 @@
 import { CommonModule, JsonPipe } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { NgbTypeahead, NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
-import { Observable, OperatorFunction, Subject, merge, } from 'rxjs';
-import { debounceTime, distinctUntilChanged, filter, map, } from 'rxjs/operators';
+import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 
 
-const clubNames = [
-	'Arsenal FC',
-	'Chelsea FC',
-	'Liverpool FC',
-	'Manchester City FC',
-	'Manchester United FC',
-	'Newcastle United FC',
-	'Tottenham Hotspur FC',
-];
+
 
 
 @Component({
@@ -34,24 +24,31 @@ const clubNames = [
 
 
 export class TopNavComponent {
-  @ViewChild('instance', { static: true }) instance!: NgbTypeahead;
-  model!: string;
-  focus$ = new Subject<string>();
-  click$ = new Subject<string>();
+  selectedClubName: string = "Manchester United";
+  @Output() clubNameSelected: EventEmitter<any> = new EventEmitter();
 
-  search: OperatorFunction<string, readonly string[]> = (text$: Observable<string>) => {
-    const debouncedText$ = text$.pipe(debounceTime(200), distinctUntilChanged());
-    const clicksWithClosedPopup$ = this.click$.pipe(filter(() => !this.instance.isPopupOpen()));
-    const inputFocus$ = this.focus$;
-    return merge(debouncedText$, inputFocus$, clicksWithClosedPopup$).pipe(
-      map((term) =>
-        (term === '' ? clubNames : clubNames.filter((clubName) => clubName.toLowerCase().indexOf(term.toLowerCase()) > -1)),
-      ),
-    );
-  };
+  clubNames = [
+    'Chelsea',
+    'Manchester City',
+    'Manchester United',
+  ];
+
+  clubSelected(selectedClubName: any){
+    console.log(selectedClubName);
+    this.clubNameSelected.emit(selectedClubName);
+  }
+
 
 }
 
-
+// clubNames = [
+//   'Arsenal',
+//   'Chelsea',
+//   'Liverpool',
+//   'Manchester City',
+//   'Manchester United',
+//   'Newcastle United',
+//   'Tottenham Hotspur',
+// ];
 
 

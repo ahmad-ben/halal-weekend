@@ -1,21 +1,21 @@
-<div class="homeComponent">
+<div class="homeComponent d-flex flex-column">
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <h2>Map And Markers With The Angular Google Map Library</h2>
-  <div class="d-flex justify-content-center align-items-center">
-    <div class="map">
+  <!-- ! <h2>Map And Markers With The Angular Google Map Library</h2> -->
+    <div class="map flex-grow-1">
       <google-map
         [options]="options"
         [center]="center"
         (mapClick)="addMarker($event)"
+        width="100%"
+        height="100%"
       >
         <map-marker
           *ngFor="let markerPosition of markerPositions"
           [position]="markerPosition"
         ></map-marker>
       </google-map>
-    </div>
   </div>
 
   <bottom-nav></bottom-nav>

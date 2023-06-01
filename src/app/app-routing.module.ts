@@ -5,6 +5,7 @@ import { EateriesComponent } from './eateries/eateries.component';
 import { homeComponent } from './home/home.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { LandingComponent } from './landing/landing.component';
+import { LanguagesComponent } from './languages/languages.component';
 import { LoginComponent } from './login/login.component';
 import { MoreComponent } from './more/more.component';
 import { MosquesComponent } from './mosques/mosques.component';
@@ -27,6 +28,8 @@ const routes: Routes = [
 
   {path: 'more', component: MoreComponent},
   {path: 'more/about', component: AboutUsComponent},
+
+  {path: 'languages', component: LanguagesComponent},
 ];
 
 @NgModule({

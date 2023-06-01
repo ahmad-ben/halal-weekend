@@ -1,8 +1,7 @@
-<div class="topNav">
+<div class="topNav p-2">
 
-  <div class="searchBar mb-2">
+  <div class="searchBar m-2">
 
-    <label for="typeahead-basic">Search for a Club:</label>
     <select class="form-select" [(ngModel)]="selectedClubName" (change)="clubSelected(selectedClubName)">
       <option *ngFor="let clubName of clubNames" [value]="clubName"> {{ clubName }} </option>
     </select>

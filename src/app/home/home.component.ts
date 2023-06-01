@@ -30,7 +30,6 @@ interface MarkerProperties {
 
 export class homeComponent {
   response: any;
-  // currentTeam: any;
 
   center!: google.maps.LatLngLiteral | google.maps.LatLng;
 

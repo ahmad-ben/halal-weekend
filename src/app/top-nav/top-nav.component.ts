@@ -3,6 +3,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 
@@ -16,7 +17,8 @@ import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
     RouterModule,
     NgbTypeaheadModule,
     FormsModule,
-    JsonPipe
+    JsonPipe,
+    TranslateModule
   ],
   templateUrl: './top-nav.component.html',
   styleUrls: ['./top-nav.component.scss']
@@ -32,6 +34,8 @@ export class TopNavComponent {
     'Manchester City',
     'Manchester United',
   ];
+
+  constructor(public translate: TranslateService) {}
 
   clubSelected(selectedClubName: any){
     console.log(selectedClubName);

@@ -1,0 +1,44 @@
+{
+  "HOME": "Home",
+  "PROFILE": "Profile",
+  "MORE": "More",
+  "HOTELS": "Hotels",
+  "SIGHTS": "Sights",
+  "EATERIES": "Eateries",
+  "MOSQUES": "Mosques",
+  "LANGUAGES_COM": {
+    "LANGUAGES": "Languages",
+    "CHOOSE YOUR LANGUAGE": "Choose your language",
+    "ENGLISH": "English",
+    "ARABIC": "Arabic"
+  },
+  "MORE_COM": {
+    "MORE": "More",
+    "SHARE THE APP": "Share the app",
+    "RATE THE APP": "Rate the app",
+    "CONTACT US": "Contact us",
+    "LANGUAGES": "Languages",
+    "ABOUT US": "About us"
+  },
+  "ABOUT US_COM": {
+    "ABOUT": "About",
+    "FIRST_PARA": "Welcome to Halal Weekend, your go-to application for families traveling from abroad and also families living in the UK to watch live Premier league games. We're here to make your trip seamless, unforgettable and halal!",
+    "SECOND_PARA": "At Halal Weekend, we understand the excitement and challenges of supporting your favorite football team in a foreign country. Our dedicated team of travel enthusiasts and local experts is committed to providing you with the essential information and resources you need.",
+    "OFFERS_INTRO": "Here's what we offer:",
+    "FIRST_OFFER_TITLE": "1. Match Information:",
+    "FIRST_OFFER_DESCRIPTION": "Stay up to date with schedules, ticket availability, and stadium details for all major football games in the UK.",
+    "SECOND_OFFER_TITLE": "2. Travel Planning Tools:",
+    "SECOND_OFFER_DESCRIPTION": "Access hotel options, transportation recommendations, and local services to ensure a comfortable stay.",
+    "THIRD_OFFER_TITLE": "3. Destination Guides:",
+    "THIRD_OFFER_DESCRIPTION": "Discover the best attractions, restaurants, masaajid and entertainment near the stadiums to make the most of your time in the UK.",
+    "END": "Join the Halal Weekend family and let us be your trusted companion on your football travel adventure. Together, we'll create lasting memories while you cheer on your team in the UK."
+  }
+}
+
+
+
+
+
+
+
+

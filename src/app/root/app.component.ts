@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 // import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Component({
@@ -9,6 +10,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'halalWeekendProject';
 
-  constructor() {}
+  constructor(public translate: TranslateService) {
+    const chosenLanguage = localStorage.getItem('currentLanguage');
+    if (chosenLanguage == "ar") {
+      translate.use(chosenLanguage);
+      document.documentElement.setAttribute('lang', 'ar');
+    } else document.documentElement.setAttribute('lang', 'en');
+  }
 
 }

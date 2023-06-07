@@ -27,6 +27,14 @@ body{
   list-style: none;
 }
 
+body{
+  .loginCom{
+    input, select, button{
+      font-size: 1.6rem;
+    }
+  }
+}
+
 h2{
   font-size: 2.2rem;
 }

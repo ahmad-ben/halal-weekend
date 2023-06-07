@@ -6,12 +6,40 @@
   "SIGHTS": "المعالم",
   "EATERIES": "المطاعم",
   "MOSQUES": "المساجد",
+
+  "LANDING_COM": {
+    "CTA": "اعثر على أقصى تجربة حلال لكرة القدم",
+    "BUTTON": "لنبدأ"
+  },
+
+  "LOGIN_COM": {
+    "FULL NAME": "الاسم الكامل",
+    "FN PLACE HOLDER": "أحمد بنشخطير",
+    "FULL NAME REQUIRED": "الاسم إلزامي",
+    "GENDER": "الجنس",
+    "MALE": "ذكر",
+    "FEMALE": "أنثى",
+    "GENDER REQUIRED": "الجنس إلزامي",
+    "COUNTRY": "الدولة/المنطقة",
+    "COUNTRY REQUIRED": "الدولة إلزامية",
+    "INTERESTS": "الاهتمامات",
+    "INTERESTS REQUIRED": "الاهتمامات إلزامية",
+    "EMAIL": "البريد الإلكتروني",
+    "EMAIL REQUIRED": "البريد الإلكتروني إلزامي",
+    "EMAIL INVALID": "يرجى إدخال بريد إلكتروني صالح",
+    "CONTINUE": "استمر",
+    "FILL ALL": "يرجى ملء جميع الحقول بشكل صحيح",
+    "SKIP": "تخطى هذه الخطوة",
+    "PLEASE SELECT": "يرجى التحديد"
+  },
+
   "LANGUAGES_COM": {
     "LANGUAGES": "اللغات",
     "CHOOSE YOUR LANGUAGE": "اختر لغتك المفضلة",
     "ENGLISH": "الانجليزية",
     "ARABIC": "العربية"
   },
+
   "MORE_COM": {
     "MORE": "المزيد",
     "SHARE THE APP": "شارك التطبيق",
@@ -20,6 +48,7 @@
     "LANGUAGES": "اللغات",
     "ABOUT US": "من نحن"
   },
+
   "ABOUT US_COM": {
     "ABOUT": "حولنا",
     "FIRST_PARA": "مرحبًا بك في Halal Weekend، تطبيقك الأمثل للعائلات القادمة من الخارج وأيضًا العائلات المقيمة في المملكة المتحدة لمشاهدة مباريات الدوري الإنجليزي الممتاز مباشرةً. نحن هنا لجعل رحلتك سلسةً ولا تُنسى وحلالًا!",

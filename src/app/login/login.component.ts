@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RealtimeDataService } from '../services/database/realtime-data.service';
 
 @Component({
@@ -12,6 +13,7 @@ import { RealtimeDataService } from '../services/database/realtime-data.service'
     CommonModule,
     RouterModule,
     FormsModule,
+    TranslateModule,
     ReactiveFormsModule,
     AngularFireDatabaseModule
   ],
@@ -26,6 +28,7 @@ export class LoginComponent {
   constructor(
     private realtimeDataService: RealtimeDataService,
     private route: Router,
+    translate: TranslateService
   ) {
     // this.userInfo.country = '';
     // this.userInfo.interests = '';

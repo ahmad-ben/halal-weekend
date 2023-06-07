@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="loginCom px-4 py-2 languageEffect">
   <div class="header text-center">
     <h2>HALAL WEEKEND</h2>
     <p>Your halal weekend starts here</p>
@@ -7,19 +7,19 @@
     <form (ngSubmit)="save(reactiveForm)" [formGroup]="reactiveForm">
 
       <div class="form-group">
-        <label for="full-name"> Full name* </label>
+        <label for="full-name">{{ 'LOGIN_COM.FULL NAME' | translate }}*</label>
         <input
-          id="full-name" type="text" class="form-control" placeholder="Joe Bloggs"
+          id="full-name" type="text" class="form-control" placeholder="{{ 'LOGIN_COM.FN PLACE HOLDER' | translate }}"
           formControlName="fullName"
         >
       </div>
       <p
         class="text-danger"
         *ngIf="reactiveForm.controls['fullName'].errors && reactiveForm.controls['fullName'].touched"
-      >The name is required</p>
+      >{{ 'LOGIN_COM.FULL NAME REQUIRED' | translate }}</p>
 
       <div class="form-group">
-        <label for="price"> Gender* </label>
+        <label for="gender">{{ 'LOGIN_COM.GENDER' | translate }}*</label>
         <div class="input-group">
           <div class="form-check form-check-inline">
             <input
@@ -27,7 +27,7 @@
               name="gender"
               formControlName="gender" value="male"
             >
-            <label class="form-check-label" for="inlineRadio1"> Male </label>
+            <label class="form-check-label" for="inlineRadio1">{{ 'LOGIN_COM.MALE' | translate }}</label>
           </div>
           <div class="form-check form-check-inline">
             <input
@@ -35,22 +35,22 @@
               name="gender"
               formControlName="gender" value="female"
             >
-            <label class="form-check-label" for="inlineRadio2"> Female </label>
+            <label class="form-check-label" for="inlineRadio2">{{ 'LOGIN_COM.FEMALE' | translate }}</label>
           </div>
         </div>
       </div>
       <p
         class="text-danger"
         *ngIf="reactiveForm.controls['gender'].errors && reactiveForm.controls['gender'].touched"
-      >The gender is required</p>
+      >{{ 'LOGIN_COM.GENDER REQUIRED' | translate }}</p>
 
       <div class="form-group">
-        <label for="country"> Country/Region </label>
+        <label for="country">{{ 'LOGIN_COM.COUNTRY' | translate }}</label>
         <select
           id="country" type="text" class="form-select"
           formControlName="country"
         >
-          <option value="" hidden disabled selected>Please select</option>
+          <option value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
           <option value="Qatar">
             Qatar
           </option>
@@ -59,15 +59,15 @@
       <p
         class="text-danger"
         *ngIf="reactiveForm.controls['country'].errors && reactiveForm.controls['country'].touched"
-      >The country is required</p>
+      >{{ 'LOGIN_COM.COUNTRY REQUIRED' | translate }}</p>
 
       <div class="form-group">
-        <label for="interests"> interests </label>
+        <label for="interests">{{ 'LOGIN_COM.INTERESTS' | translate }}</label>
         <select
           id="interests" type="text" class="form-select"
           formControlName="interests"
         >
-          <option value="" hidden disabled selected>Please select</option>
+          <option value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
           <option value="Football tickets" >
             Football tickets
           </option>
@@ -76,12 +76,12 @@
       <p
         class="text-danger"
         *ngIf="reactiveForm.controls['interests'].errors && reactiveForm.controls['interests'].touched"
-      >The interests is required</p>
+      >{{ 'LOGIN_COM.INTERESTS REQUIRED' | translate }}</p>
 
       <div class="form-group">
-        <label for="email"> Email </label>
+        <label for="email">{{ 'LOGIN_COM.EMAIL' | translate }}</label>
         <input
-          id="email" type="text" class="form-control" placeholder="HalalWeekend@gmail.com"
+          id="email" type="text" class="form-control" placeholder="ahmadbenchakhti@gmail.com"
           formControlName="email"
         >
       </div>
@@ -89,11 +89,11 @@
         <p
           class="text-danger"
           *ngIf="reactiveForm.controls['email'].errors?.['required']"
-        >The email is required</p>
+        >{{ 'LOGIN_COM.EMAIL REQUIRED' | translate }}</p>
         <p
           class="text-danger"
           *ngIf="reactiveForm.controls['email'].errors?.['email']"
-        >Please enter a valid email</p>
+        >{{ 'LOGIN_COM.EMAIL INVALID' | translate }}</p>
       </div>
 
       <div>
@@ -101,20 +101,17 @@
           class="btn m-2 border d-block" type="submit"
           [class.inactive]="reactiveForm.invalid"
           (click)="skip()"
-        > continue </button>
+        >{{ 'LOGIN_COM.CONTINUE' | translate }}</button>
         <p
-        class="text-danger"
-        *ngIf="invalidFrom && reactiveForm.invalid"
-      >Please fill all the inputs properly</p>
+          class="text-danger"
+          *ngIf="invalidFrom && reactiveForm.invalid"
+        >{{ 'LOGIN_COM.FILL ALL' | translate }}</p>
         <button
           type="button" class="btn m-2 border d-block"
           (click)="skip()"
-        > skip this step </button>
+        >{{ 'LOGIN_COM.SKIP' | translate }}</button>
       </div>
 
     </form>
   </div>
 </div>
-
-
-

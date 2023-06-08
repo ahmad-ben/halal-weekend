@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { arCountries } from '../common/world\'sCountries';
 
 @Component({
   selector: 'app-landing',
@@ -16,6 +17,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class LandingComponent {
 
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService) {
+    console.log(arCountries);
+
+    arCountries.sort((a, b) => a.localeCompare(b, "ar"));
+
+    console.log(arCountries);
+
+  }
 
 }

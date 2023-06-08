@@ -4,6 +4,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { arCountries, enCountries } from '../common/world\'sCountries';
 import { RealtimeDataService } from '../services/database/realtime-data.service';
 
 @Component({
@@ -21,17 +22,15 @@ import { RealtimeDataService } from '../services/database/realtime-data.service'
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  //! userInfo: any = {}; iF i will use it or not.
   reactiveForm!: FormGroup;
   invalidFrom!: boolean;
+  countries?: string[];
 
   constructor(
     private realtimeDataService: RealtimeDataService,
     private route: Router,
     translate: TranslateService
   ) {
-    // this.userInfo.country = '';
-    // this.userInfo.interests = '';
     this.reactiveForm = new FormGroup({
       fullName: new FormControl(null, Validators.required),
       gender: new FormControl(null, Validators.required),
@@ -39,7 +38,12 @@ export class LoginComponent {
       interests: new FormControl("", Validators.required),
       email: new FormControl(null, [Validators.required, Validators.email]),
     })
+
+    this.countries = (translate.currentLang == "ar") ? arCountries : enCountries ;
+
   }
+
+
 
   save(formInfo: FormGroup){
     if (formInfo.invalid) this.invalidFrom = true

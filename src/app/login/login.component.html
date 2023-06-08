@@ -51,9 +51,7 @@
           formControlName="country"
         >
           <option value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
-          <option value="Qatar">
-            Qatar
-          </option>
+          <option *ngFor="let country of countries" [value]="country"> {{ country }} </option>
         </select>
       </div>
       <p

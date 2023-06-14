@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'halalWeekendProject';
 
   constructor(public translate: TranslateService) {
+
     const chosenLanguage = localStorage.getItem('currentLanguage');
     if (chosenLanguage == "ar") {
       translate.use(chosenLanguage);

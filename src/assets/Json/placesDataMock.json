@@ -1,0 +1,85 @@
+{
+  "Old Trafford Stadium Hotel": {
+    "name": "Old Trafford Stadium Hotel",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
+    "phoneNumber": "+447964451119",
+    "workTime": {"open": "2PM", "close": "11PM"  },
+    "images": [
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/1.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/2.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/3.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/4.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/5.jpg"
+    ],
+    "usefulInformation": {
+      "peopleNumber": "From 1 To 4",
+      "spaceBetween": "2.5 miles from the centre of Manchester."
+    },
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat": 53.461134028804764,
+      "lng": -2.287671429882639
+    }
+  },
+
+
+  "Millola House": {
+    "name": "Millola House",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
+    "phoneNumber": "+456456456456",
+    "workTime": {"open": "2PM", "close": "11PM"  },
+    "images": [
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/1.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/2.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/3.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/4.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/5.jpg"
+    ],
+    "usefulInformation": {
+      "peopleNumber": "From 1 To 4",
+      "spaceBetween": "2.5 miles from the centre of Manchester."
+    },
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat": 53.461134028804764,
+      "lng": -2.287671429882639
+    }
+  },
+
+
+  "Millennium & Copthorne": {
+    "name": "Millennium & Copthorne",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
+    "phoneNumber": "+789789789789",
+    "workTime": {"open": "2PM", "close": "11PM"  },
+    "images": [
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/1.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/2.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/3.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/4.jpg",
+      "/assets/Images/Hotels/Old Trafford Stadium Hotel/5.jpg"
+    ],
+    "usefulInformation": {
+      "peopleNumber": "From 1 To 4",
+      "spaceBetween": "2.5 miles from the centre of Manchester."
+    },
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat":  51.481113092995045,
+      "lng": -0.18915545056722702
+    }
+  }
+
+}

@@ -1,73 +1,60 @@
 {
-  "HOME": "Home",
-  "PROFILE": "Profile",
-  "MORE": "More",
-  "HOTELS": "Hotels",
-  "SIGHTS": "Sights",
-  "EATERIES": "Eateries",
-  "MOSQUES": "Mosques",
-
-  "LANDING_COM": {
-    "CTA": "Find your ultimate halal football experience",
-    "BUTTON": "Let's get started"
-  },
-
-  "LOGIN_COM": {
-    "FULL NAME": "Full name",
-    "FN PLACE HOLDER": "Ahmed Ben Chakhter",
-    "FULL NAME REQUIRED": "The name is required",
-    "GENDER": "Gender",
-    "MALE": "Male",
-    "FEMALE": "Female",
-    "GENDER REQUIRED": "The gender is required",
-    "COUNTRY": "Country/Region",
-    "COUNTRY REQUIRED": "The country is required",
-    "INTERESTS": "interests",
-    "INTERESTS REQUIRED": "The interests is required",
-    "EMAIL": "Email",
-    "EMAIL REQUIRED": "The email is required",
-    "EMAIL INVALID": "Please enter a valid email",
-    "CONTINUE": "continue",
-    "FILL ALL": "Please fill all the inputs properly",
-    "SKIP": "skip this step",
-    "PLEASE SELECT": "Please select"
-  },
-
-  "LANGUAGES_COM": {
-    "LANGUAGES": "Languages",
-    "CHOOSE YOUR LANGUAGE": "Choose your language",
-    "ENGLISH": "English",
-    "ARABIC": "Arabic"
-  },
-
-  "MORE_COM": {
-    "MORE": "More",
-    "SHARE THE APP": "Share the app",
-    "RATE THE APP": "Rate the app",
-    "CONTACT US": "Contact us",
-    "LANGUAGES": "Languages",
-    "ABOUT US": "About us"
-  },
-
   "ABOUT US_COM": {
     "ABOUT": "About",
-    "FIRST_PARA": "Welcome to Halal Weekend, your go-to application for families traveling from abroad and also families living in the UK to watch live Premier league games. We're here to make your trip seamless, unforgettable and halal!",
-    "SECOND_PARA": "At Halal Weekend, we understand the excitement and challenges of supporting your favorite football team in a foreign country. Our dedicated team of travel enthusiasts and local experts is committed to providing you with the essential information and resources you need.",
-    "OFFERS_INTRO": "Here's what we offer:",
-    "FIRST_OFFER_TITLE": "1. Match Information:",
+    "END": "Join the Halal Weekend family and let us be your trusted companion on your football travel adventure. Together, we'll create lasting memories while you cheer on your team in the UK.",
     "FIRST_OFFER_DESCRIPTION": "Stay up to date with schedules, ticket availability, and stadium details for all major football games in the UK.",
-    "SECOND_OFFER_TITLE": "2. Travel Planning Tools:",
+    "FIRST_OFFER_TITLE": "1. Match Information:",
+    "FIRST_PARA": "Welcome to Halal Weekend, your go-to application for families traveling from abroad and also families living in the UK to watch live Premier league games. We're here to make your trip seamless, unforgettable and halal!",
+    "OFFERS_INTRO": "Here's what we offer:",
     "SECOND_OFFER_DESCRIPTION": "Access hotel options, transportation recommendations, and local services to ensure a comfortable stay.",
-    "THIRD_OFFER_TITLE": "3. Destination Guides:",
+    "SECOND_OFFER_TITLE": "2. Travel Planning Tools:",
+    "SECOND_PARA": "At Halal Weekend, we understand the excitement and challenges of supporting your favorite football team in a foreign country. Our dedicated team of travel enthusiasts and local experts is committed to providing you with the essential information and resources you need.",
     "THIRD_OFFER_DESCRIPTION": "Discover the best attractions, restaurants, masaajid and entertainment near the stadiums to make the most of your time in the UK.",
-    "END": "Join the Halal Weekend family and let us be your trusted companion on your football travel adventure. Together, we'll create lasting memories while you cheer on your team in the UK."
-  }
+    "THIRD_OFFER_TITLE": "3. Destination Guides:"
+  },
+  "EATERIES": "Eateries",
+  "HOME": "Home",
+  "HOTELS": "Hotels",
+  "LANDING_COM": {
+    "BUTTON": "Let's get started",
+    "CTA": "Find your ultimate halal football experience"
+  },
+  "LANGUAGES_COM": {
+    "ARABIC": "Arabic",
+    "CHOOSE YOUR LANGUAGE": "Choose your language",
+    "ENGLISH": "English",
+    "LANGUAGES": "Languages"
+  },
+  "LOGIN_COM": {
+    "CONTINUE": "continue",
+    "COUNTRY": "Country/Region",
+    "COUNTRY REQUIRED": "The country is required",
+    "EMAIL": "Email",
+    "EMAIL INVALID": "Please enter a valid email",
+    "EMAIL REQUIRED": "The email is required",
+    "FEMALE": "Female",
+    "FILL ALL": "Please fill all the inputs properly",
+    "FN PLACE HOLDER": "Ahmed Ben Chakhter",
+    "FULL NAME": "Full name",
+    "FULL NAME REQUIRED": "The name is required",
+    "GENDER": "Gender",
+    "GENDER REQUIRED": "The gender is required",
+    "INTERESTS": "interests",
+    "INTERESTS REQUIRED": "The interests is required",
+    "MALE": "Male",
+    "PLEASE SELECT": "Please select",
+    "SKIP": "skip this step"
+  },
+  "MORE": "More",
+  "MORE_COM": {
+    "ABOUT US": "About us",
+    "CONTACT US": "Contact us",
+    "LANGUAGES": "Languages",
+    "MORE": "More",
+    "RATE THE APP": "Rate the app",
+    "SHARE THE APP": "Share the app"
+  },
+  "MOSQUES": "Mosques",
+  "PROFILE": "Profile",
+  "SIGHTS": "Sights"
 }
-
-
-
-
-
-
-
-

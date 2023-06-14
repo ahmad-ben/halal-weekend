@@ -1,21 +1,27 @@
-<div class="homeComponent d-flex flex-column vh-100">
+<div class="homeComponent d-flex flex-column">
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <!-- ! <h2>Map And Markers With The Angular Google Map Library</h2> -->
-    <div class="map flex-grow-1">
+    <div class="map flex-grow-1" #map>
       <google-map
         [options]="options"
-        [center]="center"
-        (mapClick)="addMarker($event)"
+        [center]="centerPosition"
         width="100%"
         height="100%"
       >
         <map-marker
-          *ngFor="let markerPosition of markerPositions"
-          [position]="markerPosition"
+          *ngFor="let markerInfo of markerInfos"
+          [position]="markerInfo.position"
+          [clickable]="true"
+          (mapClick)="markerClicked(markerInfo)"
         ></map-marker>
       </google-map>
+      <place-card
+        (showCard)="showCard()"
+        (showCardHeader)="showCardHeader($event)"
+        (hideCard)="hideCard()"
+        #placeCard>
+      </place-card>
   </div>
 
   <bottom-nav></bottom-nav>
@@ -24,3 +30,5 @@
 
 
 
+<!-- ! Add The Marker : ( (mapClick)="addMarker($event)" )  -->
+<!-- ! addMarker(event: google.maps.MapMouseEvent) this.markerPositions.push(event.latLng!.toJSON()) -->

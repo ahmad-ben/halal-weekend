@@ -3,7 +3,7 @@
   <div class="searchBar m-2">
 
     <select class="form-select" [(ngModel)]="selectedClubName" (change)="clubSelected(selectedClubName)">
-      <option *ngFor="let clubName of clubNames" [value]="clubName"> {{ clubName }} </option>
+      <option *ngFor="let clubName of clubsNames" [value]="clubName"> {{ clubName }} </option>
     </select>
 
   </div>

@@ -1,0 +1,32 @@
+.placeCardCom{
+  background-color: #47484A;
+  color: #EAEAEA;
+}
+
+.iconHolder{
+  padding: 5px;
+  background: rgb(144, 122, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.detailsImages img{
+  width: calc(100% / 5);
+  aspect-ratio: 1/1;
+}
+
+.cta{
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #5D5C5C;
+}
+
+.internalCard{
+  padding: 5px 10px;
+  background-color: #5D5C5C;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+

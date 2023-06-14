@@ -25,6 +25,7 @@ body{
   margin: 0;
   text-decoration: none;
   list-style: none;
+  transition: .5s;
 }
 
 body{
@@ -35,8 +36,12 @@ body{
   }
 }
 
+h1{
+  font-size: calc(2.2rem + 1.5vw);
+}
+
 h2{
-  font-size: 2.2rem;
+  font-size: calc(2.12rem + 0.9vw);
 }
 
 ul{
@@ -44,7 +49,17 @@ ul{
   margin: 0px;
 }
 
+a{
+  color: white;
+}
+
 /* Arabic Styling */
 [lang="ar"] body .languageEffect{
   direction: rtl;
 }
+
+
+//! 989898 Icon BackGround
+//! 47484A Card BackGround
+//! 5D5C5C Cards BackGround
+//! EAEAEA Font Color

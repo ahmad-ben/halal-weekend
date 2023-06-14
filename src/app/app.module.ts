@@ -15,7 +15,7 @@ import { AppComponent } from './root/app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

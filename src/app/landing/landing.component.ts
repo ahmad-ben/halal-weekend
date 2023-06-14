@@ -18,11 +18,9 @@ import { arCountries } from '../common/world\'sCountries';
 export class LandingComponent {
 
   constructor(public translate: TranslateService) {
-    console.log(arCountries);
 
     arCountries.sort((a, b) => a.localeCompare(b, "ar"));
 
-    console.log(arCountries);
 
   }
 

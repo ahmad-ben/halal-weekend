@@ -1,3 +1,24 @@
 
 
+.homeComponent{
+  height: 100vh;
+  height: 100dvh;
+}
+.map{
+  --position-value: relative;
+
+  position: var(--position-value);
+  overflow: hidden;
+
+  place-card{
+    --bottom-value: 0px;
+    --MaxHeight-value: none;
+
+    position: absolute;
+    width: 100%;
+    overflow-y: auto;
+    bottom: var(--bottom-value);
+    max-height: var(--MaxHeight-value);
+  }
+}
 

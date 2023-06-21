@@ -11,12 +11,12 @@ import { JsonDataService } from '../services/json/json-data.service';
 })
 export class PlaceCardComponent {
   placeInfo!: any;
-  isCardShown: boolean = false;
+  isWholeCardShown: boolean = false;
 
   @ViewChild('placeIntro') placeIntroRef!: ElementRef<HTMLElement>;
 
-  @Output('showCardHeader') showCardHeader: EventEmitter<number> = new EventEmitter() ;
   @Output('showCard') showCard: EventEmitter<number> = new EventEmitter() ;
+  @Output('showCardHeader') showCardHeader: EventEmitter<number> = new EventEmitter() ;
   @Output('hideCard') hideCard: EventEmitter<number> = new EventEmitter() ;
 
   constructor(public jsonData: JsonDataService){}
@@ -40,8 +40,8 @@ export class PlaceCardComponent {
   }
 
   toggleCardVisibility(){
-    this.isCardShown = !this.isCardShown;
-    if(this.isCardShown) this.showCard.emit();
+    this.isWholeCardShown = !this.isWholeCardShown;
+    if(this.isWholeCardShown) this.showCard.emit();
     else this.getPlaceInfoHeight()
   }
 

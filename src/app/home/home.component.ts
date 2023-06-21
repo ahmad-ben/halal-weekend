@@ -27,8 +27,7 @@ interface MarkerInfo {
   styleUrls: ['./home.component.scss']
 })
 
-
-export class homeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit{
   @ViewChild('placeCard', { read: ElementRef }) placeCardRef!: ElementRef<HTMLElement>;
   @ViewChild('placeCard') placeCardCom!: PlaceCardComponent;
   placeCardElement!: HTMLElement;
@@ -40,12 +39,12 @@ export class homeComponent implements AfterViewInit{
   response: any;
   MarkerClickedInfo: MarkerInfo | null = null;
 
-  centerPosition!: google.maps.LatLngLiteral | google.maps.LatLng;
+  centerPosition: google.maps.LatLngLiteral | google.maps.LatLng = {lat: 0 , lng: 0};
   centerName!: string;
 
   markerInfos: MarkerInfo[] = [];
 
-  options: google.maps.MapOptions = { zoom: 18 };
+  options: google.maps.MapOptions = { zoom: 18, gestureHandling: "greedy" };
 
   constructor(public jsonData: JsonDataService){
     jsonData.getJsonData().subscribe({
@@ -54,11 +53,13 @@ export class homeComponent implements AfterViewInit{
         this.mapHandling();
       }
     });
+
   }
 
   ngAfterViewInit(): void {
     this.placeCardElement = this.placeCardRef?.nativeElement;
     this.mapElement = this.map?.nativeElement;
+    this.handleEventsPerformance();
 
     this.placeCardEleHeight = this.placeCardElement.offsetHeight;
     this.placeCardElement.style.setProperty('--bottom-value', `-${this.placeCardEleHeight}px`);
@@ -117,6 +118,15 @@ export class homeComponent implements AfterViewInit{
   hideCard(){
     this.placeCardElement.style.setProperty('--bottom-value', `-${this.placeCardEleHeight}px`);
     this.MarkerClickedInfo = null;
+  }
+
+  handleEventsPerformance(){
+
+  const handleTouchMove = (event: Event) => {}
+  window.addEventListener('touchmove', handleTouchMove, { passive: true });
+  window.addEventListener('touchend', handleTouchMove, { passive: true });
+  window.addEventListener('touchstart', handleTouchMove, { passive: true });
+
   }
 
 }

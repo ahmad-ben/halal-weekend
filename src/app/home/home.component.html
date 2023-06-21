@@ -2,33 +2,30 @@
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-    <div class="map flex-grow-1" #map>
-      <google-map
-        [options]="options"
-        [center]="centerPosition"
-        width="100%"
-        height="100%"
+  <div class="map flex-grow-1" #map>
+    <google-map
+      [options]="options"
+      [center]="centerPosition"
+      width="100%"
+      height="100%"
+    >
+      <map-marker
+        *ngFor="let markerInfo of markerInfos"
+        [position]="markerInfo.position"
+        [clickable]="true"
+        (mapClick)="markerClicked(markerInfo)"
+      ></map-marker>
+    </google-map>
+    <place-card
+      #placeCard
+      (showCard)="showCard()"
+      (showCardHeader)="showCardHeader($event)"
+      (hideCard)="hideCard()"
       >
-        <map-marker
-          *ngFor="let markerInfo of markerInfos"
-          [position]="markerInfo.position"
-          [clickable]="true"
-          (mapClick)="markerClicked(markerInfo)"
-        ></map-marker>
-      </google-map>
-      <place-card
-        (showCard)="showCard()"
-        (showCardHeader)="showCardHeader($event)"
-        (hideCard)="hideCard()"
-        #placeCard>
-      </place-card>
+    </place-card>
   </div>
 
   <bottom-nav></bottom-nav>
 
 </div>
 
-
-
-<!-- ! Add The Marker : ( (mapClick)="addMarker($event)" )  -->
-<!-- ! addMarker(event: google.maps.MapMouseEvent) this.markerPositions.push(event.latLng!.toJSON()) -->

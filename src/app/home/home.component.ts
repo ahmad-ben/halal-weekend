@@ -44,7 +44,7 @@ export class HomeComponent implements AfterViewInit{
 
   markerInfos: MarkerInfo[] = [];
 
-  options: google.maps.MapOptions = { zoom: 18, gestureHandling: "greedy" };
+  options: google.maps.MapOptions = { zoom: 18 };
 
   constructor(public jsonData: JsonDataService){
     jsonData.getJsonData().subscribe({
@@ -59,10 +59,10 @@ export class HomeComponent implements AfterViewInit{
   ngAfterViewInit(): void {
     this.placeCardElement = this.placeCardRef?.nativeElement;
     this.mapElement = this.map?.nativeElement;
-    this.handleEventsPerformance();
 
     this.placeCardEleHeight = this.placeCardElement.offsetHeight;
     this.placeCardElement.style.setProperty('--bottom-value', `-${this.placeCardEleHeight}px`);
+
   }
 
   mapHandling(clubName: number = 0){
@@ -118,15 +118,6 @@ export class HomeComponent implements AfterViewInit{
   hideCard(){
     this.placeCardElement.style.setProperty('--bottom-value', `-${this.placeCardEleHeight}px`);
     this.MarkerClickedInfo = null;
-  }
-
-  handleEventsPerformance(){
-
-  const handleTouchMove = (event: Event) => {}
-  window.addEventListener('touchmove', handleTouchMove, { passive: true });
-  window.addEventListener('touchend', handleTouchMove, { passive: true });
-  window.addEventListener('touchstart', handleTouchMove, { passive: true });
-
   }
 
 }

@@ -7,7 +7,6 @@ import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { MosquesComponent } from './mosques/mosques.component';
 import { ProfileComponent } from './profile/profile.component';
-import { SightsComponent } from './sights/sights.component';
 
 const routes: Routes = [
   {path: '', pathMatch: "full", redirectTo: '/landing'},
@@ -17,7 +16,6 @@ const routes: Routes = [
 
   { path: 'home', loadComponent: () => import('./home/home.component').then(module => module.HomeComponent)},
   {path: 'home/hotels', component: HotelsComponent},
-  {path: 'home/sights', component: SightsComponent},
   {path: 'home/eateries', component: EateriesComponent},
   {path: 'home/mosques', component: MosquesComponent},
 

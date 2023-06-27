@@ -1,0 +1,20 @@
+{
+  "name": "Chelsea",
+  "stadium": {
+    "stadium_name": "Stamford Bridge",
+    "location" : {
+      "lat":  51.48166623150523,
+      "lng": -0.19095919015808197
+    }
+  },
+  "hotels" : [
+    {
+      "hotel_name": "Millennium & Copthorne",
+      "location" : {
+        "lat":  51.481113092995045,
+        "lng": -0.18915545056722702
+      }
+    }
+  ],
+  "restaurants" : []
+}

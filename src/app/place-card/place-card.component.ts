@@ -21,9 +21,12 @@ export class PlaceCardComponent {
 
   constructor(public jsonData: JsonDataService){}
 
-  getPlaceInfo(placeName: string){
-    this.jsonData.placeJsonData().subscribe({
+  getPlaceInfo(clubName: string, placeType: string, placeName: string){
+    this.jsonData.placeJsonData(clubName, placeType).subscribe({
       next: result =>{
+
+        console.log(result);
+        
 
         this.placeInfo = result[placeName];
 

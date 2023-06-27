@@ -55,3 +55,12 @@ firebase.json
 
 #Internal Settings
 settings.json
+
+#Design Images
+src/assets/designs/
+
+#Translation Helper
+.lingua
+
+#Test Files
+src/assets/test

@@ -1,0 +1,20 @@
+{
+  "name": "Manchester City",
+  "stadium": {
+    "stadium_name": "Old Trafford",
+    "location" : {
+      "lat":  53.48346000086,
+      "lng":  -2.200193052123844
+    }
+  },
+  "hotels" : [
+    {
+      "hotel_name": "Millola House",
+      "location" : {
+        "lat":  53.48679493674559,
+        "lng": -2.181460103745198
+      }
+    }
+  ],
+  "restaurants" : []
+}

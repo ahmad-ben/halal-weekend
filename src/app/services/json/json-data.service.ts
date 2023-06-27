@@ -11,12 +11,12 @@ export class JsonDataService {
 
   constructor(private http: HttpClient) { }
 
-  getJsonData(): Observable<any> {
-    return this.http.get<any>('/assets/Json/mock.json');
+  getJsonData(clubName: string = 'Manchester United'): Observable<any> {
+    return this.http.get<any>(`/assets/Json/${clubName}/generalInfo.json`);
   }
 
-  placeJsonData(): Observable<any> {
-    return this.http.get<any>('/assets/Json/placesDataMock.json');
+  placeJsonData(clubName: string, placeType: string): Observable<any> {
+    return this.http.get<any>(`/assets/Json/${clubName}/Places Data/${placeType}.json`);
   }
 
 }

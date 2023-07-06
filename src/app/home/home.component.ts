@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
 import { stadiumNames } from '../common/clubsNames';
 import { JsonDataService } from '../services/json/json-data.service';
+import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from "../top-nav/top-nav.component";
 import { PlaceCardComponent } from './../place-card/place-card.component';
 
@@ -36,6 +38,11 @@ export class HomeComponent implements AfterViewInit{
   placeCardElement!: HTMLElement;
   placeCardEleHeight!: number;
 
+  placeType: string | undefined;
+  placeName: string | undefined;
+
+  googleMap: google.maps.Map | undefined;
+
   @ViewChild('map') map!: ElementRef<HTMLDivElement>;
   mapElement!: HTMLElement;
 
@@ -50,17 +57,31 @@ export class HomeComponent implements AfterViewInit{
 
   options: google.maps.MapOptions = { zoom: 18 };
 
-  constructor(public jsonData: JsonDataService){
-    this.getData();
+  constructor(
+      public jsonData: JsonDataService,
+      private activateRoute: ActivatedRoute,
+      private currentClubName: ShareClubNameService
+    ){
+      this.placeType = this.activateRoute.snapshot.paramMap.get('placeType') as string;
+      this.placeName = this.activateRoute.snapshot.paramMap.get('placeName') as string;
+
+      console.log('placeType: ', this.placeType);
+      console.log('placeName: ', this.placeName);
+
+    this.currentClubName.selectedClub.subscribe({
+      next: (nextPara) => {
+        console.log(nextPara);
+        this.clubNameSelected(nextPara);
+
+      }
+    })
   }
 
-  getData(clubName?: string){
+  getData(clubName: string){
 
     this.jsonData.getJsonData(clubName).subscribe({
       next: (response) => {
         this.response = response;
-        console.log(response);
-
         this.mapHandling(clubName);
       }
     });
@@ -76,35 +97,263 @@ export class HomeComponent implements AfterViewInit{
 
   }
 
-  mapHandling(clubsName: string = 'Manchester United'){
-    console.log(this.response);
+  mapHandling(clubsName: string){
 
-    this.centerPosition = this.response.stadium.location;
-    this.centerName = this.response.stadium.stadium_name;
+    console.log('placeName', this.placeName);
+    console.log('placeType', this.placeType);
 
-    const centerInfo: MarkerInfo = {
-      placeType: 'stadium', 
-      placeName: this.centerName, 
-      position: this.centerPosition,
-      clubName: clubsName,
-    }
-    this.markerInfos.push(centerInfo)
+    if(this.placeName && this.placeType){
 
-    const hotels: any[] = this.response.hotels;
 
-    hotels.forEach((hotel) => {
-      const hotelInfo: MarkerInfo = { 
-        clubName: clubsName,
-        placeType: "hotels", 
-        placeName: hotel.hotel_name, 
-        position: hotel.location 
+      console.log(this.response);
+
+      console.log(this.response[this.placeType]);
+
+      if(this.placeType == "hotels"){
+
+        const hotelsArray : any[] = this.response[this.placeType];
+
+        hotelsArray.forEach(hotel => {
+          if (hotel.hotel_name == this.placeName) {
+            this.centerPosition = hotel.location;
+            this.centerName = hotel.hotel_name;
+
+            new google.maps.Marker({
+              position: hotel.location,
+              map: this.googleMap,
+              icon: {
+                url: "/assets/icons/hotelCustomMarker.svg",
+                scaledSize: new google.maps.Size(40, 40)
+              }
+            });
+          } else{
+            const hotelInfo: MarkerInfo = {
+              clubName: clubsName,
+              placeType: "hotels",
+              placeName: hotel.hotel_name,
+              position: hotel.location
+            }
+            this.markerInfos.push(hotelInfo)
+          }
+
+          const stadiumInfo: MarkerInfo = {
+            placeType: 'stadium',
+            placeName: this.response.stadium.stadium_name,
+            position: this.response.stadium.location,
+            clubName: clubsName,
+          }
+          this.markerInfos.push(stadiumInfo)
+        })
+
+        const eateries: any[] = this.response.eateries;
+
+        eateries.forEach((eatery) => {
+          const eateryInfo: MarkerInfo = {
+            clubName: clubsName,
+            placeType: "eateries",
+            placeName: eatery.eatery_name,
+            position: eatery.location
+          }
+          this.markerInfos.push(eateryInfo)
+        })
+
+        const mosques: any[] = this.response.mosques;
+
+        mosques.forEach((mosque) => {
+          const mosqueInfo: MarkerInfo = {
+            clubName: clubsName,
+            placeType: "mosques",
+            placeName: mosque.mosque_name,
+            position: mosque.location
+          }
+          this.markerInfos.push(mosqueInfo);
+        })
+
+      } else if(this.placeType == "eateries"){
+
+        const eateriesArray : any[] = this.response[this.placeType];
+
+        eateriesArray.forEach(eatery => {
+          if (eatery.eatery_name == this.placeName) {
+            this.centerPosition = eatery.location;
+            this.centerName = eatery.hotel_name;
+
+            new google.maps.Marker({
+              position: eatery.location,
+              map: this.googleMap,
+              icon: {
+                url: "/assets/icons/eateriesCustomMarker.svg",
+                scaledSize: new google.maps.Size(40, 40)
+              }
+            });
+          } else{
+            const eateryInfo: MarkerInfo = {
+              clubName: clubsName,
+              placeType: "eateries",
+              placeName: eatery.eatery_name,
+              position: eatery.location
+            }
+            this.markerInfos.push(eateryInfo)
+          }
+
+          const stadiumInfo: MarkerInfo = {
+            placeType: 'stadium',
+            placeName: this.response.stadium.stadium_name,
+            position: this.response.stadium.location,
+            clubName: clubsName,
+          }
+          this.markerInfos.push(stadiumInfo)
+        })
+
+        const hotels: any[] = this.response.hotels;
+
+        hotels.forEach((hotel) => {
+          const hotelInfo: MarkerInfo = {
+            clubName: clubsName,
+            placeType: "hotels",
+            placeName: hotel.hotel_name,
+            position: hotel.location
+          }
+          this.markerInfos.push(hotelInfo)
+        })
+
+        const mosques: any[] = this.response.mosques;
+
+        mosques.forEach((mosque) => {
+          const mosqueInfo: MarkerInfo = {
+            clubName: clubsName,
+            placeType: "mosques",
+            placeName: mosque.mosque_name,
+            position: mosque.location
+          }
+          this.markerInfos.push(mosqueInfo);
+        })
+
+      } else if (this.placeType == "mosques"){
+
+        const mosquesArray : any[] = this.response[this.placeType];
+
+        mosquesArray.forEach(mosque => {
+          if (mosque.mosque_name == this.placeName) {
+            this.centerPosition = mosque.location;
+            this.centerName = mosque.mosque_name;
+
+            new google.maps.Marker({
+              position: mosque.location,
+              map: this.googleMap,
+              icon: {
+                url: "/assets/icons/mosqueCustomMarker.svg",
+                scaledSize: new google.maps.Size(40, 40)
+              }
+            });
+          } else{
+            const mosqueInfo: MarkerInfo = {
+              clubName: clubsName,
+              placeType: "eateries",
+              placeName: mosque.mosque_name,
+              position: mosque.location
+            }
+            this.markerInfos.push(mosqueInfo)
+          }
+
+          const stadiumInfo: MarkerInfo = {
+            placeType: 'stadium',
+            placeName: this.response.stadium.stadium_name,
+            position: this.response.stadium.location,
+            clubName: clubsName,
+          }
+          this.markerInfos.push(stadiumInfo)
+        })
+
+        const hotels: any[] = this.response.hotels;
+
+        hotels.forEach((hotel) => {
+          const hotelInfo: MarkerInfo = {
+            clubName: clubsName,
+            placeType: "hotels",
+            placeName: hotel.hotel_name,
+            position: hotel.location
+          }
+          this.markerInfos.push(hotelInfo)
+        })
+
+        const eateries: any[] = this.response.eateries;
+
+        eateries.forEach((eatery) => {
+          const eateryInfo: MarkerInfo = {
+            clubName: clubsName,
+            placeType: "eateries",
+            placeName: eatery.eatery_name,
+            position: eatery.location
+          }
+          this.markerInfos.push(eateryInfo)
+        })
+
       }
-      this.markerInfos.push(hotelInfo)
-    })
+
+
+    }else{
+
+
+      this.centerPosition = this.response.stadium.location;
+      this.centerName = this.response.stadium.stadium_name;
+
+      const centerInfo: MarkerInfo = {
+        placeType: 'stadium',
+        placeName: this.centerName,
+        position: this.centerPosition,
+        clubName: clubsName,
+      }
+      this.markerInfos.push(centerInfo);
+
+
+
+      const hotels: any[] = this.response.hotels;
+
+      hotels.forEach((hotel) => {
+        const hotelInfo: MarkerInfo = {
+          clubName: clubsName,
+          placeType: "hotels",
+          placeName: hotel.hotel_name,
+          position: hotel.location
+        }
+        this.markerInfos.push(hotelInfo)
+      })
+
+      const eateries: any[] = this.response.eateries;
+
+      eateries.forEach((eatery) => {
+        const eateryInfo: MarkerInfo = {
+          clubName: clubsName,
+          placeType: "eateries",
+          placeName: eatery.eatery_name,
+          position: eatery.location
+        }
+        this.markerInfos.push(eateryInfo)
+      })
+
+      const mosques: any[] = this.response.mosques;
+
+      mosques.forEach((mosque) => {
+        const mosqueInfo: MarkerInfo = {
+          clubName: clubsName,
+          placeType: "mosques",
+          placeName: mosque.mosque_name,
+          position: mosque.location
+        }
+        this.markerInfos.push(mosqueInfo);
+      })
+
+
+
+
+    }
+
+
   }
 
   clubNameSelected(clubName: string){
-    this.hideCard()
+    this.hideCard();
     this.getData(clubName);
   }
 
@@ -139,8 +388,14 @@ export class HomeComponent implements AfterViewInit{
   }
 
   hideCard(){
-    this.placeCardElement.style.setProperty('--bottom-value', `-${this.placeCardEleHeight}px`);
+    this.placeCardElement?.style.setProperty('--bottom-value', `-${this.placeCardEleHeight}px`);
     this.MarkerClickedInfo = null;
+  }
+
+  handleMapInitialized(googleMap: google.maps.Map){
+
+    this.googleMap = googleMap;
+
   }
 
 }

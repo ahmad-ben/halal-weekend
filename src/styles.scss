@@ -5,6 +5,11 @@
 @import 'bootstrap/scss/bootstrap';
 
 
+@import 'Scss/Variables';
+
+
+
+
 :root{
   font-size: 62.5%; //=> 16Px * 0.625 = 10Px
 }
@@ -44,6 +49,24 @@ h2{
   font-size: calc(2.12rem + 0.9vw);
 }
 
+h3{
+  font-size: calc(2.08rem + 0.6vw);
+}
+
+h4{
+  font-size: calc(2.04rem + 0.3vw);
+}
+
+h5{
+  font-size: 2rem;
+}
+
+h6{
+  font-size: 1.6rem;
+}
+
+
+
 ul{
   padding: 0px;
   margin: 0px;
@@ -51,6 +74,10 @@ ul{
 
 a{
   color: white;
+}
+
+.features .features-group img{
+  margin-right: 15px;
 }
 
 /* Arabic Styling */
@@ -63,3 +90,69 @@ a{
 //! 47484A Card BackGround
 //! 5D5C5C Cards BackGround
 //! EAEAEA Font Color
+
+//=> Start My Special Framework Classes
+.pad-10{padding: 10px}
+
+.padY-16{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.padY-25{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.bor-10{border-radius: 10px;}
+
+.marT-16{
+  margin-top: 16px;
+}
+
+.marT-25{
+  margin-top: 25px;
+}
+
+.marR-16{
+  margin-right: 16px;
+}
+
+.marB-16{
+  margin-bottom: 16px;
+}
+
+.marB-25{
+  margin-bottom: 25px;
+}
+
+.marL-16{
+  margin-left: 16px;
+}
+
+.marX-16{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.marX-25{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+//=> End My Special Framework Classes
+
+
+//=> Start Icon Resizinge
+
+img.icon{
+  width: 18px;
+  height: 18px;
+}
+
+img.backIcon{
+  width: 21px;
+  height: 21px;
+}
+
+//=> End Icon Resizing

@@ -1,4 +1,5 @@
 {
+
   "Old Trafford Stadium Hotel": {
     "name": "Old Trafford Stadium Hotel",
     "type": "hotel",
@@ -9,11 +10,50 @@
     "phoneNumber": "+447964451119",
     "workTime": {"open": "2PM", "close": "11PM"  },
     "images": [
-      "/assets/Images/Hotels/Old Trafford Stadium Hotel/1.jpg",
-      "/assets/Images/Hotels/Old Trafford Stadium Hotel/2.jpg",
-      "/assets/Images/Hotels/Old Trafford Stadium Hotel/3.jpg",
-      "/assets/Images/Hotels/Old Trafford Stadium Hotel/4.jpg",
-      "/assets/Images/Hotels/Old Trafford Stadium Hotel/5.jpg"
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/3.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "peopleNumber", "text": "From 1 To 4"},
+      {"iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester."}
+    ],
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat": 53.461087029037145,
+      "lng": -2.2877933877309387
+    },
+    "distance": "0.4 miles from the Stamford Bridge stadium",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "features": [
+
+      {"icon": "mosque", "description": "Prayer room"},
+      {"icon": "halalFood", "description": "Halal food"},
+      {"icon": "breast", "description": "Breast feeding room"},
+      {"icon": "lostAndFind", "description": "Lost and found"},
+      {"icon": "wifi", "description": "Free Wifi"},
+      {"icon": "parking", "description": "Free Parking"}
+
+    ]
+  },
+
+  "Old Trafford Stadium Hotel 1": {
+    "name": "Old Trafford Stadium Hotel",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
+    "phoneNumber": "+447964451119",
+    "workTime": {"open": "2PM", "close": "11PM"  },
+    "images": [
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/3.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
     ],
     "usefulInformation": {
       "peopleNumber": "From 1 To 4",
@@ -21,8 +61,41 @@
     },
     "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
     "location" : {
-      "lat": 53.461134028804764,
-      "lng": -2.287671429882639
-    }
+      "lat": 53.461087029037145,
+      "lng": -2.2877933877309387
+    },
+    "distance": "0.4 miles from the Stamford Bridge stadium",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?"
+  },
+
+  "Old Trafford Stadium Hotel 2": {
+    "name": "Old Trafford Stadium Hotel",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
+    "phoneNumber": "+447964451119",
+    "workTime": {"open": "2PM", "close": "11PM"  },
+    "images": [
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/3.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
+      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
+    ],
+    "usefulInformation": {
+      "peopleNumber": "From 1 To 4",
+      "spaceBetween": "2.5 miles from the centre of Manchester."
+    },
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat": 53.461087029037145,
+      "lng": -2.2877933877309387
+    },
+    "distance": "0.4 miles from the Stamford Bridge stadium",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?"
+
   }
+
 }

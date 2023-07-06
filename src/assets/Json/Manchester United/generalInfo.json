@@ -11,10 +11,12 @@
     {
       "hotel_name": "Old Trafford Stadium Hotel",
       "location" : {
-        "lat": 53.461134028804764,
-        "lng": -2.287671429882639
+        "lat": 53.461087029037145,
+        "lng": -2.2877933877309387
       }
     }
   ],
-  "restaurants" : []
+  "eateries" : [],
+  "mosques" : []
 }
+

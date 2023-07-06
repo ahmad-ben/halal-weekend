@@ -1,0 +1,90 @@
+<div class="hotelComponent d-flex flex-column">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <div class="hotel flex-grow-1">
+
+    <div class="hotel">
+
+      <header class="hotelHeader d-flex align-items-center marX-25">
+
+          <span class="backArrow">
+
+            <a routerLink="/home/hotels">
+              <img src="/assets/icons/Back.svg" class="backIcon" alt="">
+            </a>
+
+          </span>
+
+          <h3 class="fw-bold flex-grow-1">{{ hotel?.name }}</h3>
+
+      </header>
+
+      <main>
+
+        <div class="imagesCollection">
+
+          <div class="mainImage">
+            <img [src]="hotel?.images[1]" alt="">
+          </div>
+          <div class="secondaryImages">
+            <img [src]="hotel?.images[2]" alt="">
+            <img [src]="hotel?.images[3]" alt="">
+            <img [src]="hotel?.images[4]" alt="">
+          </div>
+
+        </div>
+
+        <div class="textInfo marX-25 marT-25 marB-16">
+
+          <p> {{ shortDescription ? hotel?.description : showWholeDescription ? hotel?.description :  (hotel?.description | slice:0:100) + '...' }}</p>
+          <button
+            *ngIf="!shortDescription"
+            class="readMoreButton"
+            (click)="showWholeDescription = !showWholeDescription"
+          >{{ showWholeDescription ? 'Read Less' : 'Read More' }}</button>
+
+
+        </div>
+
+        <div class="features marX-25 padY-16 marB-16">
+
+          <h5>Most Popular Facilities</h5>
+
+          <div class="features-group">
+
+            <div *ngFor="let feature of hotel?.features" class="feature">
+              <img [src]="'/assets/icons/'+ feature.icon + '.svg'" [alt]="feature.icon + ' icon'" class="icon">
+              <span> {{ feature.description }} </span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="viewInMap marX-25 marB-16" (click)="viewInMap(hotel?.name)">
+          <div class="imageHolder marB-16">
+            <img src="/assets/Images/viewInMap.jpg" alt="map image">
+          </div>
+          <span>View in map</span>
+        </div>
+
+      </main>
+
+      <footer class="d-flex justify-content-center align-items-center marX-25">
+        <button class="call pad-10 bor-10 flex-grow-1 d-flex align-items-center text-white" (click)="callPhoneNumber(hotel?.phoneNumber)">
+          <img src="/assets/icons/Phone.png" alt="map image" class="icon">
+          <span class="flex-grow-1">Call</span>
+        </button>
+        <button class="website pad-10 bor-10 flex-grow-1 d-flex align-items-center text-white" (click)="redirectToWebsite(hotel?.website)">
+          <img src="/assets/icons/Globe.png" alt="map image" class="icon">
+          <span class="flex-grow-1">Website</span>
+        </button>
+      </footer>
+
+    </div>
+
+  </div>
+
+</div>
+

@@ -6,6 +6,7 @@
     <google-map
       [options]="options"
       [center]="centerPosition"
+      (mapInitialized)="handleMapInitialized($event)"
       width="100%"
       height="100%"
     >

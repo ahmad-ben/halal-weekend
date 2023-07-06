@@ -5,7 +5,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { arCountries, enCountries } from '../common/world\'sCountries';
-import { RealtimeDataService } from '../services/database/realtime-data.service';
+import { RealtimeshareClubNameService } from '../services/database/realtime-data.service';
 
 @Component({
   selector: 'app-login',
@@ -27,7 +27,7 @@ export class LoginComponent {
   countries?: string[];
 
   constructor(
-    private realtimeDataService: RealtimeDataService,
+    private realtimeshareClubNameService: RealtimeshareClubNameService,
     private route: Router,
     translate: TranslateService
   ) {
@@ -48,7 +48,7 @@ export class LoginComponent {
   save(formInfo: FormGroup){
     if (formInfo.invalid) this.invalidFrom = true
     else  this.invalidFrom = false;
-    // this.realtimeDataService.saveUserInfo(formInfo.value);
+    // this.realtimeshareClubNameService.saveUserInfo(formInfo.value);
   }
 
   skip(){

@@ -1,1 +1,20 @@
-<p>mosques works!</p>
+<div class="mosquesComponent d-flex flex-column">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <div class="mosques flex-grow-1 px-4">
+
+    <div class="mosque" *ngFor="let mosque of mosques">
+
+      <img [src]="mosque.images[0]" alt="" class="mainPicture">
+      <h3> {{ mosque.name }} </h3>
+      <span> {{ mosque.distance }} </span>
+
+    </div>
+
+  </div>
+
+  <bottom-nav></bottom-nav>
+
+</div>
+

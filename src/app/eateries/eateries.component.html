@@ -1,1 +1,20 @@
-<p>eateries works!</p>
+<div class="eaterysComponent d-flex flex-column">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <div class="eaterys flex-grow-1 px-4">
+
+    <div class="eatery" *ngFor="let eatery of eateries">
+
+      <img [src]="eatery.images[0]" alt="" class="mainPicture">
+      <h3> {{ eatery.name }} </h3>
+      <span> {{ eatery.distance }} </span>
+
+    </div>
+
+  </div>
+
+  <bottom-nav></bottom-nav>
+
+</div>
+

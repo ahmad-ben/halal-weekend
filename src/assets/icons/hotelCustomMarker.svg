@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Group 99</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group-99">
+      <circle id="Oval" fill-opacity="0.65" fill="#9E9D9D" cx="23" cy="23" r="23"></circle>
+      <g id="Group-52" transform="translate(15, 15)">
+        <polygon id="Triangle" fill="#3B3B3B" transform="translate(7.5, 15.5) rotate(-180) translate(-7.5, -15.5)"
+          points="7.5 13 10 18 5 18"></polygon>
+        <rect id="Rectangle" fill="#3B3B3B" x="0" y="0" width="16" height="14" rx="7"></rect>
+        <g id="Bedroom(2)" transform="translate(8, 6.5) scale(-1, 1) translate(-8, -6.5)translate(2, 1.5)"
+          fill="#FFFFFF" fill-rule="nonzero">
+          <path
+            d="M6,0 C1.85062499,0 0,0.649348967 0,2.1015625 L0,3.75 L0.96,3.75 L0.96,3.1015625 C0.96,1.9501302 1.63312499,1.5 3.36,1.5 C5.08687501,1.5 5.76,1.9501302 5.76,3.1015625 L5.76,3.75 L6.24,3.75 L6.24,3.1015625 C6.24,1.9501302 6.91312499,1.5 8.64,1.5 C10.366875,1.5 11.04,1.9501302 11.04,3.1015625 L11.04,3.75 L12,3.75 L12,2.1015625 C12,0.649348967 10.149375,0 6,0 Z M0,4.25 L0,10 L1.92,10 L1.92,9.25 L10.08,9.25 L10.08,10 L12,10 L12,4.25 L0,4.25 Z"
+            id="Shape"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

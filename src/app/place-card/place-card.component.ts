@@ -19,14 +19,13 @@ export class PlaceCardComponent {
   @Output('showCardHeader') showCardHeader: EventEmitter<number> = new EventEmitter() ;
   @Output('hideCard') hideCard: EventEmitter<number> = new EventEmitter() ;
 
-  constructor(public jsonData: JsonDataService){}
+  constructor(
+    public jsonData: JsonDataService,
+    ){}
 
   getPlaceInfo(clubName: string, placeType: string, placeName: string){
     this.jsonData.placeJsonData(clubName, placeType).subscribe({
       next: result =>{
-
-        console.log(result);
-        
 
         this.placeInfo = result[placeName];
 

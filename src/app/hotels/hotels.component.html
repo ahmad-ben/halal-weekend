@@ -1,1 +1,20 @@
-<p>hotels works!</p>
+<div class="hotelsComponent d-flex flex-column">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <div class="hotels flex-grow-1 px-4">
+
+    <div class="hotel" *ngFor="let hotel of hotels" [routerLink]="['/home/hotel', hotel.name]" (click)="showOneHotelInfo(hotel.name)">
+
+      <img [src]="hotel.images[0]" alt="hotel image" class="mainPicture">
+      <h3> {{ hotel.name }} </h3>
+      <span> {{ hotel.distance }} </span>
+
+    </div>
+
+  </div>
+
+  <bottom-nav></bottom-nav>
+
+</div>
+

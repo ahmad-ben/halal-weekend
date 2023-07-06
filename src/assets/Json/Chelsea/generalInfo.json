@@ -16,5 +16,6 @@
       }
     }
   ],
-  "restaurants" : []
+  "eateries" : [],
+  "mosques" : []
 }

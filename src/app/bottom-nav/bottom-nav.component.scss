@@ -1,4 +1,12 @@
 .bottomNavCom{
-  background-color: #f3f9fd;
-  padding: 20px;
+  border-top: 1px solid var(--gray-490);
+  a{
+    color: var(--gray-450);
+    font-size: 1.2rem;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+    .empty{ color: var(--gray-100) }
+  }
 }

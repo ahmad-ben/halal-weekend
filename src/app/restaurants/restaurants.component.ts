@@ -6,19 +6,19 @@ import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
 
 @Component({
-  selector: 'app-eateries',
+  selector: 'app-restaurants',
   standalone: true,
   imports: [
     CommonModule,
     TopNavComponent,
     BottomNavComponent
   ],
-  templateUrl: './eateries.component.html',
-  styleUrls: ['./eateries.component.scss']
+  templateUrl: './restaurants.component.html',
+  styleUrls: ['./restaurants.component.scss']
 })
-export class EateriesComponent {
+export class RestaurantsComponent {
   response?: string;
-  eateries: any[] = [];
+  restaurants: any[] = [];
 
   constructor(
     public jsonData: JsonDataService,
@@ -27,15 +27,15 @@ export class EateriesComponent {
 
   getData(clubName: string = 'Manchester United'){
 
-    this.jsonData.placeJsonData(clubName, 'eateries').subscribe({
+    this.jsonData.placeJsonData(clubName, 'restaurants').subscribe({
       next: (response) => {
         this.response = response;
 
-        const eateriesName = Object.keys(response);
+        const restaurantsName = Object.keys(response);
 
-        this.eateries = [];
-        eateriesName.forEach(eateryName => {
-          this.eateries.push(response[eateryName]);
+        this.restaurants = [];
+        restaurantsName.forEach(restaurantName => {
+          this.restaurants.push(response[restaurantName]);
 
         })
 

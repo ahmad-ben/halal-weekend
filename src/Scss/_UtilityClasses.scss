@@ -3,9 +3,29 @@
   padding-top: 25px;
 }
 
+.padX-5{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.padX-10{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.padX-20{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .padX-25{
   padding-right: 25px;
   padding-left: 25px;
+}
+
+.padY-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .padY-16{
@@ -93,4 +113,32 @@
 .mainHeight-100dvh{
   min-height: 100vh;
   min-height: 100dvh;
+}
+
+//=> Flex:
+.d-f{
+  display: flex;
+}
+
+.fleD-c{
+  flex-direction: column;
+}
+
+.aliI-c{
+  align-items: center;
+}
+
+.jusC-c{
+  justify-content: center;
+}
+
+.jusC-spaB{
+  justify-content: space-between;
+}
+
+
+//=> Usage Shapes:
+.roundedShape{
+  padding: 5px 10px;
+  border-radius: 15px;
 }

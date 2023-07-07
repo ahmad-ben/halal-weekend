@@ -157,16 +157,16 @@ export class HomeComponent implements AfterViewInit{
           this.markerInfos.push(stadiumInfo)
         })
 
-        const eateries: any[] = this.response.eateries;
+        const restaurants: any[] = this.response.restaurants;
 
-        eateries.forEach((eatery) => {
-          const eateryInfo: MarkerInfo = {
+        restaurants.forEach((restaurant) => {
+          const restaurantInfo: MarkerInfo = {
             clubName: clubsName,
-            placeType: "eateries",
-            placeName: eatery.eatery_name,
-            position: eatery.location
+            placeType: "restaurants",
+            placeName: restaurant.restaurant_name,
+            position: restaurant.location
           }
-          this.markerInfos.push(eateryInfo)
+          this.markerInfos.push(restaurantInfo)
         })
 
         const mosques: any[] = this.response.mosques;
@@ -181,27 +181,27 @@ export class HomeComponent implements AfterViewInit{
           this.markerInfos.push(mosqueInfo);
         })
 
-      } else if(this.placeType == "eateries"){
+      } else if(this.placeType == "restaurants"){
 
-        const eateriesArray : any[] = this.response[this.placeType];
+        const restaurantsArray : any[] = this.response[this.placeType];
 
-        eateriesArray.forEach(eatery => {
-          if (eatery.eatery_name == this.placeName) {
-            this.centerPosition = eatery.location;
-            this.centerName = eatery.hotel_name;
+        restaurantsArray.forEach(restaurant => {
+          if (restaurant.restaurant_name == this.placeName) {
+            this.centerPosition = restaurant.location;
+            this.centerName = restaurant.hotel_name;
 
             const customMarker = new google.maps.Marker({
-              position: eatery.location,
+              position: restaurant.location,
               map: this.googleMap,
               icon: {
-                url: "/assets/icons/eateriesCustomMarker.svg",
+                url: "/assets/icons/restaurantsCustomMarker.svg",
                 scaledSize: new google.maps.Size(40, 40)
               }
             });
 
             const customMarkerInfo: MarkerInfo = {
               clubName: clubsName,
-              placeType: "eateries",
+              placeType: "restaurants",
               placeName: this.centerName,
               position: this.centerPosition
             }
@@ -209,13 +209,13 @@ export class HomeComponent implements AfterViewInit{
             customMarker.addListener('click', () => this.markerClicked(customMarkerInfo))
 
           } else{
-            const eateryInfo: MarkerInfo = {
+            const restaurantInfo: MarkerInfo = {
               clubName: clubsName,
-              placeType: "eateries",
-              placeName: eatery.eatery_name,
-              position: eatery.location
+              placeType: "restaurants",
+              placeName: restaurant.restaurant_name,
+              position: restaurant.location
             }
-            this.markerInfos.push(eateryInfo)
+            this.markerInfos.push(restaurantInfo)
           }
 
           const stadiumInfo: MarkerInfo = {
@@ -281,7 +281,7 @@ export class HomeComponent implements AfterViewInit{
           } else{
             const mosqueInfo: MarkerInfo = {
               clubName: clubsName,
-              placeType: "eateries",
+              placeType: "restaurants",
               placeName: mosque.mosque_name,
               position: mosque.location
             }
@@ -309,16 +309,16 @@ export class HomeComponent implements AfterViewInit{
           this.markerInfos.push(hotelInfo)
         })
 
-        const eateries: any[] = this.response.eateries;
+        const restaurants: any[] = this.response.restaurants;
 
-        eateries.forEach((eatery) => {
-          const eateryInfo: MarkerInfo = {
+        restaurants.forEach((restaurant) => {
+          const restaurantInfo: MarkerInfo = {
             clubName: clubsName,
-            placeType: "eateries",
-            placeName: eatery.eatery_name,
-            position: eatery.location
+            placeType: "restaurants",
+            placeName: restaurant.restaurant_name,
+            position: restaurant.location
           }
-          this.markerInfos.push(eateryInfo)
+          this.markerInfos.push(restaurantInfo)
         })
 
       }
@@ -352,16 +352,16 @@ export class HomeComponent implements AfterViewInit{
         this.markerInfos.push(hotelInfo)
       })
 
-      const eateries: any[] = this.response.eateries;
+      const restaurants: any[] = this.response.restaurants;
 
-      eateries.forEach((eatery) => {
-        const eateryInfo: MarkerInfo = {
+      restaurants.forEach((restaurant) => {
+        const restaurantInfo: MarkerInfo = {
           clubName: clubsName,
-          placeType: "eateries",
-          placeName: eatery.eatery_name,
-          position: eatery.location
+          placeType: "restaurants",
+          placeName: restaurant.restaurant_name,
+          position: restaurant.location
         }
-        this.markerInfos.push(eateryInfo)
+        this.markerInfos.push(restaurantInfo)
       })
 
       const mosques: any[] = this.response.mosques;

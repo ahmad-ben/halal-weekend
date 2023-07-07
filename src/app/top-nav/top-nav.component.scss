@@ -1,6 +1,12 @@
-select{
-  font-size: 1.6rem;
-}
 .topNavCom{
-  border-bottom: 1px solid var(--gray-500);
+  border-bottom: 1px solid var(--gray-490);
+  a{
+    color: var(--gray-450);
+    font-size: 1.2rem;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
+

@@ -21,8 +21,18 @@ html{
 
 body{
   font-size: 1.6rem; //=> 1.6 * 10Px = 16px
-  background-color: #E9E9E9;
+  background-color: var(--gray-100);
   transition: var(--transition-duration);
+  .loginCom{
+    input, select, button{
+      font-size: 1.6rem;
+    }
+  }
+  .topNavCom{
+    select{
+      font-size: 1.6rem;
+    }
+  }
 }
 
 
@@ -33,14 +43,6 @@ body{
   text-decoration: none;
   list-style: none;
   transition: .5s;
-}
-
-body{
-  .loginCom{
-    input, select, button{
-      font-size: 1.6rem;
-    }
-  }
 }
 
 h1{

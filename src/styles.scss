@@ -6,6 +6,7 @@
 
 
 @import 'Scss/Variables';
+@import 'Scss/UtilityClasses';
 
 
 
@@ -21,6 +22,7 @@ html{
 body{
   font-size: 1.6rem; //=> 1.6 * 10Px = 16px
   background-color: #E9E9E9;
+  transition: var(--transition-duration);
 }
 
 
@@ -65,8 +67,6 @@ h6{
   font-size: 1.6rem;
 }
 
-
-
 ul{
   padding: 0px;
   margin: 0px;
@@ -83,65 +83,17 @@ a{
 /* Arabic Styling */
 [lang="ar"] body .languageEffect{
   direction: rtl;
+  select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    background-image: none;
+  }
+  .ctaBtn{
+    direction: ltr;
+  }
 }
-
-
-//! 989898 Icon BackGround
-//! 47484A Card BackGround
-//! 5D5C5C Cards BackGround
-//! EAEAEA Font Color
-
-//=> Start My Special Framework Classes
-.pad-10{padding: 10px}
-
-.padY-16{
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.padY-25{
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.bor-10{border-radius: 10px;}
-
-.marT-16{
-  margin-top: 16px;
-}
-
-.marT-25{
-  margin-top: 25px;
-}
-
-.marR-16{
-  margin-right: 16px;
-}
-
-.marB-16{
-  margin-bottom: 16px;
-}
-
-.marB-25{
-  margin-bottom: 25px;
-}
-
-.marL-16{
-  margin-left: 16px;
-}
-
-.marX-16{
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.marX-25{
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-//=> End My Special Framework Classes
-
 
 //=> Start Icon Resizinge
 

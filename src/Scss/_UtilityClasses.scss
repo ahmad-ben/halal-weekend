@@ -1,0 +1,96 @@
+//=> Padding:
+.padT-25{
+  padding-top: 25px;
+}
+
+.padX-25{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.padY-16{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.padY-25{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.pad-10{padding: 10px}
+
+//=> Border:
+
+.bor-none{border: none;}
+
+.borRad-10{border-radius: 10px;}
+
+//=> Margin:
+
+.marT-10{
+  margin-top: 10px;
+}
+
+.marT-16{
+  margin-top: 16px;
+}
+
+.marT-25{
+  margin-top: 25px;
+}
+
+.marT-40{
+  margin-top: 40px;
+}
+
+.marR-16{
+  margin-right: 16px;
+}
+
+.marB-10{
+  margin-bottom: 10px;
+}
+
+.marB-15{
+  margin-bottom: 15px;
+}
+
+.marB-16{
+  margin-bottom: 16px;
+}
+
+.marB-25{
+  margin-bottom: 25px;
+}
+
+.marB-40{
+  margin-bottom: 40px;
+}
+
+.marL-16{
+  margin-left: 16px;
+}
+
+.marX-16{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.marX-25{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+//=> Width:
+
+.width-100{
+  width: 100%;
+}
+
+//=> Height:
+
+.mainHeight-100dvh{
+  min-height: 100vh;
+  min-height: 100dvh;
+}

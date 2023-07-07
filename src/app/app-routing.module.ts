@@ -5,7 +5,6 @@ import { EateriesComponent } from './eateries/eateries.component';
 import { EateryComponent } from './eatery/eatery.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { HotelsComponent } from './hotels/hotels.component';
-import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { MosqueComponent } from './mosque/mosque.component';
 import { MosquesComponent } from './mosques/mosques.component';
@@ -13,8 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: "full", redirectTo: '/landing'},
-  {path: 'landing', component: LandingComponent},
+  {path: '', pathMatch: "full", redirectTo: '/login'},
 
   {path: 'login', component: LoginComponent},
 

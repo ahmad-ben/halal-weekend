@@ -4,7 +4,7 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
 @Injectable({
   providedIn: 'root'
 })
-export class RealtimeshareClubNameService {
+export class RealtimeShareClubNameService {
 
   constructor(private fireDatabase: AngularFireDatabase) { }
 

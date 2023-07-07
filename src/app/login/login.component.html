@@ -1,15 +1,16 @@
-<div class="loginCom px-4 py-2 languageEffect">
-  <div class="header text-center">
-    <h2>HALAL WEEKEND</h2>
+<div class="loginCom padX-25 languageEffect mainHeight-100dvh">
+  <div class="header text-center marB-40">
+    <h2 class="padT-25 marB-15">HALAL WEEKEND</h2>
     <p>Your halal weekend starts here</p>
   </div>
   <div class="">
     <form (ngSubmit)="save(reactiveForm)" [formGroup]="reactiveForm">
 
-      <div class="form-group">
-        <label for="full-name">{{ 'LOGIN_COM.FULL NAME' | translate }}*</label>
+      <div class="form-group marB-15">
+        <label class="marB-10" for="full-name">{{ 'LOGIN_COM.FULL NAME' | translate }}*</label>
         <input
-          id="full-name" type="text" class="form-control" placeholder="{{ 'LOGIN_COM.FN PLACE HOLDER' | translate }}"
+          id="full-name" type="text"
+          class="form-control roundedShape customBorder" placeholder="{{ 'LOGIN_COM.FN PLACE HOLDER' | translate }}"
           formControlName="fullName" autocomplete="name"
         >
       </div>
@@ -18,9 +19,9 @@
         *ngIf="reactiveForm.controls['fullName'].errors && reactiveForm.controls['fullName'].touched"
       >{{ 'LOGIN_COM.FULL NAME REQUIRED' | translate }}</p>
 
-      <div class="form-group">
-        <span >{{ 'LOGIN_COM.GENDER' | translate }}*</span>
-        <div class="input-group">
+      <div class="form-group  marB-15">
+        <span>{{ 'LOGIN_COM.GENDER' | translate }}*</span>
+        <div class="input-group marT-10">
           <div class="form-check form-check-inline">
             <input
               class="form-check-input" type="radio" id="male"
@@ -44,13 +45,13 @@
         *ngIf="reactiveForm.controls['gender'].errors && reactiveForm.controls['gender'].touched"
       >{{ 'LOGIN_COM.GENDER REQUIRED' | translate }}</p>
 
-      <div class="form-group">
-        <label for="country">{{ 'LOGIN_COM.COUNTRY' | translate }}</label>
+      <div class="form-group marB-15">
+        <label class="marB-10" for="country">{{ 'LOGIN_COM.COUNTRY' | translate }}</label>
         <select
-          id="country" type="text" class="form-select"
+          id="country" type="text" class="form-select roundedShape customBorder"
           formControlName="country" autocomplete="country-name"
         >
-          <option value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
+          <option class="defaultOption" value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
           <option *ngFor="let country of countries" [value]="country"> {{ country }} </option>
         </select>
       </div>
@@ -59,13 +60,13 @@
         *ngIf="reactiveForm.controls['country'].errors && reactiveForm.controls['country'].touched"
       >{{ 'LOGIN_COM.COUNTRY REQUIRED' | translate }}</p>
 
-      <div class="form-group">
-        <label for="interests">{{ 'LOGIN_COM.INTERESTS' | translate }}</label>
+      <div class="form-group marB-15">
+        <label class="marB-10" for="interests">{{ 'LOGIN_COM.INTERESTS' | translate }}</label>
         <select
-          id="interests" type="text" class="form-select"
+          id="interests" type="text" class="form-select roundedShape customBorder"
           formControlName="interests"
         >
-          <option value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
+          <option class="defaultOption" value="" hidden disabled selected>{{ 'LOGIN_COM.PLEASE SELECT' | translate }}</option>
           <option value="Football tickets" >
             Football tickets
           </option>
@@ -76,10 +77,10 @@
         *ngIf="reactiveForm.controls['interests'].errors && reactiveForm.controls['interests'].touched"
       >{{ 'LOGIN_COM.INTERESTS REQUIRED' | translate }}</p>
 
-      <div class="form-group">
-        <label for="email">{{ 'LOGIN_COM.EMAIL' | translate }}</label>
+      <div class="form-group marB-15">
+        <label class="marB-10" for="email">{{ 'LOGIN_COM.EMAIL' | translate }}</label>
         <input
-          id="email" type="text" class="form-control" placeholder="ahmadbenchakhti@gmail.com"
+          id="email" type="text" class="form-control roundedShape customBorder" placeholder="Halaweekend@gmail.com"
           formControlName="email" autocomplete="email"
         >
       </div>
@@ -94,20 +95,26 @@
         >{{ 'LOGIN_COM.EMAIL INVALID' | translate }}</p>
       </div>
 
-      <div>
+      <div class="marT-40">
         <button
-          class="btn m-2 border d-block" type="submit"
-          [class.inactive]="reactiveForm.invalid"
-          (click)="skip()"
-        >{{ 'LOGIN_COM.CONTINUE' | translate }}</button>
+          class="btn width-100 roundedShape ctaBtn continue languageEffect"
+          type="submit"
+          [class.validForm]="reactiveForm.valid"
+          (click)="save(reactiveForm)"
+        >
+          <span>{{ 'LOGIN_COM.CONTINUE' | translate }}</span>
+          <img src="/assets/icons/Forward.svg" alt="forwardIcon" class="forwardIcon">
+        </button>
         <p
           class="text-danger"
           *ngIf="invalidFrom && reactiveForm.invalid"
         >{{ 'LOGIN_COM.FILL ALL' | translate }}</p>
         <button
-          type="button" class="btn m-2 border d-block"
+          class="btn width-100 roundedShape ctaBtn skip languageEffect"
+          type="button"
           (click)="skip()"
-        >{{ 'LOGIN_COM.SKIP' | translate }}</button>
+        >{{ 'LOGIN_COM.SKIP' | translate }}
+        </button>
       </div>
 
     </form>

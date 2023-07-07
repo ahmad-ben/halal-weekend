@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
-import { RealtimeshareClubNameService } from './realtime-data.service';
+import { RealtimeShareClubNameService } from './realtime-data.service';
 
 
-describe('RealtimeshareClubNameService', () => {
-  let service: RealtimeshareClubNameService;
+describe('RealtimeShareClubNameService', () => {
+  let service: RealtimeShareClubNameService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RealtimeshareClubNameService);
+    service = TestBed.inject(RealtimeShareClubNameService);
   });
 
   it('should be created', () => {

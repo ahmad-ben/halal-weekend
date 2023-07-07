@@ -118,14 +118,24 @@ export class HomeComponent implements AfterViewInit{
             this.centerPosition = hotel.location;
             this.centerName = hotel.hotel_name;
 
-            new google.maps.Marker({
+            const customMarker = new google.maps.Marker({
               position: hotel.location,
               map: this.googleMap,
               icon: {
                 url: "/assets/icons/hotelCustomMarker.svg",
                 scaledSize: new google.maps.Size(40, 40)
-              }
+              },
             });
+
+            const customMarkerInfo: MarkerInfo = {
+              clubName: clubsName,
+              placeType: "hotels",
+              placeName: this.centerName,
+              position: this.centerPosition
+            }
+
+            customMarker.addListener('click', () => this.markerClicked(customMarkerInfo))
+
           } else{
             const hotelInfo: MarkerInfo = {
               clubName: clubsName,
@@ -135,6 +145,8 @@ export class HomeComponent implements AfterViewInit{
             }
             this.markerInfos.push(hotelInfo)
           }
+
+
 
           const stadiumInfo: MarkerInfo = {
             placeType: 'stadium',
@@ -178,7 +190,7 @@ export class HomeComponent implements AfterViewInit{
             this.centerPosition = eatery.location;
             this.centerName = eatery.hotel_name;
 
-            new google.maps.Marker({
+            const customMarker = new google.maps.Marker({
               position: eatery.location,
               map: this.googleMap,
               icon: {
@@ -186,6 +198,16 @@ export class HomeComponent implements AfterViewInit{
                 scaledSize: new google.maps.Size(40, 40)
               }
             });
+
+            const customMarkerInfo: MarkerInfo = {
+              clubName: clubsName,
+              placeType: "eateries",
+              placeName: this.centerName,
+              position: this.centerPosition
+            }
+
+            customMarker.addListener('click', () => this.markerClicked(customMarkerInfo))
+
           } else{
             const eateryInfo: MarkerInfo = {
               clubName: clubsName,
@@ -238,7 +260,7 @@ export class HomeComponent implements AfterViewInit{
             this.centerPosition = mosque.location;
             this.centerName = mosque.mosque_name;
 
-            new google.maps.Marker({
+            const customMarker = new google.maps.Marker({
               position: mosque.location,
               map: this.googleMap,
               icon: {
@@ -246,6 +268,16 @@ export class HomeComponent implements AfterViewInit{
                 scaledSize: new google.maps.Size(40, 40)
               }
             });
+
+            const customMarkerInfo: MarkerInfo = {
+              clubName: clubsName,
+              placeType: "mosques",
+              placeName: this.centerName,
+              position: this.centerPosition
+            }
+
+            customMarker.addListener('click', () => this.markerClicked(customMarkerInfo))
+
           } else{
             const mosqueInfo: MarkerInfo = {
               clubName: clubsName,

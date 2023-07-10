@@ -1,35 +1,28 @@
-<div class="languagesComponent d-flex flex-column vh-100">
+<div class="languagesComponent d-f fleD-c minH-100dvh">
 
-  <div class="moreHeader border-bottom border-2 py-3 px-3">
-    <span class="backArrow">
+  <header class="languagesHeader">
 
-      <a routerLink="/more">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-        </svg>
-      </a>
+    <h3 class="texA-c marY-10">{{ "LANGUAGES_COM.LANGUAGES" | translate }}</h3>
 
-    </span>
+    <a routerLink="/more"><img src="/assets/icons/backArrowIcon.svg" alt="backArrowIcon"></a>
 
-    <span class="fw-bold">{{ "LANGUAGES_COM.LANGUAGES" | translate }}</span>
+  </header>
 
-  </div>
+  <main class="choseLanguage languageEffect fleG-1 m-20">
 
-  <div class="choseLanguage px-5 flex-grow-1 languageEffect">
-
-    <h2 class="py-3">{{ "LANGUAGES_COM.CHOOSE YOUR LANGUAGE" | translate }}</h2>
+    <h6 class="marB-25">{{ "LANGUAGES_COM.CHOOSE YOUR LANGUAGE" | translate }}</h6>
 
     <ul class="languagesList">
 
-      <li class="py-3 ps-2 border-bottom border-2" (click)="changeLanguage('en')">
+      <li class="padY-10" (click)="changeLanguage('en')">
         {{ "LANGUAGES_COM.ENGLISH" | translate }}
       </li>
-      <li class="py-3 ps-2 border-bottom border-2" (click)="changeLanguage('ar')">
+      <li class="padY-10" (click)="changeLanguage('ar')">
         {{ "LANGUAGES_COM.ARABIC" | translate }}
       </li>
 
     </ul>
-  </div>
+  </main>
 
   <bottom-nav></bottom-nav>
 

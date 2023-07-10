@@ -1,5 +1,5 @@
 {
-  "ABOUT US_COM": {
+  "ABOUT_COM": {
     "ABOUT": "About",
     "END": "Join the Halal Weekend family and let us be your trusted companion on your football travel adventure. Together, we'll create lasting memories while you cheer on your team in the UK.",
     "FIRST_OFFER_DESCRIPTION": "Stay up to date with schedules, ticket availability, and stadium details for all major football games in the UK.",
@@ -49,6 +49,10 @@
     "MORE": "More",
     "RATE THE APP": "Rate the app",
     "SHARE THE APP": "Share the app"
+  },
+  "CONTACT_COM": {
+    "PARAGRAPH": "Welcome to Halal Weekend! We're here to assist you. If you have any questions, need support, or have feedback, please don't hesitate to contact us.",
+    "EMAIL": "Email: halalweekends@gmail.com"
   },
   "MOSQUES": "Mosques",
   "PROFILE": "Profile"

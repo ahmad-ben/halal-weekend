@@ -9,10 +9,28 @@
 @import 'Scss/UtilityClasses';
 
 
+@font-face {
+  font-family: 'Radley Sans';
+  src: url('/assets/fonts/RadleySans.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+}
 
 :root{
-  font-size: 62.5%; //=> 16Px * 0.625 = 10Px
+  font-size: 62.5%; //=> 16Px * 0.625 = 10Px '1rem = 10Px'
 }
 
 html{
@@ -20,21 +38,22 @@ html{
 }
 
 body{
-  font-size: 1.6rem; //=> 1.6 * 10Px = 16px
+  font-size: 1.4rem; //=> 1.4 * 10Px = 14px
   background-color: var(--gray-100);
   transition: var(--transition-duration);
   .loginCom{
+    // ! SIMPLIFY THIS 1
     input, select, button{
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
   }
   .topNavCom{
+    // ! SIMPLIFY THIS 1
     select{
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
   }
 }
-
 
 *{
   box-sizing: border-box;
@@ -42,31 +61,38 @@ body{
   margin: 0;
   text-decoration: none;
   list-style: none;
-  transition: .5s;
 }
 
 h1{
-  font-size: calc(2.2rem + 1.5vw);
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #FFF;
+  letter-spacing: 2.1px;
 }
 
 h2{
-  font-size: calc(2.12rem + 0.9vw);
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
 h3{
-  font-size: calc(2.08rem + 0.6vw);
+  font-size: 2.0rem;
+  font-weight: bold;
 }
 
 h4{
-  font-size: calc(2.04rem + 0.3vw);
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 h5{
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 h6{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 ul{
@@ -75,11 +101,8 @@ ul{
 }
 
 a{
-  color: white;
-}
-
-.features .features-group img{
-  margin-right: 15px;
+  color: black;
+  text-decoration: none;
 }
 
 /* Arabic Styling */
@@ -96,17 +119,3 @@ a{
     direction: ltr;
   }
 }
-
-//=> Start Icon Resizinge
-
-img.icon{
-  width: 18px;
-  height: 18px;
-}
-
-img.backIcon{
-  width: 21px;
-  height: 21px;
-}
-
-//=> End Icon Resizing

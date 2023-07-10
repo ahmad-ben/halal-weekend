@@ -6,9 +6,11 @@
     "borough": "Trafford",
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
-    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
-    "phoneNumber": "+447964451119",
-    "workTime": {"open": "2PM", "close": "11PM"  },
+    "details": [
+      {"iconName": "markerIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "phoneIcon", "text": "+447964451119"},
+      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+    ],
     "images": [
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
@@ -17,8 +19,8 @@
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "peopleNumber", "text": "From 1 To 4"},
-      {"iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester."}
+      {"iconName": "peopleIcon", "text": "From 1 To 4"},
+      {"iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester."}
     ],
     "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
     "location" : {

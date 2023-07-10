@@ -1,32 +1,51 @@
 .placeCardCom{
-  background-color: #47484A;
+  background-color: var(--gray-900);
   color: #EAEAEA;
+  border-radius: 5px 0px;
+  .bottomBorder{ border-bottom: 1px solid white; }
+  .internalCardShape{
+    background-color: var(--gray-700);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .placeCardPara{
+    line-height: 18px;
+    .placeCardIcon{
+      width: 18px;
+      height: 18px;
+    }
+  }
+  header.placeIntro{
+    .placeName{
+      gap: 5px;
+      .headerIcon{
+        width: 27px;
+        height: 27px;
+      }
+    }
+    .brief{
+      font-size: 1.2;
+    }
+  }
+  main{
+    .overview{
+
+    }
+  }
+  footer{
+    .cta{
+      padding: 10px 25px;
+      border-radius: 5px;
+      background-color: var(--gray-700);
+    }
+  }
 }
 
-.iconHolder{
-  padding: 5px;
-  background: rgb(144, 122, 122);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
 .detailsImages img{
   width: calc(100% / 5);
   aspect-ratio: 1/1;
 }
 
-.cta{
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #5D5C5C;
-}
 
-.internalCard{
-  padding: 5px 10px;
-  background-color: #5D5C5C;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
 
 

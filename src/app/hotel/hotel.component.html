@@ -11,7 +11,7 @@
           <span class="backArrow">
 
             <a routerLink="/home/hotels">
-              <img src="/assets/icons/Back.svg" class="backIcon" alt="">
+              <img src="../../assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
             </a>
 
           </span>
@@ -54,7 +54,7 @@
           <div class="features-group">
 
             <div *ngFor="let feature of hotel?.features" class="feature">
-              <img [src]="'/assets/icons/'+ feature.icon + '.svg'" [alt]="feature.icon + ' icon'" class="icon">
+              <img [src]="'/assets/icons/'+ feature.icon + '.svg'" [alt]="feature.icon + ' icon'" class="icon marR-15">
               <span> {{ feature.description }} </span>
             </div>
 

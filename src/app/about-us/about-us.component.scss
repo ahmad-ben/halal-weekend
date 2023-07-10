@@ -1,0 +1,14 @@
+.aboutComponent{
+  header{
+    position: relative;
+    border-bottom: 1px solid var(--gray-490);
+    img{
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      top: 50%;
+      left: 20px;
+      translate : 0% -50%;
+    }
+  }
+}

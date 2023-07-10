@@ -13,7 +13,7 @@ export class PlaceCardComponent {
   placeInfo!: any;
   isWholeCardShown: boolean = false;
 
-  @ViewChild('placeIntro') placeIntroRef!: ElementRef<HTMLElement>;
+  @ViewChild('placeCardHeader') placeCardHeaderRef!: ElementRef<HTMLElement>;
 
   @Output('showCard') showCard: EventEmitter<number> = new EventEmitter() ;
   @Output('showCardHeader') showCardHeader: EventEmitter<number> = new EventEmitter() ;
@@ -36,9 +36,9 @@ export class PlaceCardComponent {
   }
 
   getPlaceInfoHeight(){
-    const PlaceIntroEle = this.placeIntroRef?.nativeElement;
-    const placeIntroHeight = PlaceIntroEle?.offsetHeight;
-    this.showCardHeader.emit(placeIntroHeight);
+    const placeCardHeaderEle = this.placeCardHeaderRef?.nativeElement;
+    const placeCardHeaderHeight = placeCardHeaderEle?.offsetHeight;
+    this.showCardHeader.emit(placeCardHeaderHeight);
   }
 
   toggleCardVisibility(){

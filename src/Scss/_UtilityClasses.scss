@@ -1,7 +1,5 @@
 //=> Padding:
-.padT-25{
-  padding-top: 25px;
-}
+.p-10{padding: 10px}
 
 .padX-5{
   padding-right: 5px;
@@ -13,6 +11,11 @@
   padding-left: 10px;
 }
 
+.padX-15{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .padX-20{
   padding-right: 20px;
   padding-left: 20px;
@@ -21,6 +24,11 @@
 .padX-25{
   padding-right: 25px;
   padding-left: 25px;
+}
+
+.padY-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .padY-10 {
@@ -38,15 +46,81 @@
   padding-bottom: 25px;
 }
 
-.pad-10{padding: 10px}
+.padY-30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.padT-10{
+  padding-top: 10px;
+}
+
+.padT-15{
+  padding-top: 15px;
+}
+
+.padT-20{
+  padding-top: 20px;
+}
+
+.padT-25{
+  padding-top: 25px;
+}
+
+.padB-10{
+  padding-bottom: 10px;
+}
+
+.padB-20{
+  padding-bottom: 20px;
+}
+
+.padB-25{
+  padding-bottom: 25px;
+}
 
 //=> Border:
 
 .bor-none{border: none;}
 
-.borRad-10{border-radius: 10px;}
+.borR-5{border-radius: 5px;}
+
+.borR-10{border-radius: 10px;}
 
 //=> Margin:
+.m-20{
+  margin: 20px;
+}
+
+.marX-16{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.marX-20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.marX-25{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.marY-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.marY-10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.marY-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .marT-10{
   margin-top: 10px;
@@ -56,12 +130,20 @@
   margin-top: 16px;
 }
 
+.marT-20{
+  margin-top: 20px;
+}
+
 .marT-25{
   margin-top: 25px;
 }
 
 .marT-40{
   margin-top: 40px;
+}
+
+.marR-12{
+  margin-right: 12px;
 }
 
 .marR-16{
@@ -80,6 +162,10 @@
   margin-bottom: 16px;
 }
 
+.marB-20{
+  margin-bottom: 20px;
+}
+
 .marB-25{
   margin-bottom: 25px;
 }
@@ -92,16 +178,6 @@
   margin-left: 16px;
 }
 
-.marX-16{
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-.marX-25{
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 //=> Width:
 
 .width-100{
@@ -110,7 +186,7 @@
 
 //=> Height:
 
-.mainHeight-100dvh{
+.minH-100dvh{
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -136,9 +212,22 @@
   justify-content: space-between;
 }
 
+.jusC-spaA{
+  justify-content: space-around;
+}
+
+.fleG-1{
+  flex-grow: 1;
+}
 
 //=> Usage Shapes:
 .roundedShape{
   padding: 5px 10px;
   border-radius: 15px;
+}
+
+//=> Text
+
+.texA-c{
+  text-align: center;
 }

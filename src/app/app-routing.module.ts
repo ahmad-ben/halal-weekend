@@ -33,8 +33,9 @@ const routes: Routes = [
 
   { path: 'more', loadComponent: () => import('./more/more.component').then(module => module.MoreComponent)},
   {path: 'more/about', component: AboutUsComponent},
+  { path: 'more/languages', loadComponent: () => import('./languages/languages.component').then(module => module.LanguagesComponent)},
+  { path: 'more/contact', loadComponent: () => import('./contact/contact.component').then(module => module.ContactComponent)},
 
-  { path: 'languages', loadComponent: () => import('./languages/languages.component').then(module => module.LanguagesComponent)},
 
   { path: '**', component: NotFoundComponent},
 ];

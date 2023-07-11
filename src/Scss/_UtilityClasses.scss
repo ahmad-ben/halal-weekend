@@ -92,6 +92,10 @@
   margin: 20px;
 }
 
+.m-25{
+  margin: 25px;
+}
+
 .marX-16{
   margin-left: 16px;
   margin-right: 16px;
@@ -142,6 +146,10 @@
   margin-top: 40px;
 }
 
+.marR-10{
+  margin-right: 10px;
+}
+
 .marR-12{
   margin-right: 12px;
 }
@@ -168,6 +176,10 @@
 
 .marB-25{
   margin-bottom: 25px;
+}
+
+.marB-30{
+  margin-bottom: 30px;
 }
 
 .marB-40{
@@ -220,14 +232,23 @@
   flex-grow: 1;
 }
 
-//=> Usage Shapes:
+//=> Text
+
+.texA-c{
+  text-align: center;
+}
+
+.texD-n{
+  text-decoration: none;
+}
+
+//=> Usage Classes:
 .roundedShape{
   padding: 5px 10px;
   border-radius: 15px;
 }
 
-//=> Text
-
-.texA-c{
-  text-align: center;
+.smallText{
+  font-size: 1.2rem;
+  letter-spacing: .9px;
 }

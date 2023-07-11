@@ -55,7 +55,7 @@ export class HomeComponent implements AfterViewInit{
 
   markerInfos: MarkerInfo[] = [];
 
-  options: google.maps.MapOptions = { zoom: 18 };
+  options: google.maps.MapOptions = { zoom: 16 };
 
   constructor(
       public jsonData: JsonDataService,

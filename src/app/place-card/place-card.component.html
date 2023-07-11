@@ -12,18 +12,18 @@
 
     </div>
 
-    <span class="brief"> {{ placeInfo?.type }} . {{ placeInfo?.borough }} , {{ placeInfo?.city }} </span>
+    <span class="smallText"> {{ placeInfo?.type }} . {{ placeInfo?.borough }} , {{ placeInfo?.city }} </span>
 
   </header>
 
   <main>
 
-    <div class="overview padB-10 bottomBorder">
+    <div *ngIf="placeInfo?.overview" class="overview padB-10 marB-10 bottomBorder">
       <h6 class="marB-15">Overview</h6>
       <p class="internalCardShape marY-0"> {{ placeInfo?.overview }} </p>
     </div>
 
-    <div class="details marT-10 padB-10 bottomBorder">
+    <div *ngIf="placeInfo?.details" class="details marB-15">
 
       <h6 class="marB-15">Details</h6>
 
@@ -42,22 +42,27 @@
 
       </div>
 
-      <div class="detailsImages">
+    </div>
+
+    <div class="sectionHolder d-f jusC-c aliI-c">
+
+      <section #imagesSection class="imagesSection padB-10 marB-10 bottomBorder">
         <img
           *ngFor="let img of placeInfo?.images"
           [src]="img"
           alt="imageDescription"
         >
-      </div>
-
+      </section>
 
     </div>
 
-    <div class="usefulInfo marT-10">
+
+
+    <div *ngIf="placeInfo?.usefulInformation" class="usefulInfo marB-15">
 
       <h6 class="marB-15">Useful Information</h6>
 
-      <div class="internalCardShape info marB-15">
+      <div class="internalCardShape info">
 
         <p *ngFor="let usefulInfo of placeInfo?.usefulInformation" class="placeCardPara usefulInfo">
 
@@ -76,16 +81,16 @@
 
   </main>
 
-  <footer class="d-f jusC-spaB aliI-c">
+  <footer *ngIf="placeInfo?.phoneNumber || placeInfo?.website" class="d-f jusC-spaB aliI-c">
 
     <div class="cta phone">
-      <a [href]="'tel:' + placeInfo?.phoneNumber">
+      <a *ngIf="placeInfo?.phoneNumber" [href]="'tel:' + placeInfo?.phoneNumber">
         <img src="/assets/icons/phoneFillIcon.svg" alt="phoneFillIcon">
       </a>
     </div>
 
     <div class="cta Website">
-      <a [href]="placeInfo?.website" target="_blank">
+      <a *ngIf="placeInfo?.website" [href]="placeInfo?.website" target="_blank">
         <img src="/assets/icons/globeIcon.svg" alt="phoneFillIcon">
       </a>
     </div>
@@ -97,3 +102,17 @@
 
 <!-- ! The Logic of the image Slider if they are more than 4 or 5... -->
 <!-- ! Hoe Exactly The Line Height Center Te Stuff And How It Work En General -->
+<!-- ! Hotels, Restaurants and Mosques the last big margin -->
+
+
+
+
+
+<!-- ------------------------------------------ -->
+
+
+
+
+
+
+

@@ -19,7 +19,6 @@
 }
 
 .readMoreButton{
-  border: none;
   background: none;
 }
 
@@ -36,11 +35,21 @@
 
 
 footer{
-  gap: 16px;
+  gap: 15px;
   margin-bottom: 35px;
   button{
     background-color: var(--gray-700);
-    img{filter: invert(1);}
+    line-height: 20px;
+    color: white;
+    position: relative;
+    img{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 10px;
+      translate: 0 -50%;
+    }
   }
 }
 

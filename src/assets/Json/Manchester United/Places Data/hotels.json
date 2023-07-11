@@ -22,6 +22,7 @@
       {"iconName": "peopleIcon", "text": "From 1 To 4"},
       {"iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester."}
     ],
+    "phoneNumber": "+447964451119",
     "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
     "location" : {
       "lat": 53.461087029037145,
@@ -31,12 +32,12 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"icon": "mosque", "description": "Prayer room"},
-      {"icon": "halalFood", "description": "Halal food"},
-      {"icon": "breast", "description": "Breast feeding room"},
-      {"icon": "lostAndFind", "description": "Lost and found"},
-      {"icon": "wifi", "description": "Free Wifi"},
-      {"icon": "parking", "description": "Free Parking"}
+      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
+      {"iconName": "halalFoodIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
 
     ]
   },

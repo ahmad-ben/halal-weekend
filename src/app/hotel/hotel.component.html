@@ -1,22 +1,22 @@
-<div class="hotelComponent d-flex flex-column">
+<div class="hotelComponent d-f fleD-c">
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <div class="hotel flex-grow-1">
+  <div class="hotel fleG-1">
 
     <div class="hotel">
 
-      <header class="hotelHeader d-flex align-items-center marX-25">
+      <header class="hotelHeader d-f aliI-c marX-25">
 
           <span class="backArrow">
 
             <a routerLink="/home/hotels">
-              <img src="../../assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
+              <img src="/assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
             </a>
 
           </span>
 
-          <h3 class="fw-bold flex-grow-1">{{ hotel?.name }}</h3>
+          <h3 class="fw-bold fleG-1">{{ hotel?.name }}</h3>
 
       </header>
 
@@ -35,9 +35,9 @@
 
         </div>
 
-        <div class="textInfo marX-25 marT-25 marB-16">
+        <div *ngIf="hotel?.description" class="textInfo marX-25 marT-25 marB-16">
 
-          <p> {{ shortDescription ? hotel?.description : showWholeDescription ? hotel?.description :  (hotel?.description | slice:0:100) + '...' }}</p>
+          <p> {{ shortDescription || showWholeDescription ? hotel?.description : (hotel?.description | slice:0:100) + '...' }}</p>
           <button
             *ngIf="!shortDescription"
             class="readMoreButton"
@@ -47,15 +47,15 @@
 
         </div>
 
-        <div class="features marX-25 padY-16 marB-16">
+        <div *ngIf="hotel?.features" class="features marX-25 padY-16 marB-16">
 
           <h5>Most Popular Facilities</h5>
 
           <div class="features-group">
 
             <div *ngFor="let feature of hotel?.features" class="feature">
-              <img [src]="'/assets/icons/'+ feature.icon + '.svg'" [alt]="feature.icon + ' icon'" class="icon marR-15">
-              <span> {{ feature.description }} </span>
+              <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="icon marR-15">
+              <span> {{ feature.text }} </span>
             </div>
 
           </div>
@@ -71,14 +71,14 @@
 
       </main>
 
-      <footer class="d-flex justify-content-center align-items-center marX-25">
-        <button class="call pad-10 bor-10 flex-grow-1 d-flex align-items-center text-white" (click)="callPhoneNumber(hotel?.phoneNumber)">
-          <img src="/assets/icons/Phone.png" alt="map image" class="icon">
-          <span class="flex-grow-1">Call</span>
+      <footer *ngIf="hotel?.phoneNumber || hotel?.website" class="d-f jusC-c aliI-c marX-25">
+        <button *ngIf="hotel?.phoneNumber" class="call padY-10 borR-5 fleG-1" (click)="callPhoneNumber(hotel?.phoneNumber)">
+          <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
+          Call
         </button>
-        <button class="website pad-10 bor-10 flex-grow-1 d-flex align-items-center text-white" (click)="redirectToWebsite(hotel?.website)">
-          <img src="/assets/icons/Globe.png" alt="map image" class="icon">
-          <span class="flex-grow-1">Website</span>
+        <button *ngIf="hotel?.website" class="website padY-10 borR-5 fleG-1" (click)="redirectToWebsite(hotel?.website)">
+          <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
+          Website
         </button>
       </footer>
 
@@ -88,3 +88,21 @@
 
 </div>
 
+<!-- ! Make Sure About The Correct Paths : Remove ../../ -->
+<!-- ! Remove The text-danger abd text-white -->
+<!-- 
+
+
+        <button class="call padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="callPhoneNumber(hotel?.phoneNumber)">
+          <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
+          <span class="">Call</span>
+        </button>
+        <button class="website padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="redirectToWebsite(hotel?.website)">
+          <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
+          <span class="">Website</span>
+        </button>
+
+
+ -->
+
+<!-- ! Add The *ngIf Logic In Data Fetch Place -->

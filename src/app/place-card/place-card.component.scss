@@ -1,6 +1,6 @@
 .placeCardCom{
   background-color: var(--gray-900);
-  color: #EAEAEA;
+  color: white;
   border-radius: 5px 0px;
   .bottomBorder{ border-bottom: 1px solid white; }
   .internalCardShape{
@@ -23,13 +23,23 @@
         height: 27px;
       }
     }
-    .brief{
-      font-size: 1.2;
-    }
   }
   main{
-    .overview{
-
+    section {
+      overflow-x: auto;
+      display: flex;
+      align-items: center;
+      &.fewImages{
+        justify-content: center;
+      }
+      img{
+        width: calc( (100% - 10px) / 3);
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        &:not(:last-child){
+          margin-right: 5px;
+        }
+      }
     }
   }
   footer{
@@ -40,12 +50,5 @@
     }
   }
 }
-
-.detailsImages img{
-  width: calc(100% / 5);
-  aspect-ratio: 1/1;
-}
-
-
 
 

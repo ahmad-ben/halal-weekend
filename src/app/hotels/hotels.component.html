@@ -1,18 +1,21 @@
-<div class="hotelsComponent d-flex flex-column">
+<div class="hotelsComponent d-f fleD-c">
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <div class="hotels flex-grow-1 px-4">
+  <main class="hotels fleG-1 m-25">
 
-    <div class="hotel" *ngFor="let hotel of hotels" [routerLink]="['/home/hotel', hotel.name]" (click)="showOneHotelInfo(hotel.name)">
+    <div class="hotel marB-30" *ngFor="let hotel of hotels" [routerLink]="['/home/hotel', hotel.name]" (click)="showOneHotelInfo(hotel.name)">
 
-      <img [src]="hotel.images[0]" alt="hotel image" class="mainPicture">
-      <h3> {{ hotel.name }} </h3>
-      <span> {{ hotel.distance }} </span>
+      <img [src]="hotel.images[0]" alt="hotel image" class="mainPicture marB-15">
+      <h6> {{ hotel.name }} </h6>
+      <p>
+        <img src="/assets/icons/markerIcon.svg" alt="hotel image" class="icon marR-10">
+        <span class="smallText"> {{ hotel.distance }} </span>
+      </p>
 
     </div>
 
-  </div>
+  </main>
 
   <bottom-nav></bottom-nav>
 

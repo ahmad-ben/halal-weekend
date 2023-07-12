@@ -1,0 +1,121 @@
+{
+
+  "The Grasshopper Place": {
+    "name": "The Grasshopper Place",
+    "type": "restaurant",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A delightful restaurant offering a variety of culinary delights.",
+    "details": [
+      {"iconName": "markerIcon", "text": "456 Main St, Manchester, M1 234"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "10AM - 10PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/1.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/2.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/3.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/4.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Seats up to 80 people"},
+      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.grasshopperplace.com/",
+    "location": {
+      "lat": 53.48312869699575,
+      "lng": -2.188067869249042
+    },
+    "distance": "0.2 miles from the Stamford Etihad Stadium",
+    "description": "The Grasshopper Place is a charming restaurant that offers a warm and inviting atmosphere. With a diverse menu featuring a range of culinary delights, there's something for everyone. Whether you're looking for a casual lunch or a memorable dinner, The Grasshopper Place is sure to satisfy your taste buds. The restaurant's central location makes it easily accessible for both locals and visitors to Manchester. Experience exceptional service and delectable cuisine at The Grasshopper Place.",
+    "features": [
+      {"iconName": "wifiIcon", "text": "Free Wi-Fi"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "chairIcon", "text": "Outdoor seating"},
+      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
+      {"iconName": "familyIcon", "text": "Family-friendly"}
+    ]
+  },
+
+  "The Grasshopper Place 1": {
+    "name": "The Grasshopper Place",
+    "type": "restaurant",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A delightful restaurant offering a variety of culinary delights.",
+    "details": [
+      {"iconName": "markerIcon", "text": "456 Main St, Manchester, M1 234"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "10AM - 10PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/1.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/2.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/3.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/4.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Seats up to 80 people"},
+      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.grasshopperplace.com/",
+    "location": {
+      "lat": 53.48312869699575,
+      "lng": -2.188067869249042
+    },
+    "distance": "0.2 miles from the Stamford Etihad Stadium",
+    "description": "The Grasshopper Place is a charming restaurant that offers a warm and inviting atmosphere. With a diverse menu featuring a range of culinary delights, there's something for everyone. Whether you're looking for a casual lunch or a memorable dinner, The Grasshopper Place is sure to satisfy your taste buds. The restaurant's central location makes it easily accessible for both locals and visitors to Manchester. Experience exceptional service and delectable cuisine at The Grasshopper Place.",
+    "features": [
+      {"iconName": "wifiIcon", "text": "Free Wi-Fi"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "chairIcon", "text": "Outdoor seating"},
+      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
+      {"iconName": "familyIcon", "text": "Family-friendly"}
+    ]
+  },
+
+  "The Grasshopper Place 2": {
+    "name": "The Grasshopper Place",
+    "type": "restaurant",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A delightful restaurant offering a variety of culinary delights.",
+    "details": [
+      {"iconName": "markerIcon", "text": "456 Main St, Manchester, M1 234"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "10AM - 10PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/1.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/2.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/3.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/4.jpg",
+      "/assets/Images/Manchester City/restaurants/The Grasshopper Place/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Seats up to 80 people"},
+      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.grasshopperplace.com/",
+    "location": {
+      "lat": 53.48312869699575,
+      "lng": -2.188067869249042
+    },
+    "distance": "0.2 miles from the Stamford Etihad Stadium",
+    "description": "The Grasshopper Place is a charming restaurant that offers a warm and inviting atmosphere. With a diverse menu featuring a range of culinary delights, there's something for everyone. Whether you're looking for a casual lunch or a memorable dinner, The Grasshopper Place is sure to satisfy your taste buds. The restaurant's central location makes it easily accessible for both locals and visitors to Manchester. Experience exceptional service and delectable cuisine at The Grasshopper Place.",
+    "features": [
+      {"iconName": "wifiIcon", "text": "Free Wi-Fi"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "chairIcon", "text": "Outdoor seating"},
+      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
+      {"iconName": "familyIcon", "text": "Family-friendly"}
+    ]
+  }
+
+}
+

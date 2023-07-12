@@ -54,8 +54,6 @@ export class HotelsComponent {
 
   }
 
-  showOneHotelInfo(hotelName: string){ }
-
   clubNameSelected(clubsName: string){
     this.getData(clubsName);
   }

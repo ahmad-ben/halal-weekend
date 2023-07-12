@@ -7,7 +7,6 @@ import { LoginComponent } from './login/login.component';
 import { MosqueComponent } from './mosque/mosque.component';
 import { MosquesComponent } from './mosques/mosques.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ProfileComponent } from './profile/profile.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 
@@ -16,20 +15,18 @@ const routes: Routes = [
 
   {path: 'login', component: LoginComponent},
 
-  {path: 'home/hotel/:name', component: HotelComponent},
-
-  { path: 'home/:placeType/:placeName', loadComponent: () => import('./home/home.component').then(module => module.HomeComponent)},
   { path: 'home', loadComponent: () => import('./home/home.component').then(module => module.HomeComponent)},
 
+  {path: 'hotels/:name', component: HotelComponent},
   {path: 'home/hotels', component: HotelsComponent},
 
-  {path: 'home/restaurants/:name', component: RestaurantComponent},
+  {path: 'restaurants/:name', component: RestaurantComponent},
   {path: 'home/restaurants', component: RestaurantsComponent},
 
-  {path: 'home/mosques/:name', component: MosqueComponent},
+  {path: 'mosques/:name', component: MosqueComponent},
   {path: 'home/mosques', component: MosquesComponent},
 
-  {path: 'profile', component: ProfileComponent},
+  { path: 'home/:placeType/:placeName', loadComponent: () => import('./home/home.component').then(module => module.HomeComponent)},
 
   { path: 'more', loadComponent: () => import('./more/more.component').then(module => module.MoreComponent)},
   {path: 'more/about', component: AboutUsComponent},

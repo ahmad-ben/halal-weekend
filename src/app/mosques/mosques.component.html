@@ -1,20 +1,24 @@
-<div class="mosquesComponent d-f flex-column">
+<div class="mosquesComponent d-f fleD-c">
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <div class="mosques fleG-1 px-4">
+  <main class="mosques fleG-1 marX-25 marT-25 marB-15">
 
-    <div class="mosque" *ngFor="let mosque of mosques">
+    <div class="mosque" *ngFor="let mosque of mosques" [routerLink]="['/mosques', mosque.name]">
 
-      <img [src]="mosque.images[0]" alt="" class="mainPicture">
-      <h3> {{ mosque.name }} </h3>
-      <span> {{ mosque.distance }} </span>
+      <img [src]="mosque.images[0]" alt="mosque image" class="mainPicture marB-15">
+      <h6> {{ mosque.name }} </h6>
+      <p>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-10">
+        <span class="smallText"> {{ mosque.distance }} </span>
+      </p>
 
     </div>
 
-  </div>
+  </main>
 
   <bottom-nav></bottom-nav>
 
 </div>
 
+<!-- ! Do The Image Cover And Tell Abdo About It. -->

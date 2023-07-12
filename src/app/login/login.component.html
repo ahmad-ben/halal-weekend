@@ -103,7 +103,13 @@
           (click)="save(reactiveForm)"
         >
           <span>{{ 'LOGIN_COM.CONTINUE' | translate }}</span>
-          <img src="/assets/icons/forwardIcon.svg" alt="forwardIcon" class="forwardIcon">
+          <img
+            [src]="reactiveForm.valid ?
+              '/assets/icons/forwardWhiteIcon.svg' :
+              '/assets/icons/forwardIcon.svg'
+            "
+            alt="forwardIcon" class="forwardIcon"
+          >
         </button>
         <p
           class="text-danger"
@@ -113,7 +119,9 @@
           class="btn width-100 roundedShape ctaBtn skip languageEffect"
           type="button"
           (click)="skip()"
-        >{{ 'LOGIN_COM.SKIP' | translate }}
+        >
+          <span>{{ 'LOGIN_COM.SKIP' | translate }}</span>
+          <img src="/assets/icons/skipArrowsIcon.svg" alt="skipArrowsIcon" class="skipArrowsIcon">
         </button>
       </div>
 

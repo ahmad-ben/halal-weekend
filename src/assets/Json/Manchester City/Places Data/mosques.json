@@ -1,0 +1,117 @@
+{
+
+  "Manchester Central Mosque": {
+    "name": "Manchester Central Mosque",
+    "type": "mosque",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A prominent mosque serving the Muslim community in Manchester.",
+    "details": [
+      {"iconName": "markerIcon", "text": "123 Mosque Street, Manchester, M1 234"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "Open 24 hours"}
+    ],
+    "images": [
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/1.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/2.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/3.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/4.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Capacity for hundreds of worshippers"},
+      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.manchestermosque.org/",
+    "location": {
+      "lat": 53.455875886783126,
+      "lng": -2.2190294253968164
+    },
+    "distance": "0.3 miles from the Etihad Stadium",
+    "description": "Manchester Central Mosque is a prominent place of worship for the Muslim community in Manchester. With its beautiful architecture and serene atmosphere, the mosque welcomes worshippers from all walks of life. The mosque provides various facilities and services to support the spiritual needs of the community. Whether you're a resident or a visitor to Manchester, Manchester Central Mosque offers a peaceful sanctuary for prayer and reflection. Experience the rich cultural heritage and warm hospitality of the mosque.",
+    "features": [
+      {"iconName": "wuduIcon", "text": "Wudu facilities"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community events"},
+      {"iconName": "parkingIcon", "text": "Parking available"}
+    ]
+  },
+
+  "Manchester Central Mosque 1": {
+    "name": "Manchester Central Mosque",
+    "type": "mosque",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A prominent mosque serving the Muslim community in Manchester.",
+    "details": [
+      {"iconName": "markerIcon", "text": "123 Mosque Street, Manchester, M1 234"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "Open 24 hours"}
+    ],
+    "images": [
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/1.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/2.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/3.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/4.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Capacity for hundreds of worshippers"},
+      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.manchestermosque.org/",
+    "location": {
+      "lat": 53.455875886783126,
+      "lng": -2.2190294253968164
+    },
+    "distance": "0.3 miles from the Etihad Stadium",
+    "description": "Manchester Central Mosque is a prominent place of worship for the Muslim community in Manchester. With its beautiful architecture and serene atmosphere, the mosque welcomes worshippers from all walks of life. The mosque provides various facilities and services to support the spiritual needs of the community. Whether you're a resident or a visitor to Manchester, Manchester Central Mosque offers a peaceful sanctuary for prayer and reflection. Experience the rich cultural heritage and warm hospitality of the mosque.",
+    "features": [
+      {"iconName": "wuduIcon", "text": "Wudu facilities"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community events"},
+      {"iconName": "parkingIcon", "text": "Parking available"}
+    ]
+  },
+
+  "Manchester Central Mosque 2": {
+    "name": "Manchester Central Mosque",
+    "type": "mosque",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A prominent mosque serving the Muslim community in Manchester.",
+    "details": [
+      {"iconName": "markerIcon", "text": "123 Mosque Street, Manchester, M1 234"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "Open 24 hours"}
+    ],
+    "images": [
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/1.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/2.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/3.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/4.jpg",
+      "/assets/Images/Manchester City/mosques/Manchester Central Mosque/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Capacity for hundreds of worshippers"},
+      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.manchestermosque.org/",
+    "location": {
+      "lat": 53.455875886783126,
+      "lng": -2.2190294253968164
+    },
+    "distance": "0.3 miles from the Etihad Stadium",
+    "description": "Manchester Central Mosque is a prominent place of worship for the Muslim community in Manchester. With its beautiful architecture and serene atmosphere, the mosque welcomes worshippers from all walks of life. The mosque provides various facilities and services to support the spiritual needs of the community. Whether you're a resident or a visitor to Manchester, Manchester Central Mosque offers a peaceful sanctuary for prayer and reflection. Experience the rich cultural heritage and warm hospitality of the mosque.",
+    "features": [
+      {"iconName": "wuduIcon", "text": "Wudu facilities"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community events"},
+      {"iconName": "parkingIcon", "text": "Parking available"}
+    ]
+  }
+
+}

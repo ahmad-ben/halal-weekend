@@ -3,7 +3,7 @@
   "stadium": {
     "stadium_name": "Old Trafford",
     "location" : {
-      "lat":  53.46305570634357,
+      "lat": 53.46305570634357,
       "lng": -2.2913186423124645
     }
   },
@@ -16,7 +16,22 @@
       }
     }
   ],
-  "restaurants" : [],
-  "mosques" : []
+  "restaurants" : [
+    {
+      "restaurant_name": "Manchester United Red Cafe",
+      "location" : {
+        "lat": 53.46368208419214,
+        "lng": -2.291700698256055
+      }
+    }
+  ],
+  "mosques" : [
+    {
+      "mosque_name": "Islamic Cultural Centre Manchester",
+      "location" : {
+        "lat": 53.454328886825564,
+        "lng": -2.248430481909624
+      }
+    }
+  ]
 }
-

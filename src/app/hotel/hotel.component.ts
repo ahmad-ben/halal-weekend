@@ -17,10 +17,11 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
   styleUrls: ['./hotel.component.scss']
 })
 export class HotelComponent {
+
   hotel: any;
   showWholeDescription: boolean = false;
   shortDescription?: boolean;
-constructor(
+  constructor(
     private router: Router,
     private activateRoute: ActivatedRoute,
     public jsonData: JsonDataService,

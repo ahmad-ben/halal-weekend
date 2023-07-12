@@ -22,16 +22,17 @@
       color: white;
       cursor: pointer;
     }
+    img{
+      width: 12px;
+      height: 12px;
+    }
   }
   &.skip{
-    font-weight: 400;
-    border: none;
+    img{
+      width: 6px;
+      height: 6px;
+    }
   }
-}
-
-img.forwardIcon{
-  width: 14px;
-  height: 14px;
 }
 
 ::placeholder {

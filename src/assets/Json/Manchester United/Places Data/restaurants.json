@@ -1,0 +1,121 @@
+{
+
+  "Manchester United Red Cafe": {
+    "name": "Manchester United Red Cafe",
+    "type": "restaurant",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A vibrant cafe offering delicious food and a great atmosphere.",
+    "details": [
+      {"iconName": "markerIcon", "text": "Sir Matt Busby Way, Old Trafford, Manchester M16 0RA"},
+      {"iconName": "phoneIcon", "text": "+447964451119"},
+      {"iconName": "clockIcon", "text": "9AM - 9PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/1.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/2.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/3.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/4.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Seating for up to 50 people"},
+      {"iconName": "markerIcon", "text": "Located within Old Trafford Stadium"}
+    ],
+    "phoneNumber": "+447964451119",
+    "website": "https://www.manutd.com/en/visit-old-trafford/food-and-drink/red-cafe",
+    "location" : {
+      "lat": 53.46368208419214,
+      "lng": -2.291700698256055
+    },
+    "distance": "0.1 miles from Old Trafford Stadium",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna sed urna posuere, quis auctor turpis consectetur. Nullam pharetra tristique ante in eleifend. Curabitur sagittis, velit nec cursus aliquet, mi est viverra felis, et finibus risus justo id risus.",
+    "features": [
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "accessibilityIcon", "text": "Accessible for people with disabilities"},
+      {"iconName": "familyIcon", "text": "Family-friendly"},
+      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"}
+    ]
+  },
+
+  "Manchester United Red Cafe 1": {
+    "name": "Manchester United Red Cafe",
+    "type": "restaurant",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A vibrant cafe offering delicious food and a great atmosphere.",
+    "details": [
+      {"iconName": "markerIcon", "text": "Sir Matt Busby Way, Old Trafford, Manchester M16 0RA"},
+      {"iconName": "phoneIcon", "text": "+447964451119"},
+      {"iconName": "clockIcon", "text": "9AM - 9PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/1.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/2.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/3.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/4.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Seating for up to 50 people"},
+      {"iconName": "markerIcon", "text": "Located within Old Trafford Stadium"}
+    ],
+    "phoneNumber": "+447964451119",
+    "website": "https://www.manutd.com/en/visit-old-trafford/food-and-drink/red-cafe",
+    "location" : {
+      "lat": 53.463422,
+      "lng": -2.292978
+    },
+    "distance": "0.1 miles from Old Trafford Stadium",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna sed urna posuere, quis auctor turpis consectetur. Nullam pharetra tristique ante in eleifend. Curabitur sagittis, velit nec cursus aliquet, mi est viverra felis, et finibus risus justo id risus.",
+    "features": [
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "accessibilityIcon", "text": "Accessible for people with disabilities"},
+      {"iconName": "familyIcon", "text": "Family-friendly"},
+      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"}
+    ]
+  },
+
+  "Manchester United Red Cafe 2": {
+    "name": "Manchester United Red Cafe",
+    "type": "restaurant",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A vibrant cafe offering delicious food and a great atmosphere.",
+    "details": [
+      {"iconName": "markerIcon", "text": "Sir Matt Busby Way, Old Trafford, Manchester M16 0RA"},
+      {"iconName": "phoneIcon", "text": "+447964451119"},
+      {"iconName": "clockIcon", "text": "9AM - 9PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/1.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/2.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/3.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/4.jpg",
+      "/assets/Images/Manchester United/restaurants/Manchester United Red Cafe/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Seating for up to 50 people"},
+      {"iconName": "markerIcon", "text": "Located within Old Trafford Stadium"}
+    ],
+    "phoneNumber": "+447964451119",
+    "website": "https://www.manutd.com/en/visit-old-trafford/food-and-drink/red-cafe",
+    "location" : {
+      "lat": 53.463422,
+      "lng": -2.292978
+    },
+    "distance": "0.1 miles from Old Trafford Stadium",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna sed urna posuere, quis auctor turpis consectetur. Nullam pharetra tristique ante in eleifend. Curabitur sagittis, velit nec cursus aliquet, mi est viverra felis, et finibus risus justo id risus.",
+    "features": [
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "accessibilityIcon", "text": "Accessible for people with disabilities"},
+      {"iconName": "familyIcon", "text": "Family-friendly"},
+      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"}
+    ]
+  }
+
+
+}

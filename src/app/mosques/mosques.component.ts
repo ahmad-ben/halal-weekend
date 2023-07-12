@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
@@ -11,7 +12,8 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
   imports: [
     CommonModule,
     TopNavComponent,
-    BottomNavComponent
+    BottomNavComponent,
+    RouterLink
   ],
   templateUrl: './mosques.component.html',
   styleUrls: ['./mosques.component.scss']
@@ -23,7 +25,17 @@ export class MosquesComponent {
   constructor(
     public jsonData: JsonDataService,
     private currentClubName: ShareClubNameService
-    ){ }
+    ){
+
+      this.currentClubName.selectedClub.subscribe({
+        next: (clubName) => {
+          console.log(clubName);
+          this.getData(clubName);
+
+        }
+      })
+
+    }
 
   getData(clubName: string = 'Manchester United'){
 

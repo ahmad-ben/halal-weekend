@@ -1,20 +1,22 @@
-<div class="restaurantsComponent d-f flex-column">
+<div class="restaurantsComponent d-f fleD-c">
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <div class="restaurants fleG-1 px-4">
+  <main class="restaurants fleG-1 marX-25 marT-25 marB-15">
 
-    <div class="restaurant" *ngFor="let restaurant of restaurants">
+    <div class="restaurant"*ngFor="let restaurant of restaurants" [routerLink]="['/restaurants', restaurant.name]">
 
-      <img [src]="restaurant.images[0]" alt="" class="mainPicture">
-      <h3> {{ restaurant.name }} </h3>
-      <span> {{ restaurant.distance }} </span>
+      <img [src]="restaurant.images[0]" alt="restaurant image" class="mainPicture marB-15">
+      <h6> {{ restaurant.name }} </h6>
+      <p>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-10">
+        <span class="smallText"> {{ restaurant.distance }} </span>
+      </p>
 
     </div>
 
-  </div>
+  </main>
 
   <bottom-nav></bottom-nav>
 
 </div>
-

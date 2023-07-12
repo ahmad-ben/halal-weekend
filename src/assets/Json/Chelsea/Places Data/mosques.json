@@ -1,0 +1,119 @@
+{
+
+  "Chelsea Muslim Community Center": {
+    "name": "Chelsea Muslim Community Center",
+    "type": "mosque",
+    "borough": "Chelsea",
+    "city": "London",
+    "overview": "A welcoming mosque that serves the Muslim community in Chelsea.",
+    "details": [
+      {"iconName": "markerIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "Open 24 hours"}
+    ],
+    "images": [
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/1.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/2.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/3.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/4.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "markerIcon", "text": "Located in the heart of Chelsea"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.chelseamosque.org/",
+    "location": {
+      "lat": 51.48436217455597,
+      "lng": -0.166915085482596
+    },
+    "distance": "0.3 miles from Stamford Stamford Bridge",
+    "description": "The Chelsea Muslim Community Center is a welcoming mosque that serves as a hub for the Muslim community in Chelsea. Located in the heart of Chelsea, it provides a peaceful and inclusive environment for prayers, gatherings, and community activities. The mosque is open 24 hours, allowing individuals to visit and engage in worship at their convenience. With its central location and strong community support, the Chelsea Muslim Community Center plays a vital role in fostering unity and spirituality among Muslims in the area.",
+    "features": [
+      {"iconName": "mosquePrayIcon", "text": "Prayer hall"},
+      {"iconName": "wuduIcon", "text": "Wudu facilities"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community events"},
+      {"iconName": "parkingIcon", "text": "Parking"}
+    ]
+  },
+
+  "Chelsea Muslim Community Center 1": {
+    "name": "Chelsea Muslim Community Center",
+    "type": "mosque",
+    "borough": "Chelsea",
+    "city": "London",
+    "overview": "A welcoming mosque that serves the Muslim community in Chelsea.",
+    "details": [
+      {"iconName": "markerIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "Open 24 hours"}
+    ],
+    "images": [
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/1.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/2.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/3.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/4.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "markerIcon", "text": "Located in the heart of Chelsea"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.chelseamosque.org/",
+    "location": {
+      "lat": 51.48436217455597,
+      "lng": -0.166915085482596
+    },
+    "distance": "0.3 miles from Stamford Stamford Bridge",
+    "description": "The Chelsea Muslim Community Center is a welcoming mosque that serves as a hub for the Muslim community in Chelsea. Located in the heart of Chelsea, it provides a peaceful and inclusive environment for prayers, gatherings, and community activities. The mosque is open 24 hours, allowing individuals to visit and engage in worship at their convenience. With its central location and strong community support, the Chelsea Muslim Community Center plays a vital role in fostering unity and spirituality among Muslims in the area.",
+    "features": [
+      {"iconName": "mosquePrayIcon", "text": "Prayer hall"},
+      {"iconName": "wuduIcon", "text": "Wudu facilities"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community events"},
+      {"iconName": "parkingIcon", "text": "Parking"}
+    ]
+  },
+
+  "Chelsea Muslim Community Center 2": {
+    "name": "Chelsea Muslim Community Center",
+    "type": "mosque",
+    "borough": "Chelsea",
+    "city": "London",
+    "overview": "A welcoming mosque that serves the Muslim community in Chelsea.",
+    "details": [
+      {"iconName": "markerIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
+      {"iconName": "phoneIcon", "text": "+44 123 456 789"},
+      {"iconName": "clockIcon", "text": "Open 24 hours"}
+    ],
+    "images": [
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/1.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/2.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/3.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/4.jpg",
+      "/assets/Images/Chelsea/mosques/Chelsea Muslim Community Center/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "markerIcon", "text": "Located in the heart of Chelsea"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.chelseamosque.org/",
+    "location": {
+      "lat": 51.48436217455597,
+      "lng": -0.166915085482596
+    },
+    "distance": "0.3 miles from Stamford Stamford Bridge",
+    "description": "The Chelsea Muslim Community Center is a welcoming mosque that serves as a hub for the Muslim community in Chelsea. Located in the heart of Chelsea, it provides a peaceful and inclusive environment for prayers, gatherings, and community activities. The mosque is open 24 hours, allowing individuals to visit and engage in worship at their convenience. With its central location and strong community support, the Chelsea Muslim Community Center plays a vital role in fostering unity and spirituality among Muslims in the area.",
+    "features": [
+      {"iconName": "mosquePrayIcon", "text": "Prayer hall"},
+      {"iconName": "wuduIcon", "text": "Wudu facilities"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community events"},
+      {"iconName": "parkingIcon", "text": "Parking"}
+    ]
+  }
+
+
+
+}

@@ -10,17 +10,29 @@
 
   <div class="places d-f aliI-c jusC-spaB">
 
-    <a class="hotels d-f fleD-c aliI-c" routerLink="/home/hotels" routerLinkActive #hotelsRoute='routerLinkActive'>
+    <a
+      class="hotels d-f fleD-c aliI-c"
+      routerLink="/home/hotels" routerLinkActive #hotelsRoute='routerLinkActive'
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <img [src]=" hotelsRoute.isActive ? '/assets/icons/hotelFillIcon.svg' : '/assets/icons/hotelIcon.svg'" alt="hotelIcon">
       <span>{{ "HOTELS" | translate }}</span>
     </a>
 
-    <a class="Restaurants d-f fleD-c aliI-c" routerLink="/home/restaurants" routerLinkActive #restaurantsRoute='routerLinkActive'>
+    <a
+      class="Restaurants d-f fleD-c aliI-c"
+      routerLink="/home/restaurants" routerLinkActive #restaurantsRoute='routerLinkActive'
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <img [src]=" restaurantsRoute.isActive ? '/assets/icons/restaurantFillIcon.svg' : '/assets/icons/restaurantIcon.svg'" alt="restaurantIcon">
       <span>{{ "RESTAURANTS" | translate }}</span>
     </a>
 
-    <a class="Mosques d-f fleD-c aliI-c" routerLink="/home/mosques" routerLinkActive #mosquesRoute='routerLinkActive'>
+    <a
+      class="Mosques d-f fleD-c aliI-c"
+      routerLink="/home/mosques" routerLinkActive #mosquesRoute='routerLinkActive'
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <img [src]=" mosquesRoute.isActive ? '/assets/icons/mosqueFillIcon.svg' : '/assets/icons/mosqueIcon.svg'" alt="mosqueIcon">
       <span>{{ "MOSQUES" | translate }}</span>
     </a>

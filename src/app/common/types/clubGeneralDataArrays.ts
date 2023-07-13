@@ -1,5 +1,4 @@
-export type ClubGeneralDataArray = 'hotels' | 'restaurants' | 'mosques' ;
+export type ClubGeneralDataArraysName = 'hotels' | 'restaurants' | 'mosques' ;
 
-export interface ClubGeneralDataArrays extends Array<ClubGeneralDataArray> {}
 
 

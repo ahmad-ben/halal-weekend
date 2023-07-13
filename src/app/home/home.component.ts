@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
-import { ClubGeneralDataArray, ClubGeneralDataArrays } from '../common/types/clubGeneralDataArrays';
+import { ClubGeneralDataArraysName } from '../common/types/clubGeneralDataArrays';
 import { stadiumNames } from '../common/variables.ts/clubsNames';
 import { PlaceCardComponent } from '../place-card/place-card.component';
 import { JsonDataService } from '../services/json/json-data.service';
@@ -34,13 +35,13 @@ interface MarkerInfo {
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit, OnDestroy{
   @ViewChild('placeCard', { read: ElementRef }) placeCardRef!: ElementRef<HTMLElement>;
   @ViewChild('placeCard') placeCardCom!: PlaceCardComponent;
   placeCardElement!: HTMLElement;
   placeCardEleHeight!: number;
 
-  placeType: string | undefined;
+  placeType: ClubGeneralDataArraysName | undefined;
   placeName: string | undefined;
 
   googleMap!: google.maps.Map;
@@ -49,13 +50,11 @@ export class HomeComponent implements AfterViewInit{
   mapElement!: HTMLElement;
 
   clubGeneralData!: ClubGeneralData;
-  // <--! response$?: Observable<any>; -->
   MarkerClickedInfo: MarkerInfo | null = null;
 
   centerPosition: google.maps.LatLngLiteral | google.maps.LatLng = {lat: 0 , lng: 0};
-  centerName!: string;
 
-  markerInfos: MarkerInfo[] = [];
+  subscriptionToCollectedObs!: Subscription;
 
   options: google.maps.MapOptions = { zoom: 16 };
 
@@ -64,18 +63,11 @@ export class HomeComponent implements AfterViewInit{
       private activateRoute: ActivatedRoute,
       private currentClubNameSer: ShareClubNameService
     ){
-      this.placeType = this.activateRoute.snapshot.paramMap.get('placeType') as string;
+      this.placeType = this.activateRoute.snapshot.paramMap.get('placeType') as ClubGeneralDataArraysName | undefined;
       this.placeName = this.activateRoute.snapshot.paramMap.get('placeName') as string;
 
-      console.log('placeType: ', this.placeType);
-      console.log('placeName: ', this.placeName);
-
     this.currentClubNameSer.selectedClub.subscribe({
-      next: (nextPara) => {
-        console.log(nextPara);
-        this.clubNameSelected(nextPara);
-
-      }
+      next: (selectedClubName) => { this.clubNameSelected(selectedClubName) }
     })
   }
 
@@ -90,9 +82,11 @@ export class HomeComponent implements AfterViewInit{
 
   getData(clubName: string){
 
-    this.jsonData.getClubGeneralData(clubName).subscribe({
-      next: (response) => {
-        this.clubGeneralData = response;
+    let collectedObsForClubGeneralData = this.jsonData.getClubGeneralData(clubName);
+
+    this.subscriptionToCollectedObs = collectedObsForClubGeneralData.subscribe({
+      next: (generalData) => {
+        this.clubGeneralData = generalData;
         this.mapHandling();
       }
     });
@@ -105,9 +99,9 @@ export class HomeComponent implements AfterViewInit{
 
     this.handlePlace(stadiumInfo, 'stadium');
 
-    const placesTypes : ClubGeneralDataArrays = ['hotels', 'restaurants', 'mosques'];
+    const placesTypes : ClubGeneralDataArraysName[] = ['hotels', 'restaurants', 'mosques'];
 
-    placesTypes.forEach((placeType: ClubGeneralDataArray) => {
+    placesTypes.forEach((placeType: ClubGeneralDataArraysName) => {
       const placeTypeArray = this.clubGeneralData[placeType];
 
       placeTypeArray.forEach((placeTypeInfo: PlaceBasicInfo) => {
@@ -117,7 +111,8 @@ export class HomeComponent implements AfterViewInit{
       } )
     })
 
-    this.centerPosition = this.clubGeneralData.stadium.location;
+    this.handleMapCenterPosition();
+
   }
 
   handlePlace(placeBasicInfo: PlaceBasicInfo, placeType: string){
@@ -146,21 +141,29 @@ export class HomeComponent implements AfterViewInit{
 
   }
 
+  handleMapCenterPosition(){
+    if (this.placeType && this.placeName){
+
+      this.clubGeneralData[this.placeType].forEach((place) => {
+        if (place.name == this.placeName) this.centerPosition = place.location;
+      })
+
+    }else this.centerPosition = this.clubGeneralData.stadium.location;
+  }
+
   clubNameSelected(clubName: string){
     this.hideCard();
     this.getData(clubName);
   }
 
   markerClicked(markerInfo: MarkerInfo){
-    if(stadiumNames.includes(markerInfo.placeName)) return
-    if(this.MarkerClickedInfo === markerInfo) {this.hideCard(); this.MarkerClickedInfo = null;}
+    if(stadiumNames.includes(markerInfo.placeName)) return //<-- Should Remove When We Have The Card For Stadium -->
+    if(this.MarkerClickedInfo === markerInfo) {this.hideCard()}
     else {
       this.MarkerClickedInfo = markerInfo;
       const clubName: string = markerInfo.clubName;
       const placeType: string = markerInfo.placeType;
       const placeName: string = markerInfo.placeName;
-      console.log('from home: ', placeName);
-
       this.placeCardCom.getPlaceInfo(clubName, placeType, placeName);
     }
   }
@@ -195,6 +198,10 @@ export class HomeComponent implements AfterViewInit{
   hideCard(){
     this.placeCardElement?.style.setProperty('--bottom-value', `-10000px`);
     this.MarkerClickedInfo = null;
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptionToCollectedObs.unsubscribe();
   }
 
 }

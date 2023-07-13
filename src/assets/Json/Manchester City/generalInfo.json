@@ -1,7 +1,7 @@
 {
   "name": "Manchester City",
   "stadium": {
-    "stadium_name": "Etihad Stadium",
+    "name": "Etihad Stadium",
     "location": {
       "lat": 53.48346000086,
       "lng": -2.200193052123844
@@ -9,7 +9,7 @@
   },
   "hotels": [
     {
-      "hotel_name": "Millola House",
+      "name": "Millola House",
       "location": {
         "lat": 53.48679493674559,
         "lng": -2.181460103745198
@@ -18,7 +18,7 @@
   ],
   "restaurants": [
     {
-      "restaurant_name": "The Grasshopper place",
+      "name": "The Grasshopper Place",
       "location": {
         "lat": 53.48312869699575,
         "lng": -2.188067869249042
@@ -27,7 +27,7 @@
   ],
   "mosques": [
     {
-      "mosque_name": "Manchester Central Mosque",
+      "name": "Manchester Central Mosque",
       "location": {
         "lat": 53.455875886783126,
         "lng": -2.2190294253968164

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { clubsNames } from '../common/clubsNames';
+import { clubsNames } from '../common/variables.ts/clubsNames';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
 
 
@@ -34,10 +34,10 @@ export class TopNavComponent {
 
   constructor(
     public translate: TranslateService,
-    private currentClubName: ShareClubNameService
+    private currentClubNameSer: ShareClubNameService
     ){
 
-    this.currentClubName.selectedClub.subscribe({
+    this.currentClubNameSer.selectedClub.subscribe({
       next: (nextPara) => {
         this.selectedClubName = nextPara;
         // this.clubSelected(nextPara);
@@ -51,7 +51,7 @@ export class TopNavComponent {
   clubSelected(selectedClubName: any){
     console.log("clubSelected Works", selectedClubName);
 
-    this.currentClubName.changeSelectedClub(selectedClubName);
+    this.currentClubNameSer.changeSelectedClub(selectedClubName);
 
     this.clubNameSelected.emit(selectedClubName);
   }

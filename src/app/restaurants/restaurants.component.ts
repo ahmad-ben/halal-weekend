@@ -24,10 +24,10 @@ export class RestaurantsComponent {
 
   constructor(
     public jsonData: JsonDataService,
-    private currentClubName: ShareClubNameService
+    private currentClubNameSer: ShareClubNameService
     ){
 
-      this.currentClubName.selectedClub.subscribe({
+      this.currentClubNameSer.selectedClub.subscribe({
         next: (clubName) => {
           console.log(clubName);
           this.getData(clubName);

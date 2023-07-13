@@ -7,7 +7,7 @@
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
     "details": [
-      {"iconName": "markerIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
       {"iconName": "phoneIcon", "text": "+447964451119"},
       {"iconName": "clockIcon", "text": "2PM - 11PM"}
     ],
@@ -32,8 +32,8 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
-      {"iconName": "halalFoodIcon", "text": "Halal food"},
+      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
       {"iconName": "wifiIcon", "text": "Free Wifi"},
@@ -49,7 +49,7 @@
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
     "details": [
-      {"iconName": "markerIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
       {"iconName": "phoneIcon", "text": "+447964451119"},
       {"iconName": "clockIcon", "text": "2PM - 11PM"}
     ],
@@ -74,8 +74,8 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
-      {"iconName": "halalFoodIcon", "text": "Halal food"},
+      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
       {"iconName": "wifiIcon", "text": "Free Wifi"},
@@ -91,7 +91,7 @@
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
     "details": [
-      {"iconName": "markerIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
       {"iconName": "phoneIcon", "text": "+447964451119"},
       {"iconName": "clockIcon", "text": "2PM - 11PM"}
     ],
@@ -116,8 +116,8 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
-      {"iconName": "halalFoodIcon", "text": "Halal food"},
+      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
       {"iconName": "wifiIcon", "text": "Free Wifi"},

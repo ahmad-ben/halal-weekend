@@ -25,7 +25,7 @@ export class MosqueComponent {
     private router: Router,
     private activateRoute: ActivatedRoute,
     public jsonData: JsonDataService,
-    private currentClubName: ShareClubNameService,
+    private currentClubNameSer: ShareClubNameService,
   ){
     this.activateRoute.params.subscribe({
       next: (urlParams) => {
@@ -34,7 +34,7 @@ export class MosqueComponent {
       }
     })
     const mosqueName = this.activateRoute.snapshot.paramMap.get('name') as string;
-    this.currentClubName.selectedClub.subscribe({
+    this.currentClubNameSer.selectedClub.subscribe({
       next: (clubName) => {
         console.log(clubName);
         jsonData.placeJsonData(clubName, 'mosques').subscribe({
@@ -56,7 +56,7 @@ export class MosqueComponent {
   }
 
   clubNameSelected(clubName: string){
-    this.currentClubName.changeSelectedClub(clubName);
+    this.currentClubNameSer.changeSelectedClub(clubName);
     this.router.navigate(['home']);
   }
 

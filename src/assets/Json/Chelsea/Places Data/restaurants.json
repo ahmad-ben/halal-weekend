@@ -7,7 +7,7 @@
     "city": "London",
     "overview": "A vibrant restaurant offering delicious food and a great atmosphere.",
     "details": [
-      { "iconName": "markerIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
+      { "iconName": "markerAddressWhiteIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
       { "iconName": "phoneIcon", "text": "+44 123 456 789"},
       { "iconName": "clockIcon", "text": "10AM - 11PM" }
     ],
@@ -19,8 +19,8 @@
       "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "capacityIcon", "text": "Seating for up to 100 people"},
-      {"iconName": "markerIcon", "text": "Located in the heart of Chelsea."}
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
     ],
     "phoneNumber": "+44 123 456 789",
     "website": "https://www.bluebird-restaurant.co.uk/",
@@ -31,11 +31,13 @@
     "distance": "0.3 miles from Stamford Bridge stadium",
     "description": "Bluebird Chelsea is a renowned restaurant known for its vibrant ambiance and delectable food. Located in the heart of Chelsea, it offers a diverse menu with a variety of culinary delights. Whether you're looking for a casual lunch or an elegant dinner, Bluebird Chelsea caters to all tastes. With seating for up to 100 people, it is perfect for hosting special events and gatherings. Enjoy exceptional service, a lively atmosphere, and exquisite cuisine at Bluebird Chelsea.",
     "features": [
-      { "iconName": "wifiIcon", "text": "Free Wi-Fi" },
-      { "iconName": "parkingIcon", "text": "Parking available" },
-      { "iconName": "chairIcon", "text": "Outdoor seating" },
-      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
-      { "iconName": "familyIcon", "text": "Family-friendly"  }
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
     ]
   },
 
@@ -46,7 +48,7 @@
     "city": "London",
     "overview": "A vibrant restaurant offering delicious food and a great atmosphere.",
     "details": [
-      { "iconName": "markerIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
+      { "iconName": "markerAddressWhiteIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
       { "iconName": "phoneIcon", "text": "+44 123 456 789"},
       { "iconName": "clockIcon", "text": "10AM - 11PM" }
     ],
@@ -58,8 +60,8 @@
       "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "capacityIcon", "text": "Seating for up to 100 people"},
-      {"iconName": "markerIcon", "text": "Located in the heart of Chelsea."}
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
     ],
     "phoneNumber": "+44 123 456 789",
     "website": "https://www.bluebird-restaurant.co.uk/",
@@ -70,11 +72,13 @@
     "distance": "0.3 miles from Stamford Bridge stadium",
     "description": "Bluebird Chelsea is a renowned restaurant known for its vibrant ambiance and delectable food. Located in the heart of Chelsea, it offers a diverse menu with a variety of culinary delights. Whether you're looking for a casual lunch or an elegant dinner, Bluebird Chelsea caters to all tastes. With seating for up to 100 people, it is perfect for hosting special events and gatherings. Enjoy exceptional service, a lively atmosphere, and exquisite cuisine at Bluebird Chelsea.",
     "features": [
-      { "iconName": "wifiIcon", "text": "Free Wi-Fi" },
-      { "iconName": "parkingIcon", "text": "Parking available" },
-      { "iconName": "chairIcon", "text": "Outdoor seating" },
-      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
-      { "iconName": "familyIcon", "text": "Family-friendly"  }
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
     ]
   },
 
@@ -85,7 +89,7 @@
     "city": "London",
     "overview": "A vibrant restaurant offering delicious food and a great atmosphere.",
     "details": [
-      { "iconName": "markerIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
+      { "iconName": "markerAddressWhiteIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
       { "iconName": "phoneIcon", "text": "+44 123 456 789"},
       { "iconName": "clockIcon", "text": "10AM - 11PM" }
     ],
@@ -97,8 +101,8 @@
       "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "capacityIcon", "text": "Seating for up to 100 people"},
-      {"iconName": "markerIcon", "text": "Located in the heart of Chelsea."}
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
     ],
     "phoneNumber": "+44 123 456 789",
     "website": "https://www.bluebird-restaurant.co.uk/",
@@ -109,11 +113,13 @@
     "distance": "0.3 miles from Stamford Bridge stadium",
     "description": "Bluebird Chelsea is a renowned restaurant known for its vibrant ambiance and delectable food. Located in the heart of Chelsea, it offers a diverse menu with a variety of culinary delights. Whether you're looking for a casual lunch or an elegant dinner, Bluebird Chelsea caters to all tastes. With seating for up to 100 people, it is perfect for hosting special events and gatherings. Enjoy exceptional service, a lively atmosphere, and exquisite cuisine at Bluebird Chelsea.",
     "features": [
-      { "iconName": "wifiIcon", "text": "Free Wi-Fi" },
-      { "iconName": "parkingIcon", "text": "Parking available" },
-      { "iconName": "chairIcon", "text": "Outdoor seating" },
-      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
-      { "iconName": "familyIcon", "text": "Family-friendly"  }
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
     ]
   }
 

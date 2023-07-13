@@ -25,7 +25,7 @@ export class HotelComponent {
     private router: Router,
     private activateRoute: ActivatedRoute,
     public jsonData: JsonDataService,
-    private currentClubName: ShareClubNameService,
+    private currentClubNameSer: ShareClubNameService,
   ){
     this.activateRoute.params.subscribe({
       next: (urlParams) => {
@@ -34,7 +34,7 @@ export class HotelComponent {
       }
     })
     const hotelName = this.activateRoute.snapshot.paramMap.get('name') as string;
-    this.currentClubName.selectedClub.subscribe({
+    this.currentClubNameSer.selectedClub.subscribe({
       next: (clubName) => {
         console.log(clubName);
         jsonData.placeJsonData(clubName, 'hotels').subscribe({
@@ -58,7 +58,7 @@ export class HotelComponent {
 
 
   clubNameSelected(clubName: string){
-    this.currentClubName.changeSelectedClub(clubName);
+    this.currentClubNameSer.changeSelectedClub(clubName);
     this.router.navigate(['home']);
   }
 

@@ -7,7 +7,7 @@
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
     "details": [
-      {"iconName": "markerIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
       {"iconName": "phoneIcon", "text": "+447964451119"},
       {"iconName": "clockIcon", "text": "2PM - 11PM"}
     ],
@@ -32,8 +32,8 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
-      {"iconName": "halalFoodIcon", "text": "Halal food"},
+      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
       {"iconName": "wifiIcon", "text": "Free Wifi"},
@@ -43,14 +43,17 @@
   },
 
   "Old Trafford Stadium Hotel 1": {
+
     "name": "Old Trafford Stadium Hotel",
     "type": "hotel",
     "borough": "Trafford",
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
-    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
-    "phoneNumber": "+447964451119",
-    "workTime": {"open": "2PM", "close": "11PM"  },
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "phoneIcon", "text": "+447964451119"},
+      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+    ],
     "images": [
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
@@ -58,28 +61,43 @@
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
     ],
-    "usefulInformation": {
-      "peopleNumber": "From 1 To 4",
-      "spaceBetween": "2.5 miles from the centre of Manchester."
-    },
+    "usefulInformation": [
+      {"iconName": "peopleIcon", "text": "From 1 To 4"},
+      {"iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester."}
+    ],
+    "phoneNumber": "+447964451119",
     "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
     "location" : {
       "lat": 53.461087029037145,
       "lng": -2.2877933877309387
     },
     "distance": "0.4 miles from the Stamford Bridge stadium",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "features": [
+
+      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
+
+    ]
+
   },
 
   "Old Trafford Stadium Hotel 2": {
+
     "name": "Old Trafford Stadium Hotel",
     "type": "hotel",
     "borough": "Trafford",
     "city": "Manchester",
     "overview": "A modern and comfortable hotel providing convenient accommodation.",
-    "address": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW",
-    "phoneNumber": "+447964451119",
-    "workTime": {"open": "2PM", "close": "11PM"  },
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "phoneIcon", "text": "+447964451119"},
+      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+    ],
     "images": [
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
@@ -87,17 +105,28 @@
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
       "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
     ],
-    "usefulInformation": {
-      "peopleNumber": "From 1 To 4",
-      "spaceBetween": "2.5 miles from the centre of Manchester."
-    },
+    "usefulInformation": [
+      {"iconName": "peopleIcon", "text": "From 1 To 4"},
+      {"iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester."}
+    ],
+    "phoneNumber": "+447964451119",
     "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
     "location" : {
       "lat": 53.461087029037145,
       "lng": -2.2877933877309387
     },
     "distance": "0.4 miles from the Stamford Bridge stadium",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?"
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "features": [
+
+      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
+
+    ]
 
   }
 

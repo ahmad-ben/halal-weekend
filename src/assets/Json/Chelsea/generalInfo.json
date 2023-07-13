@@ -1,7 +1,7 @@
 {
   "name": "Chelsea",
   "stadium": {
-    "stadium_name": "Stamford Bridge",
+    "name": "Stamford Bridge",
     "location": {
       "lat": 51.48166623150523,
       "lng": -0.19095919015808197
@@ -9,7 +9,7 @@
   },
   "hotels": [
     {
-      "hotel_name": "Millennium & Copthorne",
+      "name": "Millennium & Copthorne",
       "location": {
         "lat": 51.481113092995045,
         "lng": -0.18915545056722702
@@ -18,7 +18,7 @@
   ],
   "restaurants": [
     {
-      "restaurant_name": "Bluebird Chelsea",
+      "name": "Bluebird Chelsea",
       "location": {
         "lat": 51.484995247472966,
         "lng": -0.17547139642546125
@@ -27,7 +27,7 @@
   ],
   "mosques": [
     {
-      "mosque_name": "Chelsea Muslim Community Center",
+      "name": "Chelsea Muslim Community Center",
       "location": {
         "lat": 51.48123990497059,
         "lng": -0.17734285891360685

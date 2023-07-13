@@ -4,8 +4,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { arCountries, enCountries } from '../common/world\'sCountries';
 import { RealtimeShareClubNameService } from '../services/database/realtime-data.service';
+import { arCountries, enCountries } from '../common/variables.ts/world\'sCountries';
 
 @Component({
   selector: 'app-login',

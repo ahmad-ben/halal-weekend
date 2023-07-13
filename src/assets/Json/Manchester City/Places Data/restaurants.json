@@ -7,7 +7,7 @@
     "city": "Manchester",
     "overview": "A delightful restaurant offering a variety of culinary delights.",
     "details": [
-      {"iconName": "markerIcon", "text": "456 Main St, Manchester, M1 234"},
+      {"iconName": "markerAddressWhiteIcon", "text": "456 Main St, Manchester, M1 234"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "10AM - 10PM"}
     ],
@@ -19,8 +19,8 @@
       "/assets/Images/Manchester City/restaurants/The Grasshopper Place/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "capacityIcon", "text": "Seats up to 80 people"},
-      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
     ],
     "phoneNumber": "+44 123 456 789",
     "website": "https://www.grasshopperplace.com/",
@@ -31,11 +31,13 @@
     "distance": "0.2 miles from the Stamford Etihad Stadium",
     "description": "The Grasshopper Place is a charming restaurant that offers a warm and inviting atmosphere. With a diverse menu featuring a range of culinary delights, there's something for everyone. Whether you're looking for a casual lunch or a memorable dinner, The Grasshopper Place is sure to satisfy your taste buds. The restaurant's central location makes it easily accessible for both locals and visitors to Manchester. Experience exceptional service and delectable cuisine at The Grasshopper Place.",
     "features": [
-      {"iconName": "wifiIcon", "text": "Free Wi-Fi"},
-      {"iconName": "parkingIcon", "text": "Parking available"},
-      {"iconName": "chairIcon", "text": "Outdoor seating"},
-      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
-      {"iconName": "familyIcon", "text": "Family-friendly"}
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
     ]
   },
 
@@ -46,7 +48,7 @@
     "city": "Manchester",
     "overview": "A delightful restaurant offering a variety of culinary delights.",
     "details": [
-      {"iconName": "markerIcon", "text": "456 Main St, Manchester, M1 234"},
+      {"iconName": "markerAddressWhiteIcon", "text": "456 Main St, Manchester, M1 234"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "10AM - 10PM"}
     ],
@@ -58,8 +60,8 @@
       "/assets/Images/Manchester City/restaurants/The Grasshopper Place/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "capacityIcon", "text": "Seats up to 80 people"},
-      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
     ],
     "phoneNumber": "+44 123 456 789",
     "website": "https://www.grasshopperplace.com/",
@@ -70,11 +72,13 @@
     "distance": "0.2 miles from the Stamford Etihad Stadium",
     "description": "The Grasshopper Place is a charming restaurant that offers a warm and inviting atmosphere. With a diverse menu featuring a range of culinary delights, there's something for everyone. Whether you're looking for a casual lunch or a memorable dinner, The Grasshopper Place is sure to satisfy your taste buds. The restaurant's central location makes it easily accessible for both locals and visitors to Manchester. Experience exceptional service and delectable cuisine at The Grasshopper Place.",
     "features": [
-      {"iconName": "wifiIcon", "text": "Free Wi-Fi"},
-      {"iconName": "parkingIcon", "text": "Parking available"},
-      {"iconName": "chairIcon", "text": "Outdoor seating"},
-      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
-      {"iconName": "familyIcon", "text": "Family-friendly"}
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
     ]
   },
 
@@ -85,7 +89,7 @@
     "city": "Manchester",
     "overview": "A delightful restaurant offering a variety of culinary delights.",
     "details": [
-      {"iconName": "markerIcon", "text": "456 Main St, Manchester, M1 234"},
+      {"iconName": "markerAddressWhiteIcon", "text": "456 Main St, Manchester, M1 234"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "10AM - 10PM"}
     ],
@@ -97,8 +101,8 @@
       "/assets/Images/Manchester City/restaurants/The Grasshopper Place/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "capacityIcon", "text": "Seats up to 80 people"},
-      {"iconName": "markerIcon", "text": "Located in the heart of the city"}
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
     ],
     "phoneNumber": "+44 123 456 789",
     "website": "https://www.grasshopperplace.com/",
@@ -109,11 +113,13 @@
     "distance": "0.2 miles from the Stamford Etihad Stadium",
     "description": "The Grasshopper Place is a charming restaurant that offers a warm and inviting atmosphere. With a diverse menu featuring a range of culinary delights, there's something for everyone. Whether you're looking for a casual lunch or a memorable dinner, The Grasshopper Place is sure to satisfy your taste buds. The restaurant's central location makes it easily accessible for both locals and visitors to Manchester. Experience exceptional service and delectable cuisine at The Grasshopper Place.",
     "features": [
-      {"iconName": "wifiIcon", "text": "Free Wi-Fi"},
-      {"iconName": "parkingIcon", "text": "Parking available"},
-      {"iconName": "chairIcon", "text": "Outdoor seating"},
-      {"iconName": "vegetarianIcon", "text": "Vegetarian options available"},
-      {"iconName": "familyIcon", "text": "Family-friendly"}
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
     ]
   }
 

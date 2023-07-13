@@ -7,7 +7,7 @@
     "city": "Manchester",
     "overview": "A prominent mosque serving the Muslim community in Manchester.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 Mosque Street, Manchester, M1 234"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 Mosque Street, Manchester, M1 234"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "Open 24 hours"}
     ],
@@ -45,7 +45,7 @@
     "city": "Manchester",
     "overview": "A prominent mosque serving the Muslim community in Manchester.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 Mosque Street, Manchester, M1 234"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 Mosque Street, Manchester, M1 234"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "Open 24 hours"}
     ],
@@ -83,7 +83,7 @@
     "city": "Manchester",
     "overview": "A prominent mosque serving the Muslim community in Manchester.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 Mosque Street, Manchester, M1 234"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 Mosque Street, Manchester, M1 234"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "Open 24 hours"}
     ],

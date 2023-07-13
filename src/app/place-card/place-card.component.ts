@@ -30,6 +30,7 @@ export class PlaceCardComponent implements AfterViewInit {
   ngAfterViewInit(): void {}
 
   getPlaceInfo(clubName: string, placeType: string, placeName: string){
+    this.isWholeCardShown = false;
     this.jsonData.placeJsonData(clubName, placeType).subscribe({
       next: result =>{
 
@@ -44,7 +45,9 @@ export class PlaceCardComponent implements AfterViewInit {
   }
 
   getPlaceInfoHeight(){
+
     const placeCardHeaderEle = this.placeCardHeaderRef?.nativeElement;
+    console.log(placeCardHeaderEle);
     const placeCardHeaderHeight = placeCardHeaderEle?.offsetHeight;
     this.showCardHeader.emit(placeCardHeaderHeight);
   }
@@ -69,52 +72,11 @@ export class PlaceCardComponent implements AfterViewInit {
 
 
 //=========================================
-/*
+  /*
 
-I have this markup:
+    Find A Way For Calculate The Data Before The Hight Is Correct.
 
-<div class="placeCardCom padX-25 padY-30" (click)="toggleCardVisibility()">
-
-  <main>
-
-    <div *ngIf="placeInfo?.images" class="imagesContainer padB-10 marB-10 bottomBorder">
-
-      <section #imagesSectionRef class="imagesSection">
-        <img
-          *ngFor="let img of placeInfo?.images"
-          [src]="img"
-          alt="imageDescription"
-        >
-      </section>
-
-    </div>
-
-  </main>
-
-</div>
-
-With the following code :
-
-export class PlaceCardComponent implements AfterViewInit {
-  @ViewChild('imagesSectionRef') imagesSectionRef!: ElementRef<HTMLElement>;
-  imagesSectionEle!: HTMLElement;
-
-  ngAfterViewInit(): void {
-    this.imagesSectionEle = this.imagesSectionRef.nativeElement;
-    this.imagesSectionEle.scrollLeft = 0;
-  }
-
-}
-
-but i have this error :
-
-src_app_home_home_component_ts.js:2 ERROR TypeError: Cannot read properties of undefined (reading 'nativeElement')
-    at PlaceCardComponent.ngAfterViewInit (place-card.component.ts:34:51)
-
-
-why this is happening and how can i solve it
-
-*/
+  */
 //=========================================
 
 

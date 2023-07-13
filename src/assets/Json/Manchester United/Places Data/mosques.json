@@ -7,7 +7,7 @@
     "city": "Manchester",
     "overview": "A community center serving the local Muslim community.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
       {"iconName": "phoneIcon", "text": "+123456789"},
       {"iconName": "clockIcon", "text": "8AM - 10PM"}
     ],
@@ -47,7 +47,7 @@
     "city": "Manchester",
     "overview": "A community center serving the local Muslim community.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
       {"iconName": "phoneIcon", "text": "+123456789"},
       {"iconName": "clockIcon", "text": "8AM - 10PM"}
     ],
@@ -87,7 +87,7 @@
     "city": "Manchester",
     "overview": "A community center serving the local Muslim community.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
       {"iconName": "phoneIcon", "text": "+123456789"},
       {"iconName": "clockIcon", "text": "8AM - 10PM"}
     ],

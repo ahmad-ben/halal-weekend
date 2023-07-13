@@ -7,7 +7,7 @@
     "city": "London",
     "overview": "A welcoming mosque that serves the Muslim community in Chelsea.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "Open 24 hours"}
     ],
@@ -45,7 +45,7 @@
     "city": "London",
     "overview": "A welcoming mosque that serves the Muslim community in Chelsea.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "Open 24 hours"}
     ],
@@ -83,7 +83,7 @@
     "city": "London",
     "overview": "A welcoming mosque that serves the Muslim community in Chelsea.",
     "details": [
-      {"iconName": "markerIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
+      {"iconName": "markerAddressWhiteIcon", "text": "123 Church St, Chelsea, London SW3 6EB"},
       {"iconName": "phoneIcon", "text": "+44 123 456 789"},
       {"iconName": "clockIcon", "text": "Open 24 hours"}
     ],

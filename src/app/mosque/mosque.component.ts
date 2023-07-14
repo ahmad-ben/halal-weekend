@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { Subscription, map, switchMap } from 'rxjs';
+import { placeWholeInfo } from '../common/types/placeWholeInfo';
+import { placesWholeInfo } from '../common/types/placesWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
@@ -18,41 +21,38 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
 })
 export class MosqueComponent {
 
-  mosque: any;
-  showWholeDescription: boolean = false;
+  mosque?: placeWholeInfo;
+  subscriptionOneMosqueData!: Subscription;
   shortDescription?: boolean;
+  showWholeDescription: boolean = false;
+
   constructor(
     private router: Router,
     private activateRoute: ActivatedRoute,
     public jsonData: JsonDataService,
     private currentClubNameSer: ShareClubNameService,
   ){
-    this.activateRoute.params.subscribe({
-      next: (urlParams) => {
-        console.log(urlParams);
-
-      }
-    })
     const mosqueName = this.activateRoute.snapshot.paramMap.get('name') as string;
-    this.currentClubNameSer.selectedClub.subscribe({
-      next: (clubName) => {
-        console.log(clubName);
-        jsonData.placeJsonData(clubName, 'mosques').subscribe({
-          next: (nextPara) => {
-            console.log(nextPara);
-            console.log(mosqueName);
 
-            console.log(nextPara[mosqueName]);
-            this.mosque = nextPara[mosqueName];
-            const descriptionParagraph = this.mosque.description as string;
+    let obsForOneMosqueData =  this.currentClubNameSer.selectedClub.pipe(
+      switchMap((selectedClubName) =>
 
-            if(descriptionParagraph.length < 100) this.shortDescription = true;
+          jsonData.placeJsonData(selectedClubName ,'mosques').pipe(
+          map((clubMosques : placesWholeInfo) => clubMosques[mosqueName]
+          )
 
-          }
-        })
-      }
+        ))
+    )
+
+    this.subscriptionOneMosqueData = obsForOneMosqueData.subscribe(oneMosqueWholeData =>{
+      this.mosque = oneMosqueWholeData;
+      this.checkDescriptionLength(this.mosque.description.length);
     })
 
+  }
+
+  checkDescriptionLength(descriptionLength : number){
+    if(descriptionLength < 100) this.shortDescription = true;
   }
 
   clubNameSelected(clubName: string){
@@ -70,6 +70,10 @@ export class MosqueComponent {
 
   callPhoneNumber(phoneNumber: string) {
     window.location.href = "tel:" + phoneNumber;
+  }
+
+  ngOnDestroy(){
+    this.subscriptionOneMosqueData?.unsubscribe();
   }
 
 }

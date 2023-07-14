@@ -55,6 +55,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
   centerPosition: google.maps.LatLngLiteral | google.maps.LatLng = {lat: 0 , lng: 0};
 
   subscriptionToCollectedObs!: Subscription;
+  subscriptionToRecentClubName!: Subscription;
 
   options: google.maps.MapOptions = { zoom: 16 };
 
@@ -66,7 +67,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
       this.placeType = this.activateRoute.snapshot.paramMap.get('placeType') as ClubGeneralDataArraysName | undefined;
       this.placeName = this.activateRoute.snapshot.paramMap.get('placeName') as string;
 
-    this.currentClubNameSer.selectedClub.subscribe({
+    this.subscriptionToRecentClubName = this.currentClubNameSer.selectedClub.subscribe({
       next: (selectedClubName) => { this.clubNameSelected(selectedClubName) }
     })
   }
@@ -76,9 +77,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
     this.mapElement = this.map?.nativeElement;
   }
 
-  handleMapInitialized(googleMap: google.maps.Map){
-    this.googleMap = googleMap;
-  }
+  handleMapInitialized(googleMap: google.maps.Map){ this.googleMap = googleMap }
 
   getData(clubName: string){
 
@@ -202,6 +201,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
 
   ngOnDestroy(): void {
     this.subscriptionToCollectedObs.unsubscribe();
+    this.subscriptionToRecentClubName.unsubscribe();
   }
 
 }

@@ -19,8 +19,8 @@
       "/assets/Images/Chelsea/hotels/Millennium & Copthorne/5.jpg"
     ],
     "usefulInformation":[
-      { "iconName": "peopleGroup", "text": "From 1 To 4" },
-      { "iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester." }
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
+      { "iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester." }
     ],
     "phoneNumber": "+789789789789",
     "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
@@ -61,7 +61,7 @@
       "/assets/Images/Chelsea/hotels/Millennium & Copthorne/5.jpg"
     ],
     "usefulInformation": [
-      { "iconName": "peopleGroup", "text": "From 1 To 4" },
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
       { "iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester." }
     ],
     "phoneNumber": "+789789789789",
@@ -103,7 +103,7 @@
       "/assets/Images/Chelsea/hotels/Millennium & Copthorne/5.jpg"
     ],
     "usefulInformation": [
-      { "iconName": "peopleGroup", "text": "From 1 To 4" },
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
       { "iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester." }
     ],
     "phoneNumber": "+789789789789",

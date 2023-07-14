@@ -1,7 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
+import { placeWholeInfo } from '../common/types/placeWholeInfo';
+import { placesWholeInfo } from '../common/types/placesWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
@@ -18,38 +21,33 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
   templateUrl: './restaurants.component.html',
   styleUrls: ['./restaurants.component.scss']
 })
-export class RestaurantsComponent {
-  response?: string;
-  restaurants: any[] = [];
+
+export class RestaurantsComponent  implements OnDestroy {
+  restaurants: placeWholeInfo[] = [];
+  subscriptionToCollectedObs!: Subscription;
+  subscriptionToRecentClubName!: Subscription;
 
   constructor(
     public jsonData: JsonDataService,
     private currentClubNameSer: ShareClubNameService
     ){
 
-      this.currentClubNameSer.selectedClub.subscribe({
-        next: (clubName) => {
-          console.log(clubName);
-          this.getData(clubName);
-
-        }
+      this.subscriptionToRecentClubName = this.currentClubNameSer.selectedClub.subscribe({
+        next: (selectedClubName) => { this.getData(selectedClubName) }
       })
 
     }
 
-  getData(clubName: string = 'Manchester United'){
+  getData(clubName: string){
 
-    this.jsonData.placeJsonData(clubName, 'restaurants').subscribe({
-      next: (response) => {
-        this.response = response;
+    let collectedObsForRestaurantsData = this.jsonData.placeJsonData(clubName, 'restaurants');
 
-        const restaurantsName = Object.keys(response);
+    this.subscriptionToCollectedObs = collectedObsForRestaurantsData.subscribe({
+      next: (clubRestaurants : placesWholeInfo) => {
 
         this.restaurants = [];
-        restaurantsName.forEach(restaurantName => {
-          this.restaurants.push(response[restaurantName]);
 
-        })
+        this.restaurants = Object.values(clubRestaurants);
 
       }
     });
@@ -59,4 +57,11 @@ export class RestaurantsComponent {
   clubNameSelected(clubsName: string){
     this.getData(clubsName);
   }
+
+  ngOnDestroy(){
+    this.subscriptionToCollectedObs.unsubscribe();
+    this.subscriptionToRecentClubName.unsubscribe();
+  }
+
 }
+//! <!-- Make The ngOndestroy Shared Some How -->

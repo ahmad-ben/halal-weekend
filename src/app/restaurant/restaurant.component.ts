@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { Subscription, map, switchMap } from 'rxjs';
+import { placeWholeInfo } from '../common/types/placeWholeInfo';
+import { placesWholeInfo } from '../common/types/placesWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
@@ -16,43 +19,41 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
   templateUrl: './restaurant.component.html',
   styleUrls: ['./restaurant.component.scss']
 })
+
 export class RestaurantComponent {
 
-  restaurant: any;
-  showWholeDescription: boolean = false;
+  restaurant?: placeWholeInfo;
+  subscriptionOneRestaurantData!: Subscription;
   shortDescription?: boolean;
+  showWholeDescription: boolean = false;
+
   constructor(
     private router: Router,
     private activateRoute: ActivatedRoute,
     public jsonData: JsonDataService,
     private currentClubNameSer: ShareClubNameService,
   ){
-    this.activateRoute.params.subscribe({
-      next: (urlParams) => {
-        console.log(urlParams);
-
-      }
-    })
     const restaurantName = this.activateRoute.snapshot.paramMap.get('name') as string;
-    this.currentClubNameSer.selectedClub.subscribe({
-      next: (clubName) => {
-        console.log(clubName);
-        jsonData.placeJsonData(clubName, 'restaurants').subscribe({
-          next: (nextPara) => {
-            console.log(nextPara);
-            console.log(restaurantName);
 
-            console.log(nextPara[restaurantName]);
-            this.restaurant = nextPara[restaurantName];
-            const descriptionParagraph = this.restaurant.description as string;
+    let obsForOneRestaurantData =  this.currentClubNameSer.selectedClub.pipe(
+      switchMap((selectedClubName) =>
 
-            if(descriptionParagraph.length < 100) this.shortDescription = true;
+          jsonData.placeJsonData(selectedClubName ,'restaurants').pipe(
+          map((clubRestaurants : placesWholeInfo) => clubRestaurants[restaurantName]
+          )
 
-          }
-        })
-      }
+        ))
+    )
+
+    this.subscriptionOneRestaurantData = obsForOneRestaurantData.subscribe(oneRestaurantWholeData =>{
+      this.restaurant = oneRestaurantWholeData;
+      this.checkDescriptionLength(this.restaurant.description.length);
     })
 
+  }
+
+  checkDescriptionLength(descriptionLength : number){
+    if(descriptionLength < 100) this.shortDescription = true;
   }
 
   clubNameSelected(clubName: string){
@@ -70,6 +71,10 @@ export class RestaurantComponent {
 
   callPhoneNumber(phoneNumber: string) {
     window.location.href = "tel:" + phoneNumber;
+  }
+
+  ngOnDestroy(){
+    this.subscriptionOneRestaurantData?.unsubscribe();
   }
 
 }

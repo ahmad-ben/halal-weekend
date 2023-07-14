@@ -1,7 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
+import { placeWholeInfo } from '../common/types/placeWholeInfo';
+import { placesWholeInfo } from '../common/types/placesWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
@@ -18,36 +21,34 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
   templateUrl: './hotels.component.html',
   styleUrls: ['./hotels.component.scss']
 })
-export class HotelsComponent {
+
+export class HotelsComponent implements OnDestroy {
   response?: string;
-  hotels: any[] = [];
+  hotels: placeWholeInfo[] = [];
+  subscriptionToCollectedObs!: Subscription;
+  subscriptionToRecentClubName!: Subscription;
 
   constructor(
     public jsonData: JsonDataService,
     private currentClubNameSer: ShareClubNameService
   ){
-    this.currentClubNameSer.selectedClub.subscribe({
-      next: (clubName) => {
-        console.log(clubName);
-        this.getData(clubName);
 
-      }
+    this.subscriptionToRecentClubName = this.currentClubNameSer.selectedClub.subscribe({
+      next: (selectedClubName) => { this.getData(selectedClubName) }
     })
+
   }
 
   getData(clubName: string = 'Manchester United'){
 
-    this.jsonData.placeJsonData(clubName, 'hotels').subscribe({
-      next: (response) => {
-        this.response = response;
+    let collectedObsForHotelsData = this.jsonData.placeJsonData(clubName, 'hotels');
 
-        const hotelsName = Object.keys(response);
+    this.subscriptionToCollectedObs = collectedObsForHotelsData.subscribe({
+      next: (clubHotels : placesWholeInfo) => {
 
         this.hotels = [];
-        hotelsName.forEach(hotelName => {
-          this.hotels.push(response[hotelName]);
 
-        })
+        this.hotels = Object.values(clubHotels);
 
       }
     });
@@ -56,6 +57,11 @@ export class HotelsComponent {
 
   clubNameSelected(clubsName: string){
     this.getData(clubsName);
+  }
+
+  ngOnDestroy(){
+    this.subscriptionToCollectedObs.unsubscribe();
+    this.subscriptionToRecentClubName.unsubscribe();
   }
 
 }

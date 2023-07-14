@@ -1,7 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
+import { placeWholeInfo } from '../common/types/placeWholeInfo';
+import { placesWholeInfo } from '../common/types/placesWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
 import { TopNavComponent } from '../top-nav/top-nav.component';
@@ -18,38 +21,33 @@ import { TopNavComponent } from '../top-nav/top-nav.component';
   templateUrl: './mosques.component.html',
   styleUrls: ['./mosques.component.scss']
 })
-export class MosquesComponent {
+export class MosquesComponent  implements OnDestroy {
   response?: string;
-  mosques: any[] = [];
+  mosques: placeWholeInfo[] = [];
+  subscriptionToCollectedObs!: Subscription;
+  subscriptionToRecentClubName!: Subscription;
 
   constructor(
     public jsonData: JsonDataService,
     private currentClubNameSer: ShareClubNameService
     ){
 
-      this.currentClubNameSer.selectedClub.subscribe({
-        next: (clubName) => {
-          console.log(clubName);
-          this.getData(clubName);
-
-        }
+      this.subscriptionToRecentClubName = this.currentClubNameSer.selectedClub.subscribe({
+        next: (selectedClubName) => { this.getData(selectedClubName) }
       })
 
     }
 
-  getData(clubName: string = 'Manchester United'){
+  getData(clubName: string){
 
-    this.jsonData.placeJsonData(clubName, 'mosques').subscribe({
-      next: (response) => {
-        this.response = response;
+    let collectedObsForRestaurantsData = this.jsonData.placeJsonData(clubName, 'mosques');
 
-        const mosquesName = Object.keys(response);
+    this.subscriptionToCollectedObs = collectedObsForRestaurantsData.subscribe({
+      next: (clubRestaurants : placesWholeInfo) => {
 
         this.mosques = [];
-        mosquesName.forEach(mosqueName => {
-          this.mosques.push(response[mosqueName]);
 
-        })
+        this.mosques = Object.values(clubRestaurants);
 
       }
     });
@@ -59,4 +57,10 @@ export class MosquesComponent {
   clubNameSelected(clubsName: string){
     this.getData(clubsName);
   }
+
+  ngOnDestroy(){
+    this.subscriptionToCollectedObs.unsubscribe();
+    this.subscriptionToRecentClubName.unsubscribe();
+  }
+
 }

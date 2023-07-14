@@ -2,7 +2,19 @@
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <main class="restaurants fleG-1 marX-25 marT-25 marB-15">
+  <main class="restaurants fleG-1 marX-25 marB-15">
+
+    <header class="restaurantsHeader marY-20">
+
+      <span class="backArrow">
+
+        <a routerLink="/home">
+          <img src="/assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
+        </a>
+
+      </span>
+
+  </header>
 
     <div class="restaurant"*ngFor="let restaurant of restaurants" [routerLink]="['/restaurants', restaurant.name]">
 

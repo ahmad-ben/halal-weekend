@@ -2,7 +2,20 @@
 
   <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
 
-  <main class="mosques fleG-1 marX-25 marT-25 marB-15">
+  <main class="mosques fleG-1 marX-25 marB-15">
+
+    <header class="mosquesHeader marY-20">
+
+      <span class="backArrow">
+
+        <a routerLink="/home">
+          <img src="/assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
+        </a>
+
+      </span>
+
+  </header>
+
 
     <div class="mosque" *ngFor="let mosque of mosques" [routerLink]="['/mosques', mosque.name]">
 

@@ -10,12 +10,6 @@
       width="100%"
       height="100%"
     >
-      <map-marker
-        *ngFor="let markerInfo of markerInfos"
-        [position]="markerInfo.position"
-        [clickable]="true"
-        (mapClick)="markerClicked(markerInfo)"
-      ></map-marker>
     </google-map>
     <place-card
       #placeCard

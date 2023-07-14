@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { placeWholeInfo } from '../common/types/placeWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
 
 @Component({
@@ -11,10 +13,11 @@ import { JsonDataService } from '../services/json/json-data.service';
 })
 
 export class PlaceCardComponent implements AfterViewInit {
-  placeInfo!: any;
+  placeInfo?: placeWholeInfo;
   isWholeCardShown: boolean = false;
   hasHorizontalScroll: boolean = false;
   maxHorizontalScroll: boolean = false;
+  subscriptionToCollectedObs?: Subscription;
 
   @ViewChild('placeCardHeader') placeCardHeaderRef!: ElementRef<HTMLElement>;
   @ViewChild('imagesSection') imagesSection!: ElementRef<HTMLElement>;
@@ -23,33 +26,35 @@ export class PlaceCardComponent implements AfterViewInit {
   @Output('showCardHeader') showCardHeader: EventEmitter<number> = new EventEmitter() ;
   @Output('hideCard') hideCard: EventEmitter<number> = new EventEmitter() ;
 
-  constructor(
-    public jsonData: JsonDataService,
-    ){}
+  constructor( public jsonData: JsonDataService){}
 
   ngAfterViewInit(): void {}
 
   getPlaceInfo(clubName: string, placeType: string, placeName: string){
     this.isWholeCardShown = false;
-    this.jsonData.placeJsonData(clubName, placeType).subscribe({
+
+    let collectedObsForPlaceData = this.jsonData.placeJsonData(clubName, placeType);
+
+    this.subscriptionToCollectedObs = collectedObsForPlaceData.subscribe({
       next: result =>{
 
         this.placeInfo = result[placeName];
 
         this.checkImagesNumber(this.placeInfo.images);
 
-        setTimeout(() => { this.getPlaceInfoHeight(); }, 50);//! Change The Height By The Content From JSON SOLUTION.
+        setTimeout(() => { this.getPlaceInfoHeight() }, 50);//! <--! Change The Height By The Content From JSON SOLUTION.
 
       }
     });
+
   }
 
   getPlaceInfoHeight(){
 
     const placeCardHeaderEle = this.placeCardHeaderRef?.nativeElement;
-    console.log(placeCardHeaderEle);
     const placeCardHeaderHeight = placeCardHeaderEle?.offsetHeight;
     this.showCardHeader.emit(placeCardHeaderHeight);
+
   }
 
   toggleCardVisibility(){
@@ -66,6 +71,10 @@ export class PlaceCardComponent implements AfterViewInit {
   checkImagesNumber(imagesArray: any[]){
     if(imagesArray.length < 3) this.imagesSection.nativeElement.classList.add('fewImages')
     else this.imagesSection.nativeElement.classList.remove('fewImages')
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptionToCollectedObs?.unsubscribe();
   }
 
 }

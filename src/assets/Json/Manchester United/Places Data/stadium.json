@@ -1,0 +1,29 @@
+{
+
+  "Old Trafford": {
+    "name": "Old Trafford",
+    "type": "stadium",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "Iconic football stadium in Manchester, home of Manchester United with rich history.",
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "Old Trafford, Manchester, M16 0RA, United Kingdom."},
+      {"iconName": "phoneIcon", "text": "+125687609354"},
+      {"iconName": "clockIcon", "text": "9AM - 9PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/stadium/Old Trafford/1.jpg",
+      "/assets/Images/Manchester United/stadium/Old Trafford/2.jpg",
+      "/assets/Images/Manchester United/stadium/Old Trafford/3.jpg",
+      "/assets/Images/Manchester United/stadium/Old Trafford/4.jpg",
+      "/assets/Images/Manchester United/stadium/Old Trafford/5.jpg"
+    ],
+    "usefulInformation": [
+      { "iconName": "manPrayWhiteIcon", "text":  "Prayer room on site"},
+      { "iconName": "manWithCameraIcon", "text":  "Stadium tours available"}
+    ],
+    "phoneNumber": "+447964451119",
+    "website": "https://www.manutd.com/en/visit-old-trafford/food-and-drink/red-cafe"
+  }
+
+}

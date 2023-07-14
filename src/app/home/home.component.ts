@@ -5,7 +5,6 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
 import { ClubGeneralDataArraysName } from '../common/types/clubGeneralDataArrays';
-import { stadiumNames } from '../common/variables.ts/clubsNames';
 import { PlaceCardComponent } from '../place-card/place-card.component';
 import { JsonDataService } from '../services/json/json-data.service';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
@@ -147,6 +146,8 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
         if (place.name == this.placeName) this.centerPosition = place.location;
       })
 
+      this.placeType = this.placeName = undefined;
+
     }else this.centerPosition = this.clubGeneralData.stadium.location;
   }
 
@@ -156,7 +157,6 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
   }
 
   markerClicked(markerInfo: MarkerInfo){
-    if(stadiumNames.includes(markerInfo.placeName)) return //<-- Should Remove When We Have The Card For Stadium -->
     if(this.MarkerClickedInfo === markerInfo) {this.hideCard()}
     else {
       this.MarkerClickedInfo = markerInfo;

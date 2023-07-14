@@ -32,7 +32,7 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
       {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
@@ -75,7 +75,7 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
       {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
@@ -119,7 +119,7 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
     "features": [
 
-      {"iconName": "manPrayIcon", "text": "Prayer room"},
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
       {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},

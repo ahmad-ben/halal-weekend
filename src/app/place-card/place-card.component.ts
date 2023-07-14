@@ -69,8 +69,10 @@ export class PlaceCardComponent implements AfterViewInit {
   }
 
   checkImagesNumber(imagesArray: any[]){
-    if(imagesArray.length < 3) this.imagesSection.nativeElement.classList.add('fewImages')
-    else this.imagesSection.nativeElement.classList.remove('fewImages')
+    const imagesSectionEle = this.imagesSection.nativeElement;
+    imagesSectionEle.addEventListener('click', (e) => e.stopPropagation() )
+    if(imagesArray.length < 3) imagesSectionEle.classList.add('fewImages')
+    else imagesSectionEle.classList.remove('fewImages')
   }
 
   ngOnDestroy(): void {

@@ -74,7 +74,7 @@ export class HotelComponent implements OnDestroy {
   }
 
   ngOnDestroy(){
-    this.subscriptionOneHotelData?.unsubscribe();
+    this.subscriptionOneHotelData.unsubscribe();
   }
 
 }

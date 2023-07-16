@@ -16,6 +16,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class BottomNavComponent {
 
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService){}
 
 }

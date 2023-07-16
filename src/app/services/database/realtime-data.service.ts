@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { UserInfo } from 'src/app/common/types/userInfo';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RealtimeShareClubNameService {
+export class RealtimeSaveUserInfoService {
 
   constructor(private fireDatabase: AngularFireDatabase) { }
 
-  saveUserInfo(userInfo: any){
+  saveUserInfo(userInfo: UserInfo){
     this.fireDatabase.object(`/users/${userInfo.fullName}`).update({
       name: userInfo.fullName,
       country: userInfo.country,

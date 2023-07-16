@@ -22,6 +22,4 @@ export interface dividedInf {
   text: string
 }
 
-// <--! My Make Some Of Them Optional -->
-// <--! If borough and city are the same ?? -->
-// <--! In The Specific Place Component If We HAve Less Than 4 Images -->
+

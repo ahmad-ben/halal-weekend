@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-// import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +16,7 @@ export class AppComponent {
       translate.use(chosenLanguage);
       document.documentElement.setAttribute('lang', 'ar');
     } else document.documentElement.setAttribute('lang', 'en');
+
   }
 
 }

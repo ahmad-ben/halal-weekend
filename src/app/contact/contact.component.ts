@@ -16,6 +16,4 @@ import { BottomNavComponent } from '../bottom-nav/bottom-nav.component';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
-
-}
+export class ContactComponent {}

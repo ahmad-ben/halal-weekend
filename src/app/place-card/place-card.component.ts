@@ -42,7 +42,7 @@ export class PlaceCardComponent implements AfterViewInit {
 
         this.checkImagesNumber(this.placeInfo.images);
 
-        setTimeout(() => { this.getPlaceInfoHeight() }, 50);//! <--! Change The Height By The Content From JSON SOLUTION.
+        setTimeout(() => { this.getPlaceInfoHeight() }, 50);
 
       }
     });
@@ -68,7 +68,7 @@ export class PlaceCardComponent implements AfterViewInit {
     this.hideCard.emit();
   }
 
-  checkImagesNumber(imagesArray: any[]){
+  checkImagesNumber(imagesArray: string[]){
     const imagesSectionEle = this.imagesSection.nativeElement;
     imagesSectionEle.addEventListener('click', (e) => e.stopPropagation() )
     if(imagesArray.length < 3) imagesSectionEle.classList.add('fewImages')
@@ -80,15 +80,3 @@ export class PlaceCardComponent implements AfterViewInit {
   }
 
 }
-
-
-//=========================================
-  /*
-
-    Find A Way For Calculate The Data Before The Hight Is Correct.
-
-  */
-//=========================================
-
-
-

@@ -183,10 +183,6 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
 
       this.placeCardEleHeight  = this.placeCardElement.offsetHeight;
 
-      console.log(this.placeCardEleHeight);
-      console.log(headerLength);
-
-
       const length: number= -this.placeCardEleHeight + headerLength ;
       this.placeCardElement.style.setProperty('--bottom-value', `calc(${length}px + 50px)`);
 
@@ -205,6 +201,3 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
   }
 
 }
-
-
-// <--! Different Between VariableName! And VariableName? -->

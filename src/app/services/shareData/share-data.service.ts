@@ -11,10 +11,6 @@ export class ShareClubNameService {
 
   constructor() { }
 
-  changeSelectedClub(clubName: string) {
-    console.log("Share Data Message: ", clubName);
-
-    this.selectedClub.next(clubName);
-  }
+  changeSelectedClub(clubName: string) { this.selectedClub.next(clubName) }
 
 }

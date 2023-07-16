@@ -28,9 +28,9 @@ import { ShareClubNameService } from '../services/shareData/share-data.service';
 
 
 export class TopNavComponent {
-  selectedClubName?: string;
-  @Output() clubNameSelected: EventEmitter<any> = new EventEmitter();
+  selectedClubName!: string;
   clubsNames: string[] = clubsNames;
+  @Output() clubNameSelected: EventEmitter<any> = new EventEmitter();
 
   constructor(
     public translate: TranslateService,
@@ -38,21 +38,13 @@ export class TopNavComponent {
     ){
 
     this.currentClubNameSer.selectedClub.subscribe({
-      next: (nextPara) => {
-        this.selectedClubName = nextPara;
-        // this.clubSelected(nextPara);
-
-      }
+      next: (nextPara) => { this.selectedClubName = nextPara}
     })
-
 
   }
 
-  clubSelected(selectedClubName: any){
-    console.log("clubSelected Works", selectedClubName);
-
+  clubSelected(selectedClubName: string){
     this.currentClubNameSer.changeSelectedClub(selectedClubName);
-
     this.clubNameSelected.emit(selectedClubName);
   }
 

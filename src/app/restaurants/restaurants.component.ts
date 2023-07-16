@@ -64,4 +64,4 @@ export class RestaurantsComponent  implements OnDestroy {
   }
 
 }
-//! <!-- Make The ngOndestroy Shared Some How -->
+

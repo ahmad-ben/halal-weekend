@@ -4,13 +4,6 @@ export const clubsNames: string[] = [
   'Manchester United',
 ];
 
-export const stadiumNames: string[] = [
-  'Old Trafford',
-  'Stamford Bridge'
-];
-
-
-
 //   'Arsenal',
 //   'Chelsea',
 //   'Liverpool',

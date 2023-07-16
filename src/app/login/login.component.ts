@@ -4,8 +4,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { RealtimeShareClubNameService } from '../services/database/realtime-data.service';
 import { arCountries, enCountries } from '../common/variables.ts/world\'sCountries';
+import { RealtimeSaveUserInfoService } from '../services/database/realtime-data.service';
 
 @Component({
   selector: 'app-login',
@@ -27,7 +27,7 @@ export class LoginComponent {
   countries?: string[];
 
   constructor(
-    private realtimeShareClubNameService: RealtimeShareClubNameService,
+    private realtimeSaveUserInfoService: RealtimeSaveUserInfoService,
     private route: Router,
     translate: TranslateService
   ) {
@@ -48,7 +48,7 @@ export class LoginComponent {
   save(formInfo: FormGroup){
     if (formInfo.invalid) this.invalidFrom = true
     else  this.invalidFrom = false;
-    this.realtimeShareClubNameService.saveUserInfo(formInfo.value);
+    this.realtimeSaveUserInfoService.saveUserInfo(formInfo.value);
     this.route.navigateByUrl('/home');
   }
 

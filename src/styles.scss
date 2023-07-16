@@ -43,17 +43,16 @@ body{
   background-color: var(--gray-100);
   transition: var(--transition-duration);
   .loginCom{
-    // ! SIMPLIFY THIS 1
     input, select, button{
       font-size: 1.4rem;
     }
   }
   .topNavCom{
-    // ! SIMPLIFY THIS 1
     select{
       font-size: 1.4rem;
     }
   }
+
 }
 
 *{

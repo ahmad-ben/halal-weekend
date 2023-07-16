@@ -37,15 +37,19 @@ interface MarkerInfo {
 export class HomeComponent implements AfterViewInit, OnDestroy{
   @ViewChild('placeCard', { read: ElementRef }) placeCardRef!: ElementRef<HTMLElement>;
   @ViewChild('placeCard') placeCardCom!: PlaceCardComponent;
+  @ViewChild('map') map!: ElementRef<HTMLDivElement>;
+
   placeCardElement!: HTMLElement;
   placeCardEleHeight!: number;
+
+  placeCardHeaderEle!: HTMLElement;
+  placeCardHeaderHeight!: number;
 
   placeType: ClubGeneralDataArraysName | undefined;
   placeName: string | undefined;
 
   googleMap!: google.maps.Map;
 
-  @ViewChild('map') map!: ElementRef<HTMLDivElement>;
   mapElement!: HTMLElement;
 
   clubGeneralData!: ClubGeneralData;
@@ -63,8 +67,8 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
       private activateRoute: ActivatedRoute,
       private currentClubNameSer: ShareClubNameService
     ){
-      this.placeType = this.activateRoute.snapshot.paramMap.get('placeType') as ClubGeneralDataArraysName | undefined;
-      this.placeName = this.activateRoute.snapshot.paramMap.get('placeName') as string;
+    this.placeType = this.activateRoute.snapshot.paramMap.get('placeType') as ClubGeneralDataArraysName | undefined;
+    this.placeName = this.activateRoute.snapshot.paramMap.get('placeName') as string;
 
     this.subscriptionToRecentClubName = this.currentClubNameSer.selectedClub.subscribe({
       next: (selectedClubName) => { this.clubNameSelected(selectedClubName) }
@@ -73,10 +77,21 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
 
   ngAfterViewInit(): void {
     this.placeCardElement = this.placeCardRef?.nativeElement;
+    this.placeCardHeaderEle = this.placeCardCom.placeCardHeaderRef.nativeElement;
     this.mapElement = this.map?.nativeElement;
   }
 
   handleMapInitialized(googleMap: google.maps.Map){ this.googleMap = googleMap }
+
+  clubNameSelected(clubName: string){
+    this.hideCard();
+    this.getData(clubName);
+  }
+
+  hideCard(){
+    this.placeCardElement?.style.setProperty('--bottom-value', `-10000px`);
+    this.MarkerClickedInfo = null;
+  }
 
   getData(clubName: string){
 
@@ -151,11 +166,6 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
     }else this.centerPosition = this.clubGeneralData.stadium.location;
   }
 
-  clubNameSelected(clubName: string){
-    this.hideCard();
-    this.getData(clubName);
-  }
-
   markerClicked(markerInfo: MarkerInfo){
     if(this.MarkerClickedInfo === markerInfo) {this.hideCard()}
     else {
@@ -174,25 +184,24 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
     this.mapElement.style.setProperty('--position-value', `static`);
   }
 
-  showCardHeader(headerLength: number){
+  showCardHeader(){
 
     this.mapElement.style.setProperty('--position-value', `relative`);
+
     this.placeCardElement.style.setProperty('--MaxHeight-value', 'none');
 
     setTimeout(() => {
 
       this.placeCardEleHeight  = this.placeCardElement.offsetHeight;
 
-      const length: number= -this.placeCardEleHeight + headerLength ;
+      this.placeCardHeaderHeight = this.placeCardHeaderEle.offsetHeight;
+
+      const length: number= -this.placeCardEleHeight + this.placeCardHeaderHeight ;
+
       this.placeCardElement.style.setProperty('--bottom-value', `calc(${length}px + 50px)`);
 
-    }, 50);
+    }, 100);
 
-  }
-
-  hideCard(){
-    this.placeCardElement?.style.setProperty('--bottom-value', `-10000px`);
-    this.MarkerClickedInfo = null;
   }
 
   ngOnDestroy(): void {

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { placeWholeInfo } from '../common/types/placeWholeInfo';
 import { JsonDataService } from '../services/json/json-data.service';
@@ -12,11 +12,9 @@ import { JsonDataService } from '../services/json/json-data.service';
   styleUrls: ['./place-card.component.scss']
 })
 
-export class PlaceCardComponent implements AfterViewInit {
+export class PlaceCardComponent {
   placeInfo?: placeWholeInfo;
   isWholeCardShown: boolean = false;
-  hasHorizontalScroll: boolean = false;
-  maxHorizontalScroll: boolean = false;
   subscriptionToCollectedObs?: Subscription;
 
   @ViewChild('placeCardHeader') placeCardHeaderRef!: ElementRef<HTMLElement>;
@@ -27,8 +25,6 @@ export class PlaceCardComponent implements AfterViewInit {
   @Output('hideCard') hideCard: EventEmitter<number> = new EventEmitter() ;
 
   constructor( public jsonData: JsonDataService){}
-
-  ngAfterViewInit(): void {}
 
   getPlaceInfo(clubName: string, placeType: string, placeName: string){
     this.isWholeCardShown = false;
@@ -42,25 +38,19 @@ export class PlaceCardComponent implements AfterViewInit {
 
         this.checkImagesNumber(this.placeInfo.images);
 
-        setTimeout(() => { this.getPlaceInfoHeight() }, 50);
+        this.showCardHeader.emit();
 
       }
     });
 
   }
 
-  getPlaceInfoHeight(){
-
-    const placeCardHeaderEle = this.placeCardHeaderRef?.nativeElement;
-    const placeCardHeaderHeight = placeCardHeaderEle?.offsetHeight;
-    this.showCardHeader.emit(placeCardHeaderHeight);
-
-  }
-
   toggleCardVisibility(){
+
     this.isWholeCardShown = !this.isWholeCardShown;
     if(this.isWholeCardShown) this.showCard.emit();
-    else this.getPlaceInfoHeight()
+    else this.showCardHeader.emit();
+
   }
 
   hideComponent(event: Event){

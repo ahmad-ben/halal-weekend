@@ -2,13 +2,9 @@ import { CommonModule, JsonPipe } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { clubsNames } from '../common/variables.ts/clubsNames';
 import { ShareClubNameService } from '../services/shareData/share-data.service';
-
-
-
 
 
 @Component({
@@ -17,7 +13,6 @@ import { ShareClubNameService } from '../services/shareData/share-data.service';
   imports: [
     CommonModule,
     RouterModule,
-    NgbTypeaheadModule,
     FormsModule,
     JsonPipe,
     TranslateModule

@@ -3,6 +3,7 @@
   a{
     color: var(--gray-450);
     font-size: 1.2rem;
+    &:hover{ color: var(--gray-450); }
     img{
       width: 24px;
       height: 24px;

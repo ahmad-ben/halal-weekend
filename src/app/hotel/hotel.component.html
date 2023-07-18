@@ -9,7 +9,7 @@
         <span class="backArrow">
 
           <a routerLink="/home/hotels">
-            <img src="/assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
+            <img src="/assets/icons/backArrowIcon.svg" class="img20Px" alt="backArrowIcon">
           </a>
 
         </span>
@@ -52,7 +52,7 @@
         <div class="features-group">
 
           <div *ngFor="let feature of hotel?.features" class="feature marB-10">
-            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="icon marR-15">
+            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="img20Px marR-15">
             <span class="smallText"> {{ feature.text }} </span>
           </div>
 
@@ -74,11 +74,11 @@
       class="d-f jusC-c aliI-c marX-25"
     >
       <button *ngIf="hotel?.phoneNumber" class="call padY-10 borR-5 fleG-1" (click)="callPhoneNumber(hotel!.phoneNumber)">
-        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
+        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="img20Px">
         Call
       </button>
       <button *ngIf="hotel?.website" class="website padY-10 borR-5 fleG-1" (click)="redirectToWebsite(hotel!.website)">
-        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
+        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="img20Px">
         Website
       </button>
     </footer>
@@ -110,6 +110,8 @@
 <!-- ! Make Sure About The Correct Paths : Remove ../../ -->
 <!-- ! Remove The text-danger abd text-white -->
 <!--
+
+  IMPO
 
 
         <button class="call padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="callPhoneNumber(hotel?.phoneNumber)">

@@ -9,7 +9,7 @@
         <span class="backArrow">
 
           <a routerLink="/home/restaurants">
-            <img src="/assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
+            <img src="/assets/icons/backArrowIcon.svg" class="img20Px" alt="backArrowIcon">
           </a>
 
         </span>
@@ -52,7 +52,7 @@
         <div class="features-group">
 
           <div *ngFor="let feature of restaurant?.features" class="feature marB-10">
-            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="icon marR-15">
+            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="img20Px marR-15">
             <span class="smallText"> {{ feature.text }} </span>
           </div>
 
@@ -74,11 +74,11 @@
       class="d-f jusC-c aliI-c marX-25"
     >
       <button *ngIf="restaurant?.phoneNumber" class="call padY-10 borR-5 fleG-1" (click)="callPhoneNumber(restaurant!.phoneNumber)">
-        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
+        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="img20Px">
         Call
       </button>
       <button *ngIf="restaurant?.website" class="website padY-10 borR-5 fleG-1" (click)="redirectToWebsite(restaurant!.website)">
-        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
+        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="img20Px">
         Website
       </button>
     </footer>

@@ -42,7 +42,6 @@
           (click)="showWholeDescription = !showWholeDescription"
         >{{ showWholeDescription ? 'Read Less' : 'Read More' }}</button>
 
-
       </div>
 
       <div *ngIf="hotel?.features" class="features marX-25 padT-15 padB-10 marB-16">
@@ -86,45 +85,3 @@
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ! Make Sure About The Correct Paths : Remove ../../ -->
-<!-- ! Remove The text-danger abd text-white -->
-<!--
-
-  IMPO
-
-
-        <button class="call padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="callPhoneNumber(hotel?.phoneNumber)">
-          <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
-          <span class="">Call</span>
-        </button>
-        <button class="website padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="redirectToWebsite(hotel?.website)">
-          <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
-          <span class="">Website</span>
-        </button>
-
-
- -->
-
-<!-- ! Add The *ngIf Logic In Data Fetch Place -->
-<!-- ! Should The Variable For Store Json Data Be With ? Or ! -->

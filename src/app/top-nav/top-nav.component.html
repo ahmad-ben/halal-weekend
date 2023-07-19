@@ -15,7 +15,12 @@
       routerLink="/home/hotels" routerLinkActive #hotelsRoute='routerLinkActive'
       [routerLinkActiveOptions]="{ exact: true }"
     >
-      <img [src]=" hotelsRoute.isActive ? '/assets/icons/hotelFillIcon.svg' : '/assets/icons/hotelIcon.svg'" alt="hotelIcon">
+      <img
+        [src]=" hotelsRoute.isActive ?
+          '/assets/icons/hotelFillIcon.svg' :
+          '/assets/icons/hotelIcon.svg'" alt="hotelIcon"
+          class="img24Px"
+        >
       <span>{{ "HOTELS" | translate }}</span>
     </a>
 
@@ -24,7 +29,12 @@
       routerLink="/home/restaurants" routerLinkActive #restaurantsRoute='routerLinkActive'
       [routerLinkActiveOptions]="{ exact: true }"
     >
-      <img [src]=" restaurantsRoute.isActive ? '/assets/icons/restaurantFillIcon.svg' : '/assets/icons/restaurantIcon.svg'" alt="restaurantIcon">
+      <img
+        [src]=" restaurantsRoute.isActive ?
+          '/assets/icons/restaurantFillIcon.svg' :
+          '/assets/icons/restaurantIcon.svg'" alt="restaurantIcon"
+          class="img24Px"
+        >
       <span>{{ "RESTAURANTS" | translate }}</span>
     </a>
 
@@ -33,7 +43,12 @@
       routerLink="/home/mosques" routerLinkActive #mosquesRoute='routerLinkActive'
       [routerLinkActiveOptions]="{ exact: true }"
     >
-      <img [src]=" mosquesRoute.isActive ? '/assets/icons/mosqueFillIcon.svg' : '/assets/icons/mosqueIcon.svg'" alt="mosqueIcon">
+      <img
+        [src]=" mosquesRoute.isActive ?
+          '/assets/icons/mosqueFillIcon.svg' :
+          '/assets/icons/mosqueIcon.svg'" alt="mosqueIcon"
+          class="img24Px"
+        >
       <span>{{ "MOSQUES" | translate }}</span>
     </a>
 

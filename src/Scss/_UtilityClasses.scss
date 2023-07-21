@@ -67,6 +67,10 @@
   padding-top: 25px;
 }
 
+.padL-20{
+  padding-left: 20px;
+}
+
 .padB-10{
   padding-bottom: 10px;
 }
@@ -282,3 +286,18 @@
   height: 24px;
 }
 
+//=> Position
+
+.p-a{
+  position: absolute;
+}
+
+.p-r{
+  position: relative;
+}
+
+//=> Display
+
+.d-b{
+  display: block;
+}

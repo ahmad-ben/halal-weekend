@@ -18,13 +18,13 @@ const routes: Routes = [
   { path: 'home', loadComponent: () => import('./home/home.component').then(module => module.HomeComponent)},
 
   {path: 'hotels/:name', component: HotelComponent},
-  {path: 'home/hotels', component: HotelsComponent},
+  {path: 'hotels', component: HotelsComponent},
 
   {path: 'restaurants/:name', component: RestaurantComponent},
-  {path: 'home/restaurants', component: RestaurantsComponent},
+  {path: 'restaurants', component: RestaurantsComponent},
 
   {path: 'mosques/:name', component: MosqueComponent},
-  {path: 'home/mosques', component: MosquesComponent},
+  {path: 'mosques', component: MosquesComponent},
 
   { path: 'home/:placeType/:placeName', loadComponent: () => import('./home/home.component').then(module => module.HomeComponent)},
 

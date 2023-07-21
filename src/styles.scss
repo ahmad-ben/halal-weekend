@@ -52,7 +52,11 @@ body{
       font-size: 1.4rem;
     }
   }
-
+  top-nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--gray-100);
+  }
 }
 
 *{

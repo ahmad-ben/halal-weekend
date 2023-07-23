@@ -1,5 +1,12 @@
 <div class="placeCardCom padX-25 padY-30" (click)="toggleCardVisibility()">
 
+  <img
+    [src]="isWholeCardShown ?
+      '/assets/icons/downArrowIcon.svg':
+      '/assets/icons/upArrowIcon.svg'"
+    alt="upArrow" class="upArrow"
+  >
+
   <header #placeCardHeader class="placeIntro marB-20">
 
     <div class="placeName d-f aliI-c jusC-c">

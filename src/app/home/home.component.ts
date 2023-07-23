@@ -53,6 +53,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
   mapElement!: HTMLElement;
 
   clubGeneralData!: ClubGeneralData;
+  markersArray: google.maps.Marker[] = [];
   MarkerClickedInfo: MarkerInfo | null = null;
 
   centerPosition: google.maps.LatLngLiteral | google.maps.LatLng = {lat: 0 , lng: 0};
@@ -100,6 +101,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
     this.subscriptionToCollectedObs = collectedObsForClubGeneralData.subscribe({
       next: (generalData) => {
         this.clubGeneralData = generalData;
+        this.deleteCurrentMarkers();
         this.mapHandling();
       }
     });
@@ -142,6 +144,8 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
         scaledSize: new google.maps.Size(40, 40)
       }
     });
+
+    this.markersArray.push(customMarker);
 
     const placeMarkerInfo: MarkerInfo = {
       placeType,
@@ -190,8 +194,6 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
 
     this.placeCardElement.style.setProperty('--MaxHeight-value', 'none');
 
-    setTimeout(() => {
-
       this.placeCardEleHeight  = this.placeCardElement.offsetHeight;
 
       this.placeCardHeaderHeight = this.placeCardHeaderEle.offsetHeight;
@@ -200,9 +202,9 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
 
       this.placeCardElement.style.setProperty('--bottom-value', `calc(${length}px + 50px)`);
 
-    }, 100);
-
   }
+
+  deleteCurrentMarkers() {this.markersArray.forEach(marker => marker.setMap(null))}
 
   ngOnDestroy(): void {
     this.subscriptionToCollectedObs.unsubscribe();

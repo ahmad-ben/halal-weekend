@@ -39,7 +39,7 @@ export class PlaceCardComponent {
 
         this.checkImagesNumber(this.placeInfo.images);
 
-        this.showCardHeader.emit();
+        setTimeout(() => { this.showCardHeader.emit() }, 100);
 
       }
     });

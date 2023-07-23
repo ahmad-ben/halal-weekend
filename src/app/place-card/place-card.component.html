@@ -6,7 +6,7 @@
 
       <h1 class="fleG-1"> {{ placeInfo?.name }} </h1>
 
-      <img class="headerIcon" src="/assets/icons/shareCircleIcon.svg" alt="shareCircleIcon" (click)="hideComponent($event)">
+      <img class="headerIcon" *ngIf="this.isNavigatorShareSupported" src="/assets/icons/shareCircleIcon.svg" alt="shareCircleIcon" (click)="shareUrl($event)">
 
       <img class="headerIcon" src="/assets/icons/closeCircleIcon.svg" alt="closeCircleIcon" (click)="hideComponent($event)">
 

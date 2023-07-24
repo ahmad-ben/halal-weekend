@@ -276,6 +276,18 @@
   letter-spacing: .8px;
 }
 
+.leftCenterPositionRef{
+  position: relative;
+  .leftCenterPosition{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    translate: 0% -50%;
+    img{ display: block; }
+  }
+  h6{ line-height: 20px; }
+}
+
 .img20Px{
   width: 20px;
   height: 20px;

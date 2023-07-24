@@ -141,7 +141,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy{
       map: this.googleMap,
       icon: {
         url: `/assets/icons/${placeType}CustomMarkerIcon.svg`,
-        scaledSize: new google.maps.Size(40, 40)
+        scaledSize: new google.maps.Size(30, 40)
       }
     });
 

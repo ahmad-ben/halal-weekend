@@ -1,12 +1,19 @@
 <div class="placeCardCom padX-25 padY-30" (click)="toggleCardVisibility()">
 
+  <img
+    [src]="isWholeCardShown ?
+      '/assets/icons/downArrowIcon.svg':
+      '/assets/icons/upArrowIcon.svg'"
+    alt="upArrow" class="upArrow"
+  >
+
   <header #placeCardHeader class="placeIntro marB-20">
 
     <div class="placeName d-f aliI-c jusC-c">
 
-      <h1 class="fleG-1 texA-c"> {{ placeInfo?.name }} </h1>
+      <h1 class="fleG-1"> {{ placeInfo?.name }} </h1>
 
-      <img class="headerIcon" src="/assets/icons/shareCircleIcon.svg" alt="shareCircleIcon" (click)="hideComponent($event)">
+      <img class="headerIcon" *ngIf="this.isNavigatorShareSupported" src="/assets/icons/shareCircleIcon.svg" alt="shareCircleIcon" (click)="shareUrl($event)">
 
       <img class="headerIcon" src="/assets/icons/closeCircleIcon.svg" alt="closeCircleIcon" (click)="hideComponent($event)">
 
@@ -56,8 +63,6 @@
 
     </div>
 
-
-
     <div *ngIf="placeInfo?.usefulInformation" class="usefulInfo marB-15">
 
       <h6 class="marB-15">Useful Information</h6>
@@ -98,21 +103,3 @@
   </footer>
 
 </div>
-
-
-<!-- ! The Logic of the image Slider if they are more than 4 or 5... -->
-<!-- ! Hoe Exactly The Line Height Center Te Stuff And How It Work En General -->
-<!-- ! Hotels, Restaurants and Mosques the last big margin -->
-
-
-
-
-
-<!-- ------------------------------------------ -->
-
-
-
-
-
-
-

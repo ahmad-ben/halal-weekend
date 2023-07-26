@@ -4,12 +4,12 @@
 
   <div class="hotel fleG-1">
 
-    <header class="hotelHeader d-f aliI-c marX-25 marY-25 texA-c">
+    <header class="hotelHeader d-f aliI-c marX-25 marY-25 texA-c leftCenterPositionRef padX-20">
 
-        <span class="backArrow">
+        <span class="backArrow leftCenterPosition">
 
-          <a routerLink="/home/hotels">
-            <img src="/assets/icons/backArrowIcon.svg" class="backIcon" alt="backArrowIcon">
+          <a routerLink="/hotels">
+            <img src="/assets/icons/backArrowIcon.svg" class="img20Px" alt="backArrowIcon">
           </a>
 
         </span>
@@ -42,7 +42,6 @@
           (click)="showWholeDescription = !showWholeDescription"
         >{{ showWholeDescription ? 'Read Less' : 'Read More' }}</button>
 
-
       </div>
 
       <div *ngIf="hotel?.features" class="features marX-25 padT-15 padB-10 marB-16">
@@ -52,7 +51,7 @@
         <div class="features-group">
 
           <div *ngFor="let feature of hotel?.features" class="feature marB-10">
-            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="icon marR-15">
+            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="img20Px marR-15">
             <span class="smallText"> {{ feature.text }} </span>
           </div>
 
@@ -74,11 +73,11 @@
       class="d-f jusC-c aliI-c marX-25"
     >
       <button *ngIf="hotel?.phoneNumber" class="call padY-10 borR-5 fleG-1" (click)="callPhoneNumber(hotel!.phoneNumber)">
-        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
+        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="img20Px">
         Call
       </button>
       <button *ngIf="hotel?.website" class="website padY-10 borR-5 fleG-1" (click)="redirectToWebsite(hotel!.website)">
-        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
+        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="img20Px">
         Website
       </button>
     </footer>
@@ -86,43 +85,3 @@
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ! Make Sure About The Correct Paths : Remove ../../ -->
-<!-- ! Remove The text-danger abd text-white -->
-<!--
-
-
-        <button class="call padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="callPhoneNumber(hotel?.phoneNumber)">
-          <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="icon">
-          <span class="">Call</span>
-        </button>
-        <button class="website padY-10 borR-5 fleG-1 d-f aliI-c jusC-c" (click)="redirectToWebsite(hotel?.website)">
-          <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="icon">
-          <span class="">Website</span>
-        </button>
-
-
- -->
-
-<!-- ! Add The *ngIf Logic In Data Fetch Place -->
-<!-- ! Should The Variable For Store Json Data Be With ? Or ! -->

@@ -27,10 +27,6 @@
     .features{
       border-top: 1px solid var(--gray-500);
       border-bottom: 1px solid var(--gray-500);
-      img.icon{
-        width: 20px;
-        height: 20px;
-      }
     }
     .viewInMap{
       .imageHolder{
@@ -55,8 +51,6 @@
       position: relative;
       img{
         position: absolute;
-        width: 20px;
-        height: 20px;
         top: 50%;
         left: 10px;
         translate: 0 -50%;

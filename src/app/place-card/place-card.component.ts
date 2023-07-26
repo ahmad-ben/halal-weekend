@@ -15,6 +15,7 @@ import { JsonDataService } from '../services/json/json-data.service';
 export class PlaceCardComponent {
   placeInfo?: placeWholeInfo;
   isWholeCardShown: boolean = false;
+  isNavigatorShareSupported!: boolean;
   subscriptionToCollectedObs?: Subscription;
 
   @ViewChild('placeCardHeader') placeCardHeaderRef!: ElementRef<HTMLElement>;
@@ -24,7 +25,7 @@ export class PlaceCardComponent {
   @Output('showCardHeader') showCardHeader: EventEmitter<number> = new EventEmitter() ;
   @Output('hideCard') hideCard: EventEmitter<number> = new EventEmitter() ;
 
-  constructor( public jsonData: JsonDataService){}
+  constructor( public jsonData: JsonDataService) { this.isNavigatorShareSupported = 'share' in navigator }
 
   getPlaceInfo(clubName: string, placeType: string, placeName: string){
     this.isWholeCardShown = false;
@@ -38,7 +39,7 @@ export class PlaceCardComponent {
 
         this.checkImagesNumber(this.placeInfo.images);
 
-        this.showCardHeader.emit();
+        setTimeout(() => { this.showCardHeader.emit() }, 100);
 
       }
     });
@@ -63,6 +64,11 @@ export class PlaceCardComponent {
     imagesSectionEle.addEventListener('click', (e) => e.stopPropagation() )
     if(imagesArray.length < 3) imagesSectionEle.classList.add('fewImages')
     else imagesSectionEle.classList.remove('fewImages')
+  }
+
+  shareUrl(event: Event){
+    event.stopPropagation();
+    navigator.share({ url: 'http://localhost:4200/home' })
   }
 
   ngOnDestroy(): void {

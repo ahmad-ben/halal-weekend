@@ -30,7 +30,7 @@
     "EMAIL REQUIRED": "The email is required",
     "FEMALE": "Female",
     "FILL ALL": "Please fill all the inputs properly",
-    "FN PLACE HOLDER": "Ahmed Ben Chakhter",
+    "FN PLACE HOLDER": "Joe Bloggs",
     "FULL NAME": "Full name",
     "FULL NAME REQUIRED": "The name is required",
     "GENDER": "Gender",
@@ -54,6 +54,5 @@
     "PARAGRAPH": "Welcome to Halal Weekend! We're here to assist you. If you have any questions, need support, or have feedback, please don't hesitate to contact us.",
     "EMAIL": "Email: halalweekends@gmail.com"
   },
-  "MOSQUES": "Mosques",
-  "PROFILE": "Profile"
+  "MOSQUES": "Mosques"
 }

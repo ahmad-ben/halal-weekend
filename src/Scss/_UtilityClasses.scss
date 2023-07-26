@@ -67,6 +67,10 @@
   padding-top: 25px;
 }
 
+.padL-20{
+  padding-left: 20px;
+}
+
 .padB-10{
   padding-bottom: 10px;
 }
@@ -270,4 +274,42 @@
 .verySmallText{
   font-size: 1rem;
   letter-spacing: .8px;
+}
+
+.leftCenterPositionRef{
+  position: relative;
+  .leftCenterPosition{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    translate: 0% -50%;
+    img{ display: block; }
+  }
+  h6{ line-height: 20px; }
+}
+
+.img20Px{
+  width: 20px;
+  height: 20px;
+}
+
+.img24Px{
+  width: 24px;
+  height: 24px;
+}
+
+//=> Position
+
+.p-a{
+  position: absolute;
+}
+
+.p-r{
+  position: relative;
+}
+
+//=> Display
+
+.d-b{
+  display: block;
 }

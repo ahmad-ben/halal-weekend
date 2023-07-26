@@ -52,7 +52,11 @@ body{
       font-size: 1.4rem;
     }
   }
-
+  top-nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--gray-100);
+  }
 }
 
 *{
@@ -106,17 +110,13 @@ ul{
 a{
   color: black;
   text-decoration: none;
+  &:hover{ color: black; }
 }
 
 button{
   border: none;
   outline: none;
   letter-spacing: 1px;
-}
-
-img.backIcon{
-  width: 20px;
-  height: 20px;
 }
 
 /* Arabic Styling */

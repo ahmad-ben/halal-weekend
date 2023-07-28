@@ -21,10 +21,10 @@
     <div class="restaurant"*ngFor="let restaurant of restaurants" [routerLink]="['/restaurants', restaurant.name]">
 
       <img [src]="restaurant.images[0]" alt="restaurant image" class="mainPicture marB-15">
-      <h6> {{ restaurant.name }} </h6>
+      <h5> {{ restaurant.name }} </h5>
       <p>
-        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-10">
-        <span class="smallText"> {{ restaurant.distance }} </span>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-5">
+        <span class="distance"> {{ restaurant.distance }} </span>
       </p>
 
     </div>

@@ -21,10 +21,10 @@
     <div class="hotel" *ngFor="let hotel of hotels" [routerLink]="['/hotels', hotel.name]">
 
       <img [src]="hotel.images[0]" alt="hotel image" class="mainPicture marB-15">
-      <h6> {{ hotel.name }} </h6>
+      <h5> {{ hotel.name }} </h5>
       <p>
-        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-10">
-        <span class="smallText"> {{ hotel.distance }} </span>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-5">
+        <span class="distance"> {{ hotel.distance }} </span>
       </p>
 
     </div>

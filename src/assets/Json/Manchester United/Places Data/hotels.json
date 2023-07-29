@@ -1,5 +1,4 @@
 {
-
   "Old Trafford Stadium Hotel": {
     "name": "Old Trafford Stadium Hotel",
     "type": "hotel",
@@ -28,10 +27,50 @@
       "lat": 53.461087029037145,
       "lng": -2.2877933877309387
     },
-    "distance": "0.4 miles from the Stamford Bridge stadium",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "distance": "0.2 miles from manchester utd football stadium",
+    "description": "Old Trafford Stadium Hotel offers rooms in the historical The Trafford pub in Manchester, attractively situated 100 yards from Old Trafford Stadium and 500 yards from the Emirates Cricket Stadium. Private parking can also be arranged on match days on request for a surcharge.The equipped rooms feature large screen TVs, WiFi, mini-fridges and kettles. Victoria Warehouse is 1,050 yards from the hotel, and the city centre is 2 miles away. The nearest airport is Manchester Airport, 9.3 miles from the property.",
     "features": [
-
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
+    ]
+  },
+  "Premier Inn Manchester Old Trafford hotel": {
+    "name": "Premier Inn Manchester Old Trafford hotel",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "Within sight of Old Trafford football stadium, this modern no-frills hotel is also a 15-minute walk from Salford Quays for shopping.",
+    "details": [
+      {
+        "iconName": "markerAddressWhiteIcon", 
+        "text": "Sir Alex Ferguson Way, Trafford Park, Stretford, Manchester M17 1WS"
+      },
+      {"iconName": "phoneIcon", "text": "03333211315"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/hotels/Premier Inn Manchester Old Trafford hotel/1.png",
+      "/assets/Images/Manchester United/hotels/Premier Inn Manchester Old Trafford hotel/2.png",
+      "/assets/Images/Manchester United/hotels/Premier Inn Manchester Old Trafford hotel/3.png",
+      "/assets/Images/Manchester United/hotels/Premier Inn Manchester Old Trafford hotel/4.png",
+      "/assets/Images/Manchester United/hotels/Premier Inn Manchester Old Trafford hotel/5.png"
+    ],
+    "usefulInformation":[
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
+      { "iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester." }
+    ],
+    "phoneNumber": "03333211315",
+    "website": "https://www.premierinn.com/gb/en/hotels/england/greater-manchester/manchester/manchester-old-trafford.html?cid=GLBC_MANOLD",
+    "location": {
+      "lat": 53.4654914,
+      "lng": -2.2891208
+    },
+    "distance": "0.6 miles from Old Trafford football stadium",
+    "description": "Within sight of Old Trafford football stadium, this modern no-frills hotel is also a 15-minute walk from Salford Quays for shopping. Rooms range from singles to family rooms with 2 pull-out beds, where kids aged 15 and under eat and stay free with paying adults. In-room amenities feature free WiFi, pillow-top mattresses and en suite bathrooms with showers, as well as tea and coffeemaking facilities, TVs and desks.There's an on-site Thyme restaurant/bar and free parking. Breakfast (an extra cost) includes all-you-can-eat and light choices. There are also 8 meeting rooms.",
+    "features": [
       {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
       {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
@@ -41,82 +80,75 @@
 
     ]
   },
-
-  "Old Trafford Stadium Hotel 1": {
-
-    "name": "Old Trafford Stadium Hotel",
+  "Hotel Football, a Tribute Portfolio Hotel": {
+    "name": "Hotel Football, a Tribute Portfolio Hotel",
     "type": "hotel",
     "borough": "Trafford",
     "city": "Manchester",
-    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "overview": "From football fanatics to foodies, business and leisure travellers - Hotel Football Old Trafford offers something for everyone.",
     "details": [
-      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
-      {"iconName": "phoneIcon", "text": "+447964451119"},
-      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+      {"iconName": "markerAddressWhiteIcon", "text": "Old Trafford, 99 Sir Matt Busby Way, Manchester M16 0SZ"},
+      {"iconName": "phoneIcon", "text": "+441617510430"},
+      {"iconName": "clockIcon", "text": "3PM - 12PM"}
     ],
     "images": [
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/3.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
+      "/assets/Images/Manchester United/hotels/Hotel Football/1.jpg",
+      "/assets/Images/Manchester United/hotels/Hotel Football/2.jpg",
+      "/assets/Images/Manchester United/hotels/Hotel Football/3.jpg",
+      "/assets/Images/Manchester United/hotels/Hotel Football/4.jpg",
+      "/assets/Images/Manchester United/hotels/Hotel Football/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "peopleIcon", "text": "From 1 To 4"},
+      {"iconName": "peopleIcon", "text": "From 1 To 8"},
       {"iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester."}
     ],
-    "phoneNumber": "+447964451119",
-    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "phoneNumber": "+441617510430",
+    "website": "https://www.marriott.com/en-us/hotels/mantx-hotel-football-old-trafford-a-tribute-portfolio-hotel/overview/",
     "location" : {
-      "lat": 53.461087029037145,
-      "lng": -2.2877933877309387
+      "lat": 53.463772,
+      "lng": -2.2927853
     },
-    "distance": "0.4 miles from the Stamford Bridge stadium",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "distance": "0.1 miles from Old Trafford football stadium",
+    "description": "The 133-room hotel has unmatched views over Old Trafford, and offers an industry leading medley of award-winning service, food, unique bedrooms and event and meeting spaces, designed to take your experience to the next level. Hotel Football is the brainchild of the Class of 92 - a world renowned group of players including Gary Neville, Ryan Giggs, Paul Scholes, Nicky Butt and Philip Neville, united together not only by football and friendship but heritage, quality, ambition and an unrelenting desire to win. Since launching in 2015, Hotel Football has become one of the most talked about hotels in Manchester. In addition to the rooms, it features the restaurant 'Cafe Football', as well as a number of events spaces (many of which transform into hospitality areas on Manchester United matchdays), including the rooftop football pitch 'Heaven' and the Old Trafford Supporters Club.",
     "features": [
-
       {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
       {"iconName": "halalIcon", "text": "Halal food"},
       {"iconName": "breastIcon", "text": "Breast feeding room"},
       {"iconName": "lostAndFindIcon", "text": "Lost and found"},
       {"iconName": "wifiIcon", "text": "Free Wifi"},
       {"iconName": "parkingIcon", "text": "Free Parking"}
-
     ]
-
   },
+  "Hilton Garden Inn Manchester": {
 
-  "Old Trafford Stadium Hotel 2": {
-
-    "name": "Old Trafford Stadium Hotel",
+    "name": "Hilton Garden Inn Manchester",
     "type": "hotel",
     "borough": "Trafford",
     "city": "Manchester",
-    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "overview": "Set within Emirates Old Trafford cricket ground, this relaxed hotel is a minute's walk from the nearest tram stop and a 12-minute walk from Old Trafford football stadium, home of Manchester United..",
     "details": [
-      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
-      {"iconName": "phoneIcon", "text": "+447964451119"},
-      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+      {"iconName": "markerAddressWhiteIcon", "text": "Talbot Rd, Old Trafford, Stretford, Manchester M16 0PX, United Kingdom"},
+      {"iconName": "phoneIcon", "text": "+441618687100"},
+      {"iconName": "clockIcon", "text": "3PM - 12PM"}
     ],
     "images": [
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/1.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/2.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/3.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/4.jpg",
-      "/assets/Images/Manchester United/hotels/Old Trafford Stadium Hotel/5.jpg"
+      "/assets/Images/Manchester United/hotels/Hilton Garden Inn Manchester/1.jpg",
+      "/assets/Images/Manchester United/hotels/Hilton Garden Inn Manchester/2.jpg",
+      "/assets/Images/Manchester United/hotels/Hilton Garden Inn Manchester/3.jpg",
+      "/assets/Images/Manchester United/hotels/Hilton Garden Inn Manchester/4.jpg",
+      "/assets/Images/Manchester United/hotels/Hilton Garden Inn Manchester/5.jpg"
     ],
     "usefulInformation": [
-      {"iconName": "peopleIcon", "text": "From 1 To 4"},
-      {"iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester."}
+      {"iconName": "peopleIcon", "text": "From 1 To 4"}
     ],
-    "phoneNumber": "+447964451119",
-    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "phoneNumber": "+441618687100",
+    "website": "https://www.hilton.com/en/hotels/manesgi-hilton-garden-inn-manchester-emirates-old-trafford/?SEO_id=GMB-EMEA-GI-MANESGI",
     "location" : {
-      "lat": 53.461087029037145,
-      "lng": -2.2877933877309387
+      "lat": 53.4573488,
+      "lng": -2.2857343
     },
-    "distance": "0.4 miles from the Stamford Bridge stadium",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "distance": "0.5 miles from Old Trafford football stadium",
+    "description": "Set within Emirates Old Trafford cricket ground, this relaxed hotel is a minute's walk from the nearest tram stop and a 12-minute walk from Old Trafford football stadium, home of Manchester United. Straightforward rooms come with free Wi-Fi, flat-screen TVs and minifridges, plus tea and coffeemaking facilities; some offer sofabeds. Upgraded rooms add balconies and/or cricket ground views. Room service is available.Parking is offered. Other amenities include a bright restaurant/bar, a fitness room and a 24-hour convenience store.",
     "features": [
 
       {"iconName": "manPrayBlackIcon", "text": "Prayer room"},

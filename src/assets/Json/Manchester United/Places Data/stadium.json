@@ -7,7 +7,7 @@
     "city": "Manchester",
     "overview": "Iconic football stadium in Manchester, home of Manchester United with rich history.",
     "details": [
-      {"iconName": "markerAddressWhiteIcon", "text": "Old Trafford, Manchester, M16 0RA, United Kingdom."},
+      {"iconName": "markerAddressWhiteIcon", "text": "Old Trafford, Manchester, M16 0RA."},
       {"iconName": "phoneIcon", "text": "+125687609354"},
       {"iconName": "clockIcon", "text": "9AM - 9PM"}
     ],

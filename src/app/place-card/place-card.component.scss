@@ -3,35 +3,39 @@
   color: white;
   border-radius: 5px 0px;
   position: relative;
-  .bottomBorder{ border-bottom: 1px solid white; }
+  .bottomBorder{
+    border-bottom: 1px solid hsla(255, 100%, 100%, 0.5);
+  }
   .internalCardShape{
     background-color: var(--gray-700);
     padding: 5px 10px;
     border-radius: 5px;
   }
   .placeCardPara{
-    line-height: 18px;
+    display: flex;
+    align-items: center;
     .placeCardIcon{
       width: 18px;
       height: 18px;
     }
   }
-  .upArrow{
+  .arrowsUpDown{
     position: absolute;
-    top: 5px;
+    top: 0px;
     left: 50%;
     translate: -50% 0%;
-    width: 18px;
-    height: 18px;
+    width: 37px;
+    height: 37px;
   }
   header.placeIntro{
     .placeName{
       gap: 5px;
       .headerIcon{
-        width: 27px;
-        height: 27px;
+        width: 35px;
+        height: 35px;
       }
     }
+    .smallText{ text-transform: capitalize }
   }
   main{
     section {

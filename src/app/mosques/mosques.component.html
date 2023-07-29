@@ -22,10 +22,10 @@
     <div class="mosque" *ngFor="let mosque of mosques" [routerLink]="['/mosques', mosque.name]">
 
       <img [src]="mosque.images[0]" alt="mosque image" class="mainPicture marB-15">
-      <h6> {{ mosque.name }} </h6>
+      <h5> {{ mosque.name }} </h5>
       <p>
-        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-10">
-        <span class="smallText"> {{ mosque.distance }} </span>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-5">
+        <span class="distance"> {{ mosque.distance }} </span>
       </p>
 
     </div>

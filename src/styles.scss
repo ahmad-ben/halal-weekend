@@ -56,6 +56,7 @@ body{
     position: sticky;
     top: 0;
     background-color: var(--gray-100);
+    z-index: 100;
   }
 }
 
@@ -93,7 +94,9 @@ h4{
 
 h5{
   font-size: 1.6rem;
+  letter-spacing: 1.1px;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 h6{

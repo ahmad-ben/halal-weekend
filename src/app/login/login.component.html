@@ -97,7 +97,7 @@
 
       <div class="marT-40">
         <button
-          class="btn width-100 roundedShape ctaBtn continue languageEffect"
+          class="btn width-100 roundedShape ctaBtn continue languageEffect marB-10"
           type="submit"
           [class.validForm]="reactiveForm.valid"
           (click)="save(reactiveForm)"
@@ -120,7 +120,7 @@
           type="button"
           (click)="skip()"
         >
-          <span>{{ 'LOGIN_COM.SKIP' | translate }}</span>
+          <span class="smallText">{{ 'LOGIN_COM.SKIP' | translate }}</span>
           <img src="/assets/icons/skipArrowsIcon.svg" alt="skipArrowsIcon" class="skipArrowsIcon">
         </button>
       </div>

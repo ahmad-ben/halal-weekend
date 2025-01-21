@@ -1,0 +1,36 @@
+<div class="hotelsComponent d-f fleD-c">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <main class="hotels fleG-1 marX-25 marB-15">
+
+    <header class="hotelsHeader marY-20 d-f aliI-c texA-c leftCenterPositionRef padX-20">
+
+      <span class="backArrow leftCenterPosition">
+
+        <a routerLink="/home">
+          <img src="/assets/icons/backArrowIcon.svg" class="img20Px" alt="backArrowIcon">
+        </a>
+
+      </span>
+
+      <h6 class="fw-bold fleG-1 marB-0">Hotels</h6>
+
+  </header>
+
+    <div class="hotel" *ngFor="let hotel of hotels" [routerLink]="['/hotels', hotel.name]">
+
+      <img [src]="hotel.images[0]" alt="hotel image" class="mainPicture marB-15">
+      <h5> {{ hotel.name }} </h5>
+      <p>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-5">
+        <span class="distance"> {{ hotel.distance }} </span>
+      </p>
+
+    </div>
+
+  </main>
+
+  <bottom-nav></bottom-nav>
+
+</div>

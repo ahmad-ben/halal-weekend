@@ -1,0 +1,18 @@
+.moreComponent{
+  img{
+    &.forwardIcon{
+      width: 14px;
+      height: 14px;
+    }
+  }
+  header{
+    position: relative;
+    border-bottom: 1px solid var(--gray-490);
+    img{
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      translate : 0% -50%;
+    }
+  }
+}

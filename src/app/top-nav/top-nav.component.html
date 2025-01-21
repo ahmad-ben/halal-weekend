@@ -1,0 +1,54 @@
+<div class="topNavCom padX-20 padY-10">
+
+  <div class="searchBar padX-5 marB-16">
+
+    <select class="form-select roundedShape" id="clubNames" [(ngModel)]="selectedClubName" (change)="clubSelected(selectedClubName)">
+      <option *ngFor="let clubName of clubsNames" [value]="clubName"> {{ clubName }} </option>
+    </select>
+
+  </div>
+
+  <div class="places d-f aliI-c jusC-spaB">
+
+    <a
+      class="hotels d-f fleD-c aliI-c"
+      routerLink="/hotels" routerLinkActive #hotelsRoute='routerLinkActive'
+    >
+      <img
+        [src]=" hotelsRoute.isActive ?
+          '/assets/icons/hotelFillIcon.svg' :
+          '/assets/icons/hotelIcon.svg'" alt="hotelIcon"
+          class="img24Px"
+        >
+      <span>{{ "HOTELS" | translate }}</span>
+    </a>
+
+    <a
+      class="Restaurants d-f fleD-c aliI-c"
+      routerLink="/restaurants" routerLinkActive #restaurantsRoute='routerLinkActive'
+    >
+      <img
+        [src]=" restaurantsRoute.isActive ?
+          '/assets/icons/restaurantFillIcon.svg' :
+          '/assets/icons/restaurantIcon.svg'" alt="restaurantIcon"
+          class="img24Px"
+        >
+      <span>{{ "RESTAURANTS" | translate }}</span>
+    </a>
+
+    <a
+      class="Mosques d-f fleD-c aliI-c"
+      routerLink="/mosques" routerLinkActive #mosquesRoute='routerLinkActive'
+    >
+      <img
+        [src]=" mosquesRoute.isActive ?
+          '/assets/icons/mosqueFillIcon.svg' :
+          '/assets/icons/mosqueIcon.svg'" alt="mosqueIcon"
+          class="img24Px"
+        >
+      <span>{{ "MOSQUES" | translate }}</span>
+    </a>
+
+  </div>
+
+</div>

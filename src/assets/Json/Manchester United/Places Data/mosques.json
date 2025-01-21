@@ -1,0 +1,124 @@
+{
+
+  "Islamic Cultural Centre Manchester": {
+    "name": "Islamic Cultural Centre Manchester",
+    "type": "mosque",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A community center serving the local Muslim community.",
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
+      {"iconName": "phoneIcon", "text": "+123456789"},
+      {"iconName": "clockIcon", "text": "8AM - 10PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/1.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/2.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/3.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/4.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Capacity for 200 worshippers"},
+      {"iconName": "markerIcon", "text": "Located in the heart of Manchester"}
+    ],
+    "phoneNumber": "+123456789",
+    "website": "https://www.iccmanchester.com/",
+    "location" : {
+      "lat": 53.454328886825564,
+      "lng": -2.248430481909624
+    },
+    "distance": "1 mile from Manchester city center",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna sed urna posuere, quis auctor turpis consectetur. Nullam pharetra tristique ante in eleifend. Curabitur sagittis, velit nec cursus aliquet, mi est viverra felis, et finibus risus justo id risus.",
+    "features": [
+      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community programs"},
+      {"iconName": "educationIcon", "text": "Educational classes"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "accessibilityIcon", "text": "Accessible for people with disabilities"}
+    ]
+  },
+
+  "Islamic Cultural Centre Manchester 1": {
+    "name": "Islamic Cultural Centre Manchester",
+    "type": "mosque",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A community center serving the local Muslim community.",
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
+      {"iconName": "phoneIcon", "text": "+123456789"},
+      {"iconName": "clockIcon", "text": "8AM - 10PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/1.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/2.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/3.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/4.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Capacity for 200 worshippers"},
+      {"iconName": "markerIcon", "text": "Located in the heart of Manchester"}
+    ],
+    "phoneNumber": "+123456789",
+    "website": "https://www.iccmanchester.com/",
+    "location" : {
+      "lat": 53.454328886825564,
+      "lng": -2.248430481909624
+    },
+    "distance": "1 mile from Manchester city center",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna sed urna posuere, quis auctor turpis consectetur. Nullam pharetra tristique ante in eleifend. Curabitur sagittis, velit nec cursus aliquet, mi est viverra felis, et finibus risus justo id risus.",
+    "features": [
+      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community programs"},
+      {"iconName": "educationIcon", "text": "Educational classes"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "accessibilityIcon", "text": "Accessible for people with disabilities"}
+    ]
+  },
+
+  "Islamic Cultural Centre Manchester 2": {
+    "name": "Islamic Cultural Centre Manchester",
+    "type": "mosque",
+    "borough": "Manchester",
+    "city": "Manchester",
+    "overview": "A community center serving the local Muslim community.",
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "123 ABC Street, Manchester, M1 2XY"},
+      {"iconName": "phoneIcon", "text": "+123456789"},
+      {"iconName": "clockIcon", "text": "8AM - 10PM"}
+    ],
+    "images": [
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/1.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/2.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/3.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/4.jpg",
+      "/assets/Images/Manchester United/mosques/Islamic Cultural Centre Manchester/5.jpg"
+    ],
+    "usefulInformation": [
+      {"iconName": "capacityIcon", "text": "Capacity for 200 worshippers"},
+      {"iconName": "markerIcon", "text": "Located in the heart of Manchester"}
+    ],
+    "phoneNumber": "+123456789",
+    "website": "https://www.iccmanchester.com/",
+    "location" : {
+      "lat": 53.454328886825564,
+      "lng": -2.248430481909624
+    },
+    "distance": "1 mile from Manchester city center",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna sed urna posuere, quis auctor turpis consectetur. Nullam pharetra tristique ante in eleifend. Curabitur sagittis, velit nec cursus aliquet, mi est viverra felis, et finibus risus justo id risus.",
+    "features": [
+      {"iconName": "mosquePrayIcon", "text": "Prayer room"},
+      {"iconName": "libraryIcon", "text": "Library"},
+      {"iconName": "communityIcon", "text": "Community programs"},
+      {"iconName": "educationIcon", "text": "Educational classes"},
+      {"iconName": "parkingIcon", "text": "Parking available"},
+      {"iconName": "accessibilityIcon", "text": "Accessible for people with disabilities"}
+    ]
+  }
+
+
+}

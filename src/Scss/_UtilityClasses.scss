@@ -1,0 +1,323 @@
+//=> Padding:
+.p-10{padding: 10px}
+
+.padX-5{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.padX-10{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.padX-15{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.padX-20{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.padX-25{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.padY-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.padY-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.padY-16{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.padY-25{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.padY-30{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.padT-10{
+  padding-top: 10px;
+}
+
+.padT-15{
+  padding-top: 15px;
+}
+
+.padT-20{
+  padding-top: 20px;
+}
+
+.padT-25{
+  padding-top: 25px;
+}
+
+.padL-20{
+  padding-left: 20px;
+}
+
+.padB-10{
+  padding-bottom: 10px;
+}
+
+.padB-20{
+  padding-bottom: 20px;
+}
+
+.padB-25{
+  padding-bottom: 25px;
+}
+
+//=> Border:
+
+.bor-none{border: none;}
+
+.borR-5{border-radius: 5px;}
+
+.borR-10{border-radius: 10px;}
+
+//=> Margin:
+.m-20{
+  margin: 20px;
+}
+
+.m-25{
+  margin: 25px;
+}
+
+.marX-16{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.marX-20{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.marX-25{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.marY-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.marY-10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.marY-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.marY-25{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.marY-30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.marT-10{
+  margin-top: 10px;
+}
+
+.marT-16{
+  margin-top: 16px;
+}
+
+.marT-20{
+  margin-top: 20px;
+}
+
+.marT-25{
+  margin-top: 25px;
+}
+
+.marT-40{
+  margin-top: 40px;
+}
+
+.marR-5{
+  margin-right: 5px;
+}
+
+.marR-10{
+  margin-right: 10px;
+}
+
+.marR-12{
+  margin-right: 12px;
+}
+
+.marR-16{
+  margin-right: 16px;
+}
+
+.marB-0{
+  margin-bottom: 0px;
+}
+
+.marB-10{
+  margin-bottom: 10px;
+}
+
+.marB-15{
+  margin-bottom: 15px;
+}
+
+.marB-16{
+  margin-bottom: 16px;
+}
+
+.marB-20{
+  margin-bottom: 20px;
+}
+
+.marB-25{
+  margin-bottom: 25px;
+}
+
+.marB-30{
+  margin-bottom: 30px;
+}
+
+.marB-40{
+  margin-bottom: 40px;
+}
+
+.marL-16{
+  margin-left: 16px;
+}
+
+//=> Width:
+
+.width-100{
+  width: 100%;
+}
+
+//=> Height:
+
+.minH-100dvh{
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+//=> Flex:
+.d-f{
+  display: flex;
+}
+
+.fleD-c{
+  flex-direction: column;
+}
+
+.aliI-c{
+  align-items: center;
+}
+
+.aliI-fleS{
+  align-items: flex-start;
+}
+
+.jusC-c{
+  justify-content: center;
+}
+
+.jusC-spaB{
+  justify-content: space-between;
+}
+
+.jusC-spaA{
+  justify-content: space-around;
+}
+
+.fleG-1{
+  flex-grow: 1;
+}
+
+//=> Text
+
+.texA-c{
+  text-align: center;
+}
+
+.texD-n{
+  text-decoration: none;
+}
+
+//=> Usage Classes:
+.roundedShape{
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.smallText{
+  font-size: 1.2rem;
+  letter-spacing: .9px;
+}
+
+.verySmallText{
+  font-size: 1rem;
+  letter-spacing: .8px;
+}
+
+.leftCenterPositionRef{
+  position: relative;
+  .leftCenterPosition{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    translate: 0% -50%;
+    img{ display: block; }
+  }
+  h6{ line-height: 20px; }
+}
+
+.img20Px{
+  width: 20px;
+  height: 20px;
+}
+
+.img24Px{
+  width: 24px;
+  height: 24px;
+}
+
+//=> Position
+
+.p-a{
+  position: absolute;
+}
+
+.p-r{
+  position: relative;
+}
+
+//=> Display
+
+.d-b{
+  display: block;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Manchester United",
+  "stadium": {
+    "name": "Old Trafford",
+    "location" : {
+      "lat": 53.46305570634357,
+      "lng": -2.2913186423124645
+    }
+  },
+  "hotels" : [
+    {
+      "name": "Old Trafford Stadium Hotel",
+      "location" : {
+        "lat": 53.461087029037145,
+        "lng": -2.2877933877309387
+      }
+    }
+  ],
+  "restaurants" : [
+    {
+      "name": "Manchester United Red Cafe",
+      "location" : {
+        "lat": 53.46368208419214,
+        "lng": -2.291700698256055
+      }
+    }
+  ],
+  "mosques" : [
+    {
+      "name": "Islamic Cultural Centre Manchester",
+      "location" : {
+        "lat": 53.454328886825564,
+        "lng": -2.248430481909624
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<div class="mosquesComponent d-f fleD-c">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <main class="mosques fleG-1 marX-25 marB-15">
+
+    <header class="mosquesHeader marY-20 d-f aliI-c texA-c leftCenterPositionRef padX-20">
+
+      <span class="backArrow leftCenterPosition">
+
+        <a routerLink="/home">
+          <img src="/assets/icons/backArrowIcon.svg" class="img20Px" alt="backArrowIcon">
+        </a>
+
+      </span>
+
+      <h6 class="fw-bold fleG-1 marB-0">Mosques</h6>
+
+  </header>
+
+
+    <div class="mosque" *ngFor="let mosque of mosques" [routerLink]="['/mosques', mosque.name]">
+
+      <img [src]="mosque.images[0]" alt="mosque image" class="mainPicture marB-15">
+      <h5> {{ mosque.name }} </h5>
+      <p>
+        <img src="/assets/icons/markerIcon.svg" alt="markerIcon" class="icon marR-5">
+        <span class="distance"> {{ mosque.distance }} </span>
+      </p>
+
+    </div>
+
+  </main>
+
+  <bottom-nav></bottom-nav>
+
+</div>
+
+

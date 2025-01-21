@@ -1,0 +1,9 @@
+.topNavCom{
+  border-bottom: 1px solid var(--gray-490);
+  a{
+    color: var(--gray-450);
+    font-size: 1.2rem;
+    &:hover{ color: var(--gray-450); }
+  }
+}
+

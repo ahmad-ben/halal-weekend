@@ -1,0 +1,23 @@
+.hotelsComponent{
+  main{
+    .hotel{
+      .mainPicture{
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 5px;
+      }
+      p{
+        font-size: 1.3rem;
+        display: flex;
+        img.icon{
+          width: 14px;
+          height: 14px;
+        }
+      }
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}

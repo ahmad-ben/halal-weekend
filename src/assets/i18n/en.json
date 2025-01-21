@@ -1,0 +1,58 @@
+{
+  "ABOUT_COM": {
+    "ABOUT": "About",
+    "END": "Join the Halal Weekend family and let us be your trusted companion on your football travel adventure. Together, we'll create lasting memories while you cheer on your team in the UK.",
+    "FIRST_OFFER_DESCRIPTION": "Stay up to date with schedules, ticket availability, and stadium details for all major football games in the UK.",
+    "FIRST_OFFER_TITLE": "1. Match Information:",
+    "FIRST_PARA": "Welcome to Halal Weekend, your go-to application for families traveling from abroad and also families living in the UK to watch live Premier league games. We're here to make your trip seamless, unforgettable and halal!",
+    "OFFERS_INTRO": "Here's what we offer:",
+    "SECOND_OFFER_DESCRIPTION": "Access hotel options, transportation recommendations, and local services to ensure a comfortable stay.",
+    "SECOND_OFFER_TITLE": "2. Travel Planning Tools:",
+    "SECOND_PARA": "At Halal Weekend, we understand the excitement and challenges of supporting your favorite football team in a foreign country. Our dedicated team of travel enthusiasts and local experts is committed to providing you with the essential information and resources you need.",
+    "THIRD_OFFER_DESCRIPTION": "Discover the best attractions, restaurants, masaajid and entertainment near the stadiums to make the most of your time in the UK.",
+    "THIRD_OFFER_TITLE": "3. Destination Guides:"
+  },
+  "RESTAURANTS": "Restaurants",
+  "HOME": "Home",
+  "HOTELS": "Hotels",
+  "LANGUAGES_COM": {
+    "ARABIC": "Arabic",
+    "CHOOSE YOUR LANGUAGE": "Choose your language",
+    "ENGLISH": "English",
+    "LANGUAGES": "Languages"
+  },
+  "LOGIN_COM": {
+    "CONTINUE": "Continue",
+    "COUNTRY": "Country/Region",
+    "COUNTRY REQUIRED": "The country is required",
+    "EMAIL": "Email",
+    "EMAIL INVALID": "Please enter a valid email",
+    "EMAIL REQUIRED": "The email is required",
+    "FEMALE": "Female",
+    "FILL ALL": "Please fill all the inputs properly",
+    "FN PLACE HOLDER": "Joe Bloggs",
+    "FULL NAME": "Full name",
+    "FULL NAME REQUIRED": "The name is required",
+    "GENDER": "Gender",
+    "GENDER REQUIRED": "The gender is required",
+    "INTERESTS": "interests",
+    "INTERESTS REQUIRED": "The interests is required",
+    "MALE": "Male",
+    "PLEASE SELECT": "Please select",
+    "SKIP": "skip this step"
+  },
+  "MORE": "More",
+  "MORE_COM": {
+    "ABOUT US": "About us",
+    "CONTACT US": "Contact us",
+    "LANGUAGES": "Languages",
+    "MORE": "More",
+    "RATE THE APP": "Rate the app",
+    "SHARE THE APP": "Share the app"
+  },
+  "CONTACT_COM": {
+    "PARAGRAPH": "Welcome to Halal Weekend! We're here to assist you. If you have any questions, need support, or have feedback, please don't hesitate to contact us.",
+    "EMAIL": "Email: halalweekends@gmail.com"
+  },
+  "MOSQUES": "Mosques"
+}

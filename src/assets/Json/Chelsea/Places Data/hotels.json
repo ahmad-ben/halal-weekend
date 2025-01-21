@@ -1,0 +1,129 @@
+{
+  "Premier Inn Manchester Old Trafford hotel": {
+    "name": "Premier Inn Manchester Old Trafford hotel",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "Within sight of Old Trafford football stadium, this modern no-frills hotel is also a 15-minute walk from Salford Quays for shopping.",
+    "details": [
+      {
+        "iconName": "markerAddressWhiteIcon", 
+        "text": "Sir Alex Ferguson Way, Trafford Park, Stretford, Manchester M17 1WS"
+      },
+      {"iconName": "phoneIcon", "text": "03333211315"}
+    ],
+    "images": [
+      "/assets/Images/Chelsea/hotels/Premier Inn Manchester Old Trafford hotel/1.png",
+      "/assets/Images/Chelsea/hotels/Premier Inn Manchester Old Trafford hotel/2.png",
+      "/assets/Images/Chelsea/hotels/Premier Inn Manchester Old Trafford hotel/3.png",
+      "/assets/Images/Chelsea/hotels/Premier Inn Manchester Old Trafford hotel/4.png",
+      "/assets/Images/Chelsea/hotels/Premier Inn Manchester Old Trafford hotel/5.png"
+    ],
+    "usefulInformation":[
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
+      { "iconName": "markerIcon", "text": "2.5 miles from the centre of Manchester." }
+    ],
+    "phoneNumber": "03333211315",
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat": 53.4654914,
+      "lng": -2.2891208
+    },
+    "distance": "1.8 miles from the Stamford Bridge stadium",
+    "description": "Within sight of Old Trafford football stadium, this modern no-frills hotel is also a 15-minute walk from Salford Quays for shopping. Rooms range from singles to family rooms with 2 pull-out beds, where kids aged 15 and under eat and stay free with paying adults. In-room amenities feature free WiFi, pillow-top mattresses and en suite bathrooms with showers, as well as tea and coffeemaking facilities, TVs and desks.There's an on-site Thyme restaurant/bar and free parking. Breakfast (an extra cost) includes all-you-can-eat and light choices. There are also 8 meeting rooms.",
+    "features": [
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
+
+    ]
+  },
+
+  "Millennium & Copthorne 1": {
+    "name": "Millennium & Copthorne",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "phoneIcon", "text": "+789789789789"},
+      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+    ],
+    "images": [
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/1.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/2.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/3.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/4.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/5.jpg"
+    ],
+    "usefulInformation": [
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
+      { "iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester." }
+    ],
+    "phoneNumber": "+789789789789",
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat":  51.481113092995045,
+      "lng": -0.18915545056722702
+    },
+    "distance": "1.8 miles from the Stamford Bridge stadium",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "features": [
+
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
+
+    ]
+  },
+
+  "Millennium & Copthorne 2": {
+    "name": "Millennium & Copthorne",
+    "type": "hotel",
+    "borough": "Trafford",
+    "city": "Manchester",
+    "overview": "A modern and comfortable hotel providing convenient accommodation.",
+    "details": [
+      {"iconName": "markerAddressWhiteIcon", "text": "699 Chester Rd, Old Trafford, Stretford, Manchester M16 0GW"},
+      {"iconName": "phoneIcon", "text": "+789789789789"},
+      {"iconName": "clockIcon", "text": "2PM - 11PM"}
+    ],
+    "images": [
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/1.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/2.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/3.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/4.jpg",
+      "/assets/Images/Chelsea/hotels/Millennium & Copthorne/5.jpg"
+    ],
+    "usefulInformation": [
+      { "iconName": "peopleGroupIcon", "text": "From 1 To 4" },
+      { "iconName": "spaceBetween", "text": "2.5 miles from the centre of Manchester." }
+    ],
+    "phoneNumber": "+789789789789",
+    "website": "https://www.shouthotels.com/old-trafford-stadium-hotel-manchester/",
+    "location" : {
+      "lat":  51.481113092995045,
+      "lng": -0.18915545056722702
+    },
+    "distance": "1.8 miles from the Stamford Bridge stadium",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit illo accusamus tempora dolores dignissimos praesentium officiis quis magnam consequatur? Voluptatum eligendi laudantium animi porro ab dolorem recusandae fuga dignissimos aliquam?",
+    "features": [
+
+      {"iconName": "manPrayBlackIcon", "text": "Prayer room"},
+      {"iconName": "halalIcon", "text": "Halal food"},
+      {"iconName": "breastIcon", "text": "Breast feeding room"},
+      {"iconName": "lostAndFindIcon", "text": "Lost and found"},
+      {"iconName": "wifiIcon", "text": "Free Wifi"},
+      {"iconName": "parkingIcon", "text": "Free Parking"}
+
+    ]
+  }
+
+}

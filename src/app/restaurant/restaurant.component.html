@@ -1,0 +1,89 @@
+<div class="restaurantComponent d-f fleD-c">
+
+  <top-nav (clubNameSelected)="clubNameSelected($event)"></top-nav>
+
+  <div class="restaurant fleG-1">
+
+    <header class="restaurantHeader d-f aliI-c marX-25 marY-25 texA-c leftCenterPositionRef padX-20">
+
+        <span class="backArrow leftCenterPosition">
+
+          <a routerLink="/restaurants">
+            <img src="/assets/icons/backArrowIcon.svg" class="img20Px" alt="backArrowIcon">
+          </a>
+
+        </span>
+
+        <h6 *ngIf="restaurant?.name" class="fw-bold fleG-1 marB-0">{{ restaurant?.name }}</h6>
+
+    </header>
+
+    <main>
+
+      <section *ngIf="restaurant?.images" class="imagesCollection">
+
+        <div class="mainImage">
+          <img [src]="restaurant!.images[1]" alt="">
+        </div>
+        <div class="secondaryImages">
+          <img [src]="restaurant!.images[2]" alt="">
+          <img [src]="restaurant!.images[3]" alt="">
+          <img [src]="restaurant!.images[4]" alt="">
+        </div>
+
+      </section>
+
+      <div *ngIf="restaurant?.description" class="textInfo marX-25 marT-20 marB-16">
+
+        <p> {{ shortDescription || showWholeDescription ? restaurant?.description : (restaurant?.description | slice:0:100) + '...' }}</p>
+        <button
+          *ngIf="!shortDescription"
+          class="readMoreButton"
+          (click)="showWholeDescription = !showWholeDescription"
+        >{{ showWholeDescription ? 'Read Less' : 'Read More' }}</button>
+
+
+      </div>
+
+      <div *ngIf="restaurant?.features" class="features marX-25 padT-15 padB-10 marB-16">
+
+        <h6 class="marB-15" >Good things to know</h6>
+
+        <div class="features-group">
+
+          <div *ngFor="let feature of restaurant?.features" class="feature marB-10">
+            <img [src]="'/assets/icons/'+ feature.iconName + '.svg'" [alt]="feature.iconName" class="img20Px marR-15">
+            <span class="smallText"> {{ feature.text }} </span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div *ngIf="restaurant?.name" class="viewInMap marX-25 marB-16" (click)="viewInMap(restaurant!.name)">
+        <div class="imageHolder marB-16">
+          <img src="/assets/Images/restaurantMap.jpg" alt="map image">
+        </div>
+        <span class="verySmallText">View in map</span>
+      </div>
+
+    </main>
+
+    <footer
+      *ngIf="restaurant?.phoneNumber || restaurant?.website"
+      class="d-f jusC-c aliI-c marX-25"
+    >
+      <button *ngIf="restaurant?.phoneNumber" class="call padY-10 borR-5 fleG-1" (click)="callPhoneNumber(restaurant!.phoneNumber)">
+        <img src="/assets/icons/phoneIcon.svg" alt="phoneIcon" class="img20Px">
+        Call
+      </button>
+      <button *ngIf="restaurant?.website" class="website padY-10 borR-5 fleG-1" (click)="redirectToWebsite(restaurant!.website)">
+        <img src="/assets/icons/globeIcon.svg" alt="globeIcon" class="img20Px">
+        Website
+      </button>
+    </footer>
+
+  </div>
+
+</div>
+

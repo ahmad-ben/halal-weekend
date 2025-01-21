@@ -1,0 +1,126 @@
+{
+
+  "Bluebird Chelsea": {
+    "name": "Bluebird Chelsea",
+    "type": "restaurant",
+    "borough": "Chelsea",
+    "city": "London",
+    "overview": "A vibrant restaurant offering delicious food and a great atmosphere.",
+    "details": [
+      { "iconName": "markerAddressWhiteIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
+      { "iconName": "phoneIcon", "text": "+44 123 456 789"},
+      { "iconName": "clockIcon", "text": "10AM - 11PM" }
+    ],
+    "images": [
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/1.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/2.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/3.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/4.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/5.jpg"
+    ],
+    "usefulInformation": [
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.bluebird-restaurant.co.uk/",
+    "location": {
+      "lat": 51.484995247472966,
+      "lng": -0.17547139642546125
+    },
+    "distance": "0.3 miles from Stamford Bridge stadium",
+    "description": "Bluebird Chelsea is a renowned restaurant known for its vibrant ambiance and delectable food. Located in the heart of Chelsea, it offers a diverse menu with a variety of culinary delights. Whether you're looking for a casual lunch or an elegant dinner, Bluebird Chelsea caters to all tastes. With seating for up to 100 people, it is perfect for hosting special events and gatherings. Enjoy exceptional service, a lively atmosphere, and exquisite cuisine at Bluebird Chelsea.",
+    "features": [
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
+    ]
+  },
+
+  "Bluebird Chelsea 1": {
+    "name": "Bluebird Chelsea",
+    "type": "restaurant",
+    "borough": "Chelsea",
+    "city": "London",
+    "overview": "A vibrant restaurant offering delicious food and a great atmosphere.",
+    "details": [
+      { "iconName": "markerAddressWhiteIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
+      { "iconName": "phoneIcon", "text": "+44 123 456 789"},
+      { "iconName": "clockIcon", "text": "10AM - 11PM" }
+    ],
+    "images": [
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/1.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/2.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/3.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/4.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/5.jpg"
+    ],
+    "usefulInformation": [
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.bluebird-restaurant.co.uk/",
+    "location": {
+      "lat": 51.484995247472966,
+      "lng": -0.17547139642546125
+    },
+    "distance": "0.3 miles from Stamford Bridge stadium",
+    "description": "Bluebird Chelsea is a renowned restaurant known for its vibrant ambiance and delectable food. Located in the heart of Chelsea, it offers a diverse menu with a variety of culinary delights. Whether you're looking for a casual lunch or an elegant dinner, Bluebird Chelsea caters to all tastes. With seating for up to 100 people, it is perfect for hosting special events and gatherings. Enjoy exceptional service, a lively atmosphere, and exquisite cuisine at Bluebird Chelsea.",
+    "features": [
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
+    ]
+  },
+
+  "Bluebird Chelsea 2": {
+    "name": "Bluebird Chelsea",
+    "type": "restaurant",
+    "borough": "Chelsea",
+    "city": "London",
+    "overview": "A vibrant restaurant offering delicious food and a great atmosphere.",
+    "details": [
+      { "iconName": "markerAddressWhiteIcon", "text": "350 King's Rd, Chelsea, London SW3 5UU"},
+      { "iconName": "phoneIcon", "text": "+44 123 456 789"},
+      { "iconName": "clockIcon", "text": "10AM - 11PM" }
+    ],
+    "images": [
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/1.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/2.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/3.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/4.jpg",
+      "/assets/Images/Chelsea/restaurants/Bluebird Chelsea/5.jpg"
+    ],
+    "usefulInformation": [
+      { "iconName": "peopleGroupIcon", "text":  "Accepts groups over 10"},
+      { "iconName": "britishPoundIcon", "text":  "All meals below £"}
+    ],
+    "phoneNumber": "+44 123 456 789",
+    "website": "https://www.bluebird-restaurant.co.uk/",
+    "location": {
+      "lat": 51.484995247472966,
+      "lng": -0.17547139642546125
+    },
+    "distance": "0.3 miles from Stamford Bridge stadium",
+    "description": "Bluebird Chelsea is a renowned restaurant known for its vibrant ambiance and delectable food. Located in the heart of Chelsea, it offers a diverse menu with a variety of culinary delights. Whether you're looking for a casual lunch or an elegant dinner, Bluebird Chelsea caters to all tastes. With seating for up to 100 people, it is perfect for hosting special events and gatherings. Enjoy exceptional service, a lively atmosphere, and exquisite cuisine at Bluebird Chelsea.",
+    "features": [
+
+      { "iconName": "noAlcoholIcon", "text": "No alcohol served" },
+      { "iconName": "halalIcon", "text": "Halal food" },
+      { "iconName": "arabicLanguageSpeakingIcon", "text": "Arabic speaking staff" },
+      {"iconName": "toiletIcon", "text": "Toilets"},
+      { "iconName": "binocularsIcon", "text": "Take away"  }
+
+    ]
+  }
+
+}
